@@ -3,23 +3,41 @@ html{
 }
 
 body{
-  padding: 20px;
+  padding-top: 20px; /* Prevent top menu overlap */
+  margin: 0;
   margin-bottom: 50px;
   background: #202565;
   font-family: 'PT Sans', sans-serif;
 }
+
 .container{
   background: #FFFFFF;
-  padding-bottom: 20px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 .navbar {
   font-family: 'Libre Baskerville', sans-serif;
   font-weight: 700; font-size: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+
+}
+
+.social_media{
+  font-size: 3em;
+  color: #202565;
 }
 
 .jumbotron{
+  padding: 0px;
+}
 
+img{
+  margin: 0;
+  padding: 0;
 }
 
 .navbar-brand {
@@ -28,29 +46,38 @@ body{
   font-style: bold;
 }
 
-h1{
+h1, h2, h3, h4{
   font-family: 'Playfair Display', serif;
-}
-h2{
-  font-family: 'Libre Baskerville', serif;
 }
 
 td{
   text-align: center;
 }
 
+p{
+
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+
+
 .bluejumb{
   text-align: center;
-  padding: 10px;
   background-color: #202565;
   color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .creamjumb{
   text-align: center;
-  padding: 10px;
-  /* background-color: #F5f4d6;
-  color: white; */
+  background-color: #F5f4d6;
+  color: black;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .spectrum{
