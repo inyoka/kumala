@@ -1,3 +1,12 @@
+# Project spcific ignore files ...
+
+*.sqlite
+settings.py
+kumala/settings.py
+
+
+
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
