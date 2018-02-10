@@ -2,8 +2,7 @@
 
 *.sqlite3
 *.sqlite
-settings.py
-kumala/settings.py
+kumala/settings_secret.py
 
 
 
