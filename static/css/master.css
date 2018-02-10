@@ -1,0 +1,70 @@
+html{
+  background: #202565;
+}
+
+body{
+  padding: 20px;
+  margin-bottom: 50px;
+  background: #202565;
+  font-family: 'PT Sans', sans-serif;
+}
+.container{
+  background: #FFFFFF;
+  padding-bottom: 20px;
+}
+
+.navbar {
+  font-family: 'Libre Baskerville', sans-serif;
+  font-weight: 700; font-size: 20px;
+}
+
+.navbar-brand {
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 700; font-size: 24px;
+  font-style: bold;
+}
+
+h1{
+  font-family: 'Playfair Display', serif;
+}
+h2{
+  font-family: 'Libre Baskerville', serif;
+}
+
+td{
+  text-align: center;
+}
+
+.spectrum{
+  border: 20px;
+  margin: 20px;
+  border-spacing: 20px;
+  margin: auto;
+  align-self: center;
+}
+
+#one{
+  background: #202565;
+  width: 100px;
+  height: 200px;
+}
+#two{
+  background: #F5f4d6;
+  width: 100px;
+  height: 200px;
+}
+#three{
+  background: #E7af14;
+  width: 100px;
+  height: 200px;
+}
+#four{
+  background: #Bcb2d5;
+  width: 100px;
+  height: 200px;
+}
+#five{
+  background: #000000;
+  width: 100px;
+  height: 200px;
+}
