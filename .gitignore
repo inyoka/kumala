@@ -1,5 +1,6 @@
 # Project spcific ignore files ...
 
+*.sqlite3
 *.sqlite
 settings.py
 kumala/settings.py
