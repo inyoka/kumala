@@ -18,6 +18,10 @@ body{
   font-weight: 700; font-size: 20px;
 }
 
+.jumbotron{
+
+}
+
 .navbar-brand {
   font-family: 'Libre Baskerville', serif;
   font-weight: 700; font-size: 24px;
@@ -33,6 +37,20 @@ h2{
 
 td{
   text-align: center;
+}
+
+.bluejumb{
+  text-align: center;
+  padding: 10px;
+  background-color: #202565;
+  color: white;
+}
+
+.creamjumb{
+  text-align: center;
+  padding: 10px;
+  /* background-color: #F5f4d6;
+  color: white; */
 }
 
 .spectrum{
