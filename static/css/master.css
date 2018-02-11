@@ -84,28 +84,57 @@ p{
   align-self: center;
 }
 
-#one{
-  background: #202565;
-  width: 100px;
-  height: 200px;
+.text-large {
+  font-size: 1.5em;
+  background-color: rgba(0, 0, 0, 0.4);
+
 }
-#two{
-  background: #F5f4d6;
-  width: 100px;
-  height: 200px;
+
+.well {
+   background-color: rgba(0, 0, 0, 0.4);
 }
-#three{
-  background: #E7af14;
-  width: 100px;
-  height: 200px;
+
+.cks-text {
+    color: white;
+    text-shadow: 0px 0px 4px #000000;
 }
-#four{
-  background: #Bcb2d5;
-  width: 100px;
-  height: 200px;
+
+/* Container holding the image and the text */
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
 }
-#five{
-  background: #000000;
-  width: 100px;
-  height: 200px;
+
+
+/* Top left text */
+.top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+}
+
+/* Top right text */
+.top-right {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+}
+
+
+/* Centered text */
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Centered text */
+.bottom-centered {
+    position: absolute;
+    width: 80%;
+    bottom: 8px;
+    left: 50%;
+    transform: translate(-50%, -20%);
 }
