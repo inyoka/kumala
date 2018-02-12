@@ -20,5 +20,5 @@ from www import views
 urlpatterns = [
     path('', views.home, name='home'), #  Show home-page index.html
     path('admin/', admin.site.urls),
-    path('www/', include('www.urls')),
+    path('', include('www.urls')),
 ]
