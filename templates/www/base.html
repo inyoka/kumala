@@ -8,11 +8,14 @@
   <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
   <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-  <title>CKS</title>
+  <title>{{ page_title }}</title>
   <link rel="stylesheet" href="{% static "css/master.css" %}">
 </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top container" >
+    <header class="sticky-top">
+
+
+    <nav class="sticky-top navbar fixed-top navbar-expand-lg navbar-light bg-light container" >
       <a class="navbar-brand" href="#"><img src="{% static "images/logo.png" %}" width="32px" alt="">  Chandra Kumala School</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -45,12 +48,16 @@
           </form> -->
       </div>
     </nav>
-    <div class="container">
+  </header>
 
       {% block body_block %}
       {% endblock %}
-
-    </div>
+      <div class="container creamjumb">
+        <a class="social_media" href="https://www.facebook.com/ChandraKumalaSchool/" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a class="social_media" href="https://www.instagram.com/chandrakumalaofficial/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a class="social_media" href="https://www.youtube.com/chandrakumalaschool" target="_blank"><i class="fab fa-youtube-square"></i></a>
+        <a class="social_media" href="tel:+62-061-661-6765"><small><small>&emsp; Call us now... </small></small><i class="fas fa-mobile"></i></a>
+      </div>
   </body>
 
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

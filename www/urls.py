@@ -22,10 +22,9 @@ from www import views
 app_name = 'www'
 urlpatterns=[
     path('www/', views.home, name='www'),
-    path('about/', views.about, name='about'),
-    path('academics/', views.academics, name='academics'),
-    path('admissions/', views.admissions, name='admissions'),
-    path('gallery/', views.gallery, name='gallery'),
-
-    path('relative/', views.relative, name='relative'),
+    path('about', views.about, name='about'),
+    path('academics', views.academics, name='academics'),
+    path('admissions', views.admissions, name='admissions'),
+    path('gallery', views.gallery, name='gallery'),
+    path('contact', views.contact, name='contact'),
 ]
