@@ -1,8 +1,94 @@
 <!DOCTYPE html>
 {% extends "www/base.html" %}
 {% load staticfiles %}
+{% block title %}Gallery{% endblock %}
 {% block body_block %}
-    <br><br>
-    <h1>Gallery</h1>
+
+
+
+
+
+<div class="container">
+
+
+    <div class="row">
+     <div class="col-md-4">
+       <div class="thumbnail">
+         <a href="{% static "/images/Chandra Kumala-00076.jpg" %}">
+           <img src="{% static "/images/Chandra Kumala-00076.jpg" %}" alt="" style="width:100%">
+           <div class="caption">
+             <!-- <p>Lorem ipsum...</p> -->
+           </div>
+         </a>
+       </div>
+     </div>
+     <div class="col-md-4">
+       <div class="thumbnail">
+         <a href="{% static "/images/Chandra Kumala-00102.jpg" %}">
+           <img src="{% static "/images/Chandra Kumala-00102.jpg" %}" alt="" style="width:100%">
+           <div class="caption">
+             <!-- <p>Lorem ipsum...</p> -->
+           </div>
+         </a>
+       </div>
+     </div>
+     <div class="col-md-4">
+       <div class="thumbnail">
+         <a href="{% static "/images/Chandra Kumala-00142.jpg" %}">
+           <img src="{% static "/images/Chandra Kumala-00142.jpg" %}" alt="" style="width:100%">
+           <div class="caption">
+             <!-- <p>Lorem ipsum...</p> -->
+           </div>
+         </a>
+       </div>
+     </div>
+     <div class="col-md-4">
+       <div class="thumbnail">
+         <a href="{% static "/images/Chandra Kumala-00288.jpg" %}">
+           <img src="{% static "/images/Chandra Kumala-00288.jpg" %}" alt="" style="width:100%">
+           <div class="caption">
+             <!-- <p>Lorem ipsum...</p> -->
+           </div>
+         </a>
+       </div>
+     </div>
+     <div class="col-md-4">
+       <div class="thumbnail">
+         <a href="{% static "/images/Chandra Kumala-00335.jpg" %}">
+           <img src="{% static "/images/Chandra Kumala-00335.jpg" %}" alt="" style="width:100%">
+           <div class="caption">
+             <!-- <p>Lorem ipsum...</p> -->
+           </div>
+         </a>
+       </div>
+     </div>
+     <div class="col-md-4">
+       <div class="thumbnail">
+         <a href="{% static "/images/Chandra Kumala-00475.jpg" %}">
+           <img src="{% static "/images/Chandra Kumala-00475.jpg" %}" alt="" style="width:100%">
+           <div class="caption">
+             <!-- <p>Lorem ipsum...</p> -->
+           </div>
+         </a>
+       </div>
+     </div>
+     <div class="col-md-4">
+       <div class="thumbnail">
+         <a href="{% static "/images/Chandra Kumala-00578.jpg" %}">
+           <img src="{% static "/images/Chandra Kumala-00578.jpg" %}" alt="" style="width:100%">
+           <div class="caption">
+             <!-- <p>Lorem ipsum...</p> -->
+           </div>
+         </a>
+       </div>
+     </div>
+   </div>
+
+
+
+</div>
+
+
+
 
 {% endblock %}
