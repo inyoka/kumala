@@ -32,6 +32,9 @@ body{
   padding-bottom: 0px;
   padding-left: 0px;
   padding-right: 0px;
+  position: relative;
+  text-align: center;
+
 }
 
 .social_media{
@@ -50,7 +53,7 @@ p{
   margin-bottom: 0px;
 }
 
-.bluejumb{
+.cks-blue{
   text-align: center;
   background-color: #202565;
   color: white;
@@ -58,7 +61,7 @@ p{
   padding-bottom: 20px;
 }
 
-.creamjumb{
+.cks-cream{
   text-align: center;
   background-color: #F5f4d6;
   color: black;
@@ -66,34 +69,19 @@ p{
   padding-bottom: 20px;
 }
 
-.spectrum{
-  border: 20px;
-  margin: 20px;
-  border-spacing: 20px;
-  margin: auto;
-  align-self: center;
-}
 
-.text-large {
+.cks-text {
   font-size: 1.5em;
   background-color: rgba(0, 0, 0, 0.4);
 }
 
-.well {
-   background-color: rgba(255, 255, 255, 0.4);
-}
 
 .cks-text {
     color: white;
     text-shadow: 0px 0px 4px #000000;
 }
 
-/* Container holding the image and the text */
-.container {
-    position: relative;
-    text-align: center;
-    color: white;
-}
+
 
 
 /* Top left text */
@@ -103,9 +91,7 @@ p{
     left: 16px;
 }
 
-.list-group-item {
-  background-color: rgba(0, 0, 0, 0.8);
-}
+
 
 /* Top right text */
 .top-right {
