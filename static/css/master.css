@@ -10,6 +10,23 @@ body{
   font-family: 'PT Sans', sans-serif;
 }
 
+
+.navbar {
+  font-family: 'Libre Baskerville', sans-serif;
+  font-weight: 700; font-size: 16px; /*20px*/
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  position: fixed;  top: 0;
+}
+
+.navbar-brand {
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 700; font-size: 24px; /*24px*/
+  font-style: bold;
+  padding-left: 20px;
+}
+
 .container{
   background: #FFFFFF;
   padding-bottom: 0px;
@@ -17,33 +34,9 @@ body{
   padding-right: 0px;
 }
 
-.navbar {
-  font-family: 'Libre Baskerville', sans-serif;
-  font-weight: 700; font-size: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 10px;
-
-}
-
 .social_media{
   font-size: 3em;
   color: #202565;
-}
-
-.jumbotron{
-  padding: 0px;
-}
-
-img{
-  margin: 0;
-  padding: 0;
-}
-
-.navbar-brand {
-  font-family: 'Libre Baskerville', serif;
-  font-weight: 700; font-size: 24px;
-  font-style: bold;
 }
 
 h1, h2, h3, h4{
@@ -51,14 +44,11 @@ h1, h2, h3, h4{
 }
 
 p{
-
   padding-top: 0px;
   padding-bottom: 0px;
   margin-top: 0px;
   margin-bottom: 0px;
 }
-
-
 
 .bluejumb{
   text-align: center;
@@ -87,11 +77,10 @@ p{
 .text-large {
   font-size: 1.5em;
   background-color: rgba(0, 0, 0, 0.4);
-
 }
 
 .well {
-   background-color: rgba(0, 0, 0, 0.4);
+   background-color: rgba(255, 255, 255, 0.4);
 }
 
 .cks-text {
@@ -112,6 +101,10 @@ p{
     position: absolute;
     top: 8px;
     left: 16px;
+}
+
+.list-group-item {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* Top right text */
@@ -135,6 +128,14 @@ p{
     position: absolute;
     width: 80%;
     bottom: 8px;
+    left: 50%;
+    transform: translate(-50%, -20%);
+}
+/* Centered text */
+.top-centered {
+    position: absolute;
+    width: 80%;
+    top: 450px;
     left: 50%;
     transform: translate(-50%, -20%);
 }
