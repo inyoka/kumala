@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 {% extends "www/base.html" %}
 {% load staticfiles %}
+<head>
+  <title>About Title</title>
+</head>
 {% block body_block %}
 
 <div class="container">
@@ -8,20 +11,14 @@
   <div class="top-left cks-text"><h1 class="display-3">Who we are...</h1></div>
   <div class="top-right cks-text"><img src="{% static "images/logo.png" %}" width="176px" alt=""></div>
   <div class="bottom-centered lead cks-text">
-    <br><br><h2 class="text-large"> A holistic school who cares for the whole child.</h2>
-    <p class="text-large">  We recognise and develop individual passions, while using that enthusiasm to fuel lifelong learning. It is through promoting personal responsibility and understanding, we encourage students to become productive members of their communities.</p>
+    <br><br>
+    <p class="text-large">  We recognise and develop individual passions, using that enthusiasm to fuel lifelong learning. Through promoting personal responsibility and understanding, we encourage students to become productive members of their communities.</p>
   </div>
 </div>
 
 
 
 
-<div class="container creamjumb">
-  <a class="social_media" href="https://www.facebook.com/ChandraKumalaSchool/"><i class="fab fa-facebook"></i></a>
-  <a class="social_media" href="https://www.instagram.com/chandrakumalaofficial/"><i class="fab fa-instagram"></i></a>
-  <a class="social_media" href="https://www.youtube.com/chandrakumalaschool"><i class="fab fa-youtube-square"></i></a>
-  <p>Call us now...</p>
-  <a class="social_media" href="tel:+62-061-661-6765"><i class="fas fa-mobile"></i></a>
-</div>
+
 
 {% endblock %}
