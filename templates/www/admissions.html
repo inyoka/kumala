@@ -2,7 +2,86 @@
 {% extends "www/base.html" %}
 {% load staticfiles %}
 {% block body_block %}
-    <br><br>
-    <h1>Admissions</h1>
 
+  <div class="container">
+    <h1>Admissions Process</h1>
+
+
+    <div class="container">
+      <img src="{% static "/images/Chandra Kumala-00002.jpg" %}" alt="Sand play"  style="width:100%;">
+
+      <div id="adminssions-display" class="centered">
+
+
+
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Children's Garden  (Playgroup & TK)</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Primary Secondary (SD, SMP & SMA)</a>
+        </li>
+      </ul>
+
+
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+          <h1>Children's Garden  (Playgroup & TK)</h1><br>
+          <div class="row">
+            <div class="col-sm-6">
+              <h2>Age Requirements</h2>
+              <h4>Age calculated at beginning of school year</h4>
+              <ul>
+                <li>Toddler : Minimum age for entry is 18 months old</li>
+                <li>PG : Jan – Dec 2014</li>
+                <li>K1 : Jan – Dec 2013 </li>
+                <li>K2 : Jan – Dec 2012</li>
+              </ul>
+            </div>
+
+            <div class="col-sm-6">
+            <h2>Documantation</h2>
+            <h4>Complete the admission form and include:</h4>
+            <ul>
+              <li>A copy of birth certificate (akte kelahiran)</li>
+              <li>A copy of family register (kartu keluarga)</li>
+              <li>3 recent colour photographs (pasfoto), sized 3X4</li>
+              <li>2 recent colour photographs (pasfoto), sized 2X3</li>
+              <li>1 copy of the childs immunization book</li>
+              <li>Booking fee payment</li>
+            </ul>
+          </div>
+          <p> Participate in the selection/observation class for 1-2 sessions,
+            according to the set schedule. This selection is based on attitude,
+            adaptability, social interaction, listening skill and speaking skill.</p>
+          </div>
+        </div>
+
+
+
+
+
+        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+            <h1>Primary Secondary (SD, SMP & SMA)</h1>
+            <h2>Documantation</h2>
+            <h4>Complete the admission form and include:</h4>
+            <ul>
+              <li>A copy of birth certificate (akte kelahiran)</li>
+              <li>A copy of family register (kartu keluarga)</li>
+              <li>3 recent colour photographs (pasfoto), sized 3X4</li>
+              <li>2 recent colour photographs (pasfoto), sized 2X3</li>
+              <li>1 copy of the childs immunization book</li>
+              <li>Booking fee payment</li>
+              <li>Transfer students contact us for more information</li>
+            </ul>
+
+            Participate in the selection process
+
+        </div>
+      </div>
+  </div>
+</div>
+<p>For more information regarding the admission process, please send us an email
+at info@chandrakumala.com or give us a call on (061) 661 6765.</p>
+</div
 {% endblock %}
