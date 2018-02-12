@@ -10,12 +10,16 @@ body{
   font-family: 'PT Sans', sans-serif;
 }
 
+#adminssions-display{
+  width: 800px;
+  background-color:  rgba(245, 244, 214, 0.5);
+}
 
 .navbar {
   font-family: 'Libre Baskerville', sans-serif;
   font-weight: 700; font-size: 16px; /*20px*/
   padding-left: 20px;
-  padding-right: 20px;
+  padding-right: 40px;
   padding-bottom: 10px;
   position: fixed;  top: 0;
 }
@@ -27,8 +31,12 @@ body{
   padding-left: 20px;
 }
 
+.navbar-nav{
+  padding-left: 30px;
+}
+
 .container{
-  background: #FFFFFF;
+  background: #F5f4d6;
   padding-bottom: 0px;
   padding-left: 0px;
   padding-right: 0px;
@@ -37,7 +45,21 @@ body{
 
 }
 
+a:hover{
+    text-decoration: none;
+}
+
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+
+
 .social_media{
+  display: inline-block;
+  vertical-align: middle;
+  float: none;
   font-size: 3em;
   color: #202565;
 }
@@ -62,6 +84,7 @@ p{
 }
 
 .cks-cream{
+
   text-align: center;
   background-color: #F5f4d6;
   color: black;
@@ -104,8 +127,8 @@ p{
 /* Centered text */
 .centered {
     position: absolute;
-    top: 50%;
     left: 50%;
+    top: 300px;
     transform: translate(-50%, -50%);
 }
 
