@@ -4,20 +4,13 @@
 {% block body_block %}
 
 
-
-
-
-    <div class="container">
-      <img src="{% static "/images/Chandra Kumala-00001.jpg" %}" alt="a-Maze-ing"  style="width:100%;  padding-bottom: 150px;">
+    <div class="overlay">
+      <img src="{% static "/images/Chandra Kumala-00102.jpg" %}" alt="a-Maze-ing"  style="width:100%;">
+      <div class="bottom-centered"><h1 style="color:black;" class="display-1">Level's Offered</h1></div>
       <div class="top-right"><img src="{% static "images/logo.png" %}" width="176px" alt=""></div>
-      <div class="top-centered lead">
+    </div>
 
     <table class="table">
-      <thead>
-        <tr class="table-light">
-          <th scope="col" colspan="3">LEVELS OFFERED</th>
-        </tr>
-      </thead>
       <tbody>
         <tr class="table-primary">
           <th scope="row">1</th>
@@ -51,17 +44,6 @@
         </tr>
       </tbody>
     </table>
-</div>
-
-
-
-
-
-
-
-
-
-
 
 
 {% endblock %}
