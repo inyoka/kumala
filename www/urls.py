@@ -26,5 +26,8 @@ urlpatterns=[
     path('academics', views.academics, name='academics'),
     path('admissions', views.admissions, name='admissions'),
     path('gallery', views.gallery, name='gallery'),
+    path('videos', views.videos, name='videos'),
     path('contact', views.contact, name='contact'),
+    path('alumni', views.alumni, name='alumni'),
+    path('careers', views.careers, name='careers'),
 ]

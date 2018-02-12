@@ -22,6 +22,18 @@ def gallery(request):
     title_dict = {'page_title':'Gallery'}
     return render(request, 'www/gallery.html', context = title_dict)
 
+def videos(request):
+    title_dict = {'page_title':'School Videos'}
+    return render(request, 'www/videos.html', context = title_dict)
+
 def contact(request):
     title_dict = {'page_title':'Contact Us'}
     return render(request, 'www/contact.html', context = title_dict)
+
+def alumni(request):
+    title_dict = {'page_title':'alumni'}
+    return render(request, 'www/alumni.html', context = title_dict)
+
+def careers(request):
+    title_dict = {'page_title':'Work With Us'}
+    return render(request, 'www/careers.html', context = title_dict)

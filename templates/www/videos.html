@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+{% extends "www/base.html" %}
+{% load staticfiles %}
+{% block body_block %}
+
+<div class="jumbotron">
+  <h1 class="display-3">Videos</h1>
+  <p class="lead">Our school is filled with creative students and teachers. <br> Explore our <a href="https://www.youtube.com/chandrakumalaschool" target="_blank">YouTube channel <i class="fab fa-youtube-square"></i></a> to get an idea of what it is like to study at Chandra Kumala School.</p>
+
+</div>
+
+
+  <div class="container cks-cream">
+    <div class="embed-responsive embed-responsive-16by9">
+      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/mStjJf6p1Bs?rel=0" allowfullscreen></iframe>
+    </div>
+
+    <div class="embed-responsive embed-responsive-16by9">
+      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/JwxyIS5oeGY?rel=0" allowfullscreen></iframe>
+    </div>
+  </div>
+
+
+
+
+{% endblock %}
