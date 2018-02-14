@@ -28,7 +28,9 @@ STATIC_DIR = os.path.join(BASE_DIR, 'static')
 # DEBUG = True
 
 # ALLOWED_HOSTS = ['127.0.0.1']
-
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
 
 # Application definition
 
@@ -40,6 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'www',
+    'contact',
 ]
 
 MIDDLEWARE = [
@@ -124,3 +127,4 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     STATIC_DIR,
 ]
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
