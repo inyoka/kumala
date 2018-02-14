@@ -1,61 +1,192 @@
-html{
-  background: #202565;
-}
+/*
+There are five types of categories:
 
-body{
-  padding-top: 20px; /* Prevent top menu overlap */
+Base, Layout, Module, State, Theme
+
+Our theme colours :
+#202565 Cream
+#F5f4d6 Dark Blue
+#E7af14
+#Bcb2d5
+#000000 Black
+*/
+
+/* Example Module */
+.example { }
+
+/* Callout Module */
+.callout { }
+
+/* Callout Module with State */
+.callout.is-collapsed { }
+
+/* Form field module */
+.field { }
+
+/* Inline layout  */
+.l-inline { }
+
+/*
+Base Rules
+
+A Base rule is applied to an element using an element selector, a descendent
+selector, or a child selector, along with any pseudo-classes. It doesn’t
+include any class or ID selectors. It is defining the default styling for how
+that element should look in all occurrences on the page.
+ */
+
+html body {
+  background: #202565;
+  padding-top: 45px; /* Prevent top menu overlap */
   margin: 0;
   margin-bottom: 50px;
-  background: #202565;
   font-family: 'PT Sans', sans-serif;
   height: 100%;
 }
 
-.navbar {
-  font-family: 'Libre Baskerville', sans-serif;
-  font-weight: 700; font-size: 16px; /*20px*/
-  padding-left: 20px;
-  padding-right: 40px;
-  padding-bottom: 10px;
-  position: fixed;  top: 0;
-}
-
-.navbar-brand {
-  font-family: 'Libre Baskerville', serif;
-  font-weight: 700; font-size: 24px; /*24px*/
-  font-style: bold;
-  padding-left: 20px;
-}
-
-.navbar-nav{
-  padding-left: 30px;
-}
-
-#admissions-display{
-  margin-left: 100px;
-  width: 90%;
-  background-color:  rgba(245, 244, 214, 0.5);
-  margin: 40px;
-}
-
-.container{
-  background: #F5f4d6;
-  /* padding-bottom: 0px;
-  padding-left: 0px;
-  padding-right: 0px; */
-
+body{
+  background-color: #F5f4d6;
 }
 
 a:hover{
     text-decoration: none;
 }
 
-.vcenter {
-    display: inline-block;
-    vertical-align: middle;
-    float: none;
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
 }
 
+nav {
+  background-color: #F5f4d6;
+  font-family: 'Libre Baskerville', sans-serif;
+  font-weight: 700;
+  position: fixed;
+  top: 0;
+  border-bottom:2px solid #E7af14;
+}
+
+
+/*
+Layout Rules
+
+Layout styles can also be divided into major and minor styles based on reuse.
+Major layout styles such as header and footer are traditionally styled using
+ID selectors but take the time to think about the elements that are common
+across all components of the page and use class selectors where appropriate.
+*/
+
+.header {
+    grid-area: hd;
+}
+.footer {
+    grid-area: ft;
+}
+.content {
+    grid-area: main;
+}
+.sidebar {
+    grid-area: sd;
+}
+
+
+
+
+@media (min-width: 500px) {
+    .wrapper {
+        grid-template-columns: repeat(9, 1fr);
+        grid-template-areas:
+          "hd hd hd hd   hd   hd   hd   hd   hd"
+          "sd sd sd main main main main main main"
+          "sd sd sd  ft  ft   ft   ft   ft   ft";
+    }
+}
+@media (min-width: 700px) {
+    .wrapper {
+        grid-template-areas:
+          "hd hd hd   hd   hd   hd   hd   hd hd"
+          "sd sd main main main main main ft ft";
+    }
+}
+
+/* @media (min-width: 1400px) {
+    .container{
+        max-width: 1200px;
+    }
+} */
+
+
+* {box-sizing: border-box;}
+
+.media {
+  margin: auto;
+    border: 5px solid #Bcb2d5;
+    border-radius: 5px;
+    background-color: #fff4e6;
+    max-width: 600px;
+}
+.media {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-template-areas: "content img";
+    margin-bottom: 1em;
+}
+
+.media.flipped {
+    grid-template-columns: 1fr 4fr;
+    grid-template-areas: "img content";
+}
+
+.media .image {
+    grid-area: img;
+}
+
+.media .text {
+    grid-area: content;
+    padding: 10px;
+
+}
+
+
+/*
+Module Rules
+
+Modules sit inside Layout components. Modules can sometimes sit within other
+Modules, too. Each Module should be designed to exist as a standalone
+component. In doing so, the page will be more flexible. If done right,
+Modules can easily be moved to different parts of the layout without
+breaking. When defining the rule set for a module, avoid using IDs and
+element selectors, sticking only to class names. */
+
+
+.navbar-brand {
+  padding-left: 20px;
+
+ font-size: 24px;
+}
+
+.navbar {
+ font-size: 16px;
+}
+
+.container{
+
+  padding: 0;
+  background: #F5f4d6;
+
+}
+.container-center{
+    height: 100%;
+    display: block;
+    vertical-align: middle;
+}
+
+.displayed {
+    display: block;
+    align: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
 .social_media{
   display: inline-block;
@@ -65,49 +196,19 @@ a:hover{
   color: #202565;
 }
 
-h1, h2, h3, h4{
-  font-family: 'Playfair Display', serif;
-}
-
-p{
-  padding-top: 0px;
-  padding-bottom: 0px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
-
-.cks-blue{
-  text-align: center;
-  background-color: #202565;
-  color: white;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-.cks-cream{
-
-  text-align: center;
-  background-color: #F5f4d6;
-  color: black;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-
 .cks-text {
   font-size: 1.5em;
   background-color: rgba(0, 0, 0, 0.4);
-}
-
-
-.cks-text {
     color: white;
     text-shadow: 0px 0px 4px #000000;
 }
 
-div{
-  height: auto;
+.footer{
+    border-top:2px solid #E7af14;
+    padding: 0;
+    margin: 0;
 }
+
 
 .overlay {
     position: relative;
@@ -162,7 +263,6 @@ div{
     top: 50%;
     right: 16px;
 }
-
 
 /* Centered text */
 .bottom-centered {
