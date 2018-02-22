@@ -88,7 +88,9 @@ across all components of the page and use class selectors where appropriate.
     grid-area: sd;
 }
 
-
+.jumbotron {
+  padding: 5px;
+}
 
 
 @media (min-width: 500px) {
