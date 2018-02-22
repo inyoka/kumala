@@ -1,18 +1,16 @@
 <!DOCTYPE html>
 {% extends "www/base.html" %}
 {% load staticfiles %}
-<head>
-  <title>About Title</title>
-</head>
+
 {% block body_block %}
+<div class="jumbotron">
+  <h1 class="display-3" style="text-align:center;">{{ page_title }}</h1>
+  <p class="lead" style="text-align:center;">We recognise and develop individual passions, using that enthusiasm to fuel lifelong learning. Through promoting personal responsibility and understanding, we encourage students to become productive members of their communities.</p>
+</div>
 
 <div class="overlay">
-  <img src="{% static "/images/Chandra Kumala-00076.jpg" %}" alt="a-Maze-ing"  style="width:100%;">
-  <div class="top-left"><h1 class="display-4" style="color:white; text-shadow: 2px 2px #000000;">Who we are...</h1></div>
+  <img src="{% static "/images/00076-1920x800.jpg" %}" alt="a-Maze-ing"  style="width:100%;">
   <div class="top-right"><img src="{% static "images/logo.png" %}" width="176px" alt=""></div>
-  <div class="bottom-centered lead">
-    <p class="cks-text" style="font-size: 1em">  We recognise and develop individual passions, using that enthusiasm to fuel lifelong learning. Through promoting personal responsibility and understanding, we encourage students to become productive members of their communities.</p>
-  </div>
 </div>
 
 
