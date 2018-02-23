@@ -92,6 +92,7 @@ across all components of the page and use class selectors where appropriate.
   padding: 5px;
 }
 
+
 @media (min-width: 500px) {
     .wrapper {
         grid-template-columns: repeat(9, 1fr);
@@ -364,7 +365,7 @@ background: rgba(0,0,0,0.4);
 .carousel-logo
 {
 position: absolute;
-right: 16px;
+right: 0;
 top: 0;
 left: 20;
 z-index: 10;
