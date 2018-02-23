@@ -4,12 +4,16 @@
 {% block body_block %}
 
     <div class="overlay">
-      <img src="{% static "/images/Chandra Kumala-00578.jpg" %}" alt="Sand play"  style="width:100%;">
+      <img src="{% static "/images/00578-1920x800.jpg" %}" alt="Sand play"  style="width:100%;">
       <div class="bottom-centered"><h1 style="color:black; text-shadow: 2px 2px #ffffff;" class="display-1">Admissions Process</h1></div>
-      <div class="top-right"><img src="{% static "images/logo.png" %}" width="176px" alt=""></div>
-    </div>
+      <div class="carousel-logo">
+        <img class="d-none d-md-block" src="{% static "images/kumala-logo.svg" %}" width="120px" alt="">
+      </div>
+      <div class="carousel-logo">
+        <img class="d-block d-md-none" src="{% static "images/kumala-logo.svg" %}" width="60px" alt="">
+      </div>    </div>
 
-      <div id="adminssions-display">
+      <div id="admissions-display">
 
       <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
         <li class="nav-item">
