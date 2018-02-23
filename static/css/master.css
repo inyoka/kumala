@@ -158,7 +158,6 @@ Modules can easily be moved to different parts of the layout without
 breaking. When defining the rule set for a module, avoid using IDs and
 element selectors, sticking only to class names. */
 
-
 .navbar-brand {
   padding-left: 20px;
 
@@ -249,20 +248,6 @@ element selectors, sticking only to class names. */
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-}
-
-.centered-title {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-
-.centered-right {
-    position: absolute;
-    top: 50%;
-    right: 16px;
 }
 
 /* Centered text */
