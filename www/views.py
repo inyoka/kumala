@@ -7,15 +7,15 @@ def home(request):
     return render(request, 'www/home.html', context = title_dict)
 
 def about(request):
-    title_dict = {'page_title':'About our school'}
+    title_dict = {'page_title':'About Us'}
     return render(request, 'www/about.html', context = title_dict)
 
 def academics(request):
-    title_dict = {'page_title':'Academic Courses Offered'}
+    title_dict = {'page_title':'Courses Offered'}
     return render(request, 'www/academics.html', context = title_dict)
 
 def admissions(request):
-    title_dict = {'page_title':'Admissions process'}
+    title_dict = {'page_title':'Admissions Process'}
     return render(request, 'www/admissions.html', context = title_dict)
 
 def gallery(request):
@@ -31,9 +31,9 @@ def contact(request):
     return render(request, 'www/contact.html', context = title_dict)
 
 def alumni(request):
-    title_dict = {'page_title':'alumni'}
+    title_dict = {'page_title':'Alumni'}
     return render(request, 'www/alumni.html', context = title_dict)
 
 def careers(request):
-    title_dict = {'page_title':'Work With Us'}
+    title_dict = {'page_title':'Join Our Team'}
     return render(request, 'www/careers.html', context = title_dict)
