@@ -30,16 +30,21 @@
           </li>
 
           <li class="nav-item active">
-          <a class="nav-link" href="{% url 'www:academics' %}">Academics <span class="sr-only">(current)</span></a>
-                    </li>
+            <a class="nav-link" href="{% url 'www:admissions' %}">Admissions <span class="sr-only">(current)</span></a>
+          </li>
+
+
+          <li class="nav-item active">
+          <a class="nav-link" href="{% url 'www:courses' %}">Courses <span class="sr-only">(current)</span></a>
+          </li>
 
 
           <!-- <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle dropdown-toggle-split" href="{% url 'www:academics' %}" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Academics
+            <a class="nav-link dropdown-toggle dropdown-toggle-split" href="{% url 'www:courses' %}" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              courses
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="{% url 'www:academics' %}">Academics </a>
+              <a class="dropdown-item" href="{% url 'www:courses' %}">courses </a>
               <a class="dropdown-item" href="{% url 'www:alumni' %}">Alumni</a>
               <a class="dropdown-item" href="{% url 'www:careers' %}">Careers</a>
               <div class="dropdown-divider"></div>
@@ -49,12 +54,8 @@
 
 
 
-          <li class="nav-item active">
-            <a class="nav-link" href="{% url 'www:admissions' %}">Admissions <span class="sr-only">(current)</span></a>
-          </li>
-
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle dropdown-toggle-split" href="{% url 'www:academics' %}" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="nav-link dropdown-toggle dropdown-toggle-split" href="{% url 'www:courses' %}" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Gallery
             </a>
             <div class="dropdown-menu  dropdown-menu-right" aria-labelledby="navbarDropdown">
@@ -63,15 +64,8 @@
               <a class="dropdown-item" href="{% url 'www:videos' %}">Videos</a
             </div>
           </li>
-
-
-
           <li class="nav-item active">
             <a class="nav-link" href="{% url 'www:contact' %}">Contact <span class="sr-only">(current)</span></a>
-          </li>
-
-
-
           </li>
           <!-- <li class="nav-item active">
             <a class="nav-link" href="{% url 'admin:index' %}">Admin <span class="sr-only">(current)</span></a>
@@ -83,54 +77,51 @@
           </form> -->
       </div>
     </nav>
-
-
-
 <div class="container">
-
 <div class="sidebar">
+
 </div>
 
-    <div class="content">
+      <div class="row">
+       <div class="col-12">
+         <div class="thumbnail">
+           <a href="{% url 'www:playday' %}">
+             <img src="{% static "/images/sd-1920x272.jpg" %}" alt="" style="width:100%">
+             <div class="caption">
+               <!-- <p>Lorem ipsum...</p> -->
+             </div>
+           </a>
+         </div>
+       </div>
+     </div>
+
+
+
+
+
       {% block body_block %}
       {% endblock %}
     </div>
   </div>
-
-
-
-
-
-
-
     <footer>
-
     <div class="container">
-
       <div class="row footer">
             <div class="col-md-3 displayed">
               <a class="social_media" href="tel:+62-061-661-6765"><small><small> Call </small></small><i class="fas fa-mobile"></i></a>
               <a class="social_media" href="mailto:info@chandrakumala.com?Subject=Website%20question" target="_top"><small><small> Email </small></small><i class="fas fa-envelope-square"></i></a>
-
             </div>
             <div class="col-md-6 displayed">
               <small><p>Chandra Kumala School, Perumahan Cemara Asri<br> No.1 Block O Deliserdang, Medan, Indonesia, 20317</p></small>
-
-
             </div>
             <div class="col-md-3 displayed">
               <a class="social_media" href="https://www.facebook.com/ChandraKumalaSchool/" target="_blank"><i class="fab fa-facebook"></i></a>
               <a class="social_media" href="https://www.instagram.com/chandrakumalaofficial/" target="_blank"><i class="fab fa-instagram"></i></a>
               <a class="social_media" href="https://www.youtube.com/chandrakumalaschool" target="_blank"><i class="fab fa-youtube-square"></i></a>
             </div>
-
       </div>
     </div>
     </footer>
 </div>
-
-
-
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
