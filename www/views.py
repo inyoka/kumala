@@ -11,11 +11,11 @@ def about(request):
     return render(request, 'www/about.html', context = title_dict)
 
 def courses(request):
-    title_dict = {'page_title':'Courses Available'}
+    title_dict = {'page_title':'Courses'}
     return render(request, 'www/courses.html', context = title_dict)
 
 def admissions(request):
-    title_dict = {'page_title':'Admissions Process'}
+    title_dict = {'page_title':'Admissions'}
     return render(request, 'www/admissions.html', context = title_dict)
 
 def gallery(request):
@@ -23,7 +23,7 @@ def gallery(request):
     return render(request, 'www/gallery.html', context = title_dict)
 
 def videos(request):
-    title_dict = {'page_title':'School Videos'}
+    title_dict = {'page_title':'Videos'}
     return render(request, 'www/videos.html', context = title_dict)
 
 def contact(request):
