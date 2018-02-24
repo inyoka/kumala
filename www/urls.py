@@ -23,11 +23,12 @@ app_name = 'www'
 urlpatterns=[
     path('www/', views.home, name='www'),
     path('about', views.about, name='about'),
-    path('academics', views.academics, name='academics'),
+    path('courses', views.courses, name='courses'),
     path('admissions', views.admissions, name='admissions'),
     path('gallery', views.gallery, name='gallery'),
     path('videos', views.videos, name='videos'),
     path('contact', views.contact, name='contact'),
     path('alumni', views.alumni, name='alumni'),
     path('careers', views.careers, name='careers'),
+    path('playday', views.playday, name='playday'),
 ]

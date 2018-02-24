@@ -10,9 +10,9 @@ def about(request):
     title_dict = {'page_title':'About Us'}
     return render(request, 'www/about.html', context = title_dict)
 
-def academics(request):
-    title_dict = {'page_title':'Courses Offered'}
-    return render(request, 'www/academics.html', context = title_dict)
+def courses(request):
+    title_dict = {'page_title':'Courses Available'}
+    return render(request, 'www/courses.html', context = title_dict)
 
 def admissions(request):
     title_dict = {'page_title':'Admissions Process'}
@@ -37,3 +37,7 @@ def alumni(request):
 def careers(request):
     title_dict = {'page_title':'Join Our Team'}
     return render(request, 'www/careers.html', context = title_dict)
+
+def playday(request):
+    title_dict = {'page_title':'Play Day'}
+    return render(request, 'www/playday.html', context = title_dict)
