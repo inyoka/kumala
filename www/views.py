@@ -3,7 +3,7 @@ from django.shortcuts import render
 # Create your views here.
 
 def home(request):
-    title_dict = {'page_title':'Home Page'}
+    title_dict = {'page_title':'Home Page','page_desc':'Chandra Kumala School'}
     return render(request, 'www/home.html', context = title_dict)
 
 def about(request):
