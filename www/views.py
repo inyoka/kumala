@@ -14,9 +14,9 @@ def courses(request):
     title_dict = {'page_title':'Courses'}
     return render(request, 'www/courses.html', context = title_dict)
 
-def admissions(request):
-    title_dict = {'page_title':'Admissions'}
-    return render(request, 'www/admissions.html', context = title_dict)
+def registration(request):
+    title_dict = {'page_title':'Register'}
+    return render(request, 'www/registration.html', context = title_dict)
 
 def gallery(request):
     title_dict = {'page_title':'Gallery'}
