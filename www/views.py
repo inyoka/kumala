@@ -39,5 +39,5 @@ def careers(request):
     return render(request, 'www/careers.html', context = title_dict)
 
 def playday(request):
-    title_dict = {'page_title':'Play Day'}
+    title_dict = {'page_title':'Play Day','page_desc':'Creative hobbies and activities to release your inner child and supercharge your learning.'}
     return render(request, 'www/playday.html', context = title_dict)
