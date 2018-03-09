@@ -30,5 +30,5 @@ urlpatterns=[
     path('contact', views.contact, name='contact'),
     path('alumni', views.alumni, name='alumni'),
     path('careers', views.careers, name='careers'),
-    path('playday', views.playday, name='playday'),
+    path('event', views.event, name='event'),
 ]
