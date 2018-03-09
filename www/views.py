@@ -38,6 +38,6 @@ def careers(request):
     title_dict = {'page_title':'Join Our Team'}
     return render(request, 'www/careers.html', context = title_dict)
 
-def event(request):
+def event(request): 
     title_dict = {'page_title':'Trolls Performance','page_desc':'Chandra Kumala Primary School performance...'}
     return render(request, 'www/event.html', context = title_dict)
