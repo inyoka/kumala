@@ -37,12 +37,13 @@ that element should look in all occurrences on the page.
 
 html body {
   background: #202565;
-  padding-top: 45px; /* Prevent top menu overlap */
+  /* padding-top: 45px; /* Prevent top menu overlap */ */
   margin: 0;
   margin-bottom: 50px;
   font-family: 'PT Sans', sans-serif;
   height: 100%;
 }
+
 
 body{
   background-color: #F5f4d6;
@@ -61,10 +62,9 @@ nav {
   font-family: 'Libre Baskerville', sans-serif;
   font-weight: 700;
   position: fixed;
-  top: 0;
+  top: 0px;
   border-bottom:2px solid #E7af14;
 }
-
 
 /*
 Layout Rules

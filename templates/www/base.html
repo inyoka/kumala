@@ -37,6 +37,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <link rel="icon" href="{% static "images/kumala.ico" %}">
 </head>
   <body>
+
     <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WQ28LG5"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -44,8 +45,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="wrapper">
       <header class="sticky-top">  </header>
 
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light container">
-      <a class="navbar-brand" href="#"><img src="{% static "images/kumala-logo.svg" %}" width="21px" alt=""><a class="d-none d-sm-block">Chandra Kumala School</a><a class="d-block d-sm-none">CKS</a></a>
+    <nav class="navbar  navbar-expand-lg navbar-light container">
+      <a class="navbar-brand" href="#"><img src="{% static "images/kumala-logo.svg" %}" width="21px" alt=""><a class="d-none d-sm-block notranslate">Chandra Kumala School</a><a class="d-block d-sm-none">CKS</a></a>
       <a class="navbar-brand ml-auto d-block d-lg-none" style="  font-size: 16px;" href="{% url 'home' %}"><i class="fas fa-home"></i> <span class="sr-only">(current)</span></a>
 
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -133,32 +134,34 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
       {% block body_block %}
       {% endblock %}
-    </div>
-  </div>
+
+
     <footer>
-    <div class="container">
+
       <div class="row footer">
-            <div class="col-md-3 displayed">
+            <div class="col-lg-2 displayed">
+
 
               <div id="google_translate_element"></div><script type="text/javascript">
               function googleTranslateElementInit() {
-                new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'en,id,ms,zh-CN', gaTrack: true, gaId: 'UA-114964374-1'}, 'google_translate_element');
+                new google.translate.TranslateElement({pageLanguage: 'en', gaTrack: true, gaId: 'UA-114964374-1'}, 'google_translate_element');
               }
               </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
-
             </div>
-            <div class="col-md-6 displayed">
 
-              <div class="" style="style="color:#fff;float:left;"">
+
+
+            <div class="col-lg-7 displayed">
+
+              <div class="notranslate" style="style="color:#fff;float:left;"">
                 <i class="fas fa-map-marker-alt"></i>&nbsp Chandra Kumala School, Perumahan Cemara Asri<br> No.1 Block O Deliserdang, Medan, Indonesia, 20317
               </div>
             </div>
-            <div class="col-md-3 displayed">
+            <div class="col-lg-3 displayed">
               <a class="social_media" href="https://www.facebook.com/ChandraKumalaSchool/" target="_blank"><i class="fab fa-facebook"></i></a>
               <a class="social_media" href="https://www.instagram.com/chandrakumalaofficial/" target="_blank"><i class="fab fa-instagram"></i></a>
               <a class="social_media" href="https://www.youtube.com/chandrakumalaschool" target="_blank"><i class="fab fa-youtube-square"></i></a>
-              &nbsp
               <a class="social_media" href="mailto:info@chandrakumala.com?Subject=Website%20question" target="_top"><i class="fas fa-envelope"></i></a>
               &nbsp
               <a class="social_media" href="tel:+62-061-661-6765"><i class="fas fa-phone"></i></a>
