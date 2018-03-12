@@ -4,29 +4,22 @@ There are five types of categories:
 Base, Layout, Module, State, Theme
 
 Our theme colours :
-#202565 Cream
-#F5f4d6 Dark Blue
-#E7af14
-#Bcb2d5
+
+#E7af14 Gold
+#F5f4d6 Cream
+#Bcb2d5 Lilac
+#202565 Dark Blue
 #000000 Black
-*/
 
-/* Example Module */
-.example { }
+Beige 	#F5F5DC
+Cornsilk 	#FFF8DC
+FloralWhite 	#FFFAF0
+Ivory 	#FFFFF0
 
-/* Callout Module */
-.callout { }
+MidnightBlue 	#191970
+Navy 	#000080
 
-/* Callout Module with State */
-.callout.is-collapsed { }
 
-/* Form field module */
-.field { }
-
-/* Inline layout  */
-.l-inline { }
-
-/*
 Base Rules
 
 A Base rule is applied to an element using an element selector, a descendent
@@ -44,13 +37,8 @@ html body {
   height: 100%;
 }
 
-
-body{
-  background-color: #F5f4d6;
-}
-
-a:hover{
-    text-decoration: none;
+body {
+  background-color: #Bcb2d5;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -63,12 +51,10 @@ nav {
   font-weight: 700;
   position: fixed;
   top: 0px;
-  border-bottom:2px solid #E7af14;
 }
 
-.event{
-  border-bottom:2px solid #E7af14;
-}
+
+
 
 /*
 Layout Rules
@@ -79,78 +65,16 @@ ID selectors but take the time to think about the elements that are common
 across all components of the page and use class selectors where appropriate.
 */
 
-.header {
-    grid-area: hd;
-}
-.footer {
-    grid-area: ft;
-}
-.content {
-    grid-area: main;
-}
-.sidebar {
-    grid-area: sd;
+header{
+    border-bottom:2px solid #E7af14;
 }
 
-.jumbotron {
-  padding: 0px;
+footer{
+    border-top:2px solid #E7af14;
+    background: #F5f4d6;
+    padding: 0;
+    margin: 0;
 }
-
-@media (min-width: 500px) {
-    .wrapper {
-        grid-template-columns: repeat(9, 1fr);
-        grid-template-areas:
-          "hd hd hd hd   hd   hd   hd   hd   hd"
-          "sd sd sd main main main main main main"
-          "sd sd sd  ft  ft   ft   ft   ft   ft";
-    }
-}
-@media (min-width: 700px) {
-    .wrapper {
-        grid-template-areas:
-          "hd hd hd   hd   hd   hd   hd   hd hd"
-          "sd sd main main main main main ft ft";
-    }
-}
-
-/* @media (min-width: 1400px) {
-    .container{
-        max-width: 1200px;
-    }
-} */
-
-
-* {box-sizing: border-box;}
-
-.media {
-  margin: auto;
-    border: 5px solid #Bcb2d5;
-    border-radius: 5px;
-    background-color: #fff4e6;
-    max-width: 600px;
-}
-.media {
-    display: grid;
-    grid-template-columns: 4fr 1fr;
-    grid-template-areas: "content img";
-    margin-bottom: 1em;
-}
-
-.media.flipped {
-    grid-template-columns: 1fr 4fr;
-    grid-template-areas: "img content";
-}
-
-.media .image {
-    grid-area: img;
-}
-
-.media .text {
-    grid-area: content;
-    padding: 10px;
-
-}
-
 
 /*
 Module Rules
@@ -160,31 +84,38 @@ Modules, too. Each Module should be designed to exist as a standalone
 component. In doing so, the page will be more flexible. If done right,
 Modules can easily be moved to different parts of the layout without
 breaking. When defining the rule set for a module, avoid using IDs and
-element selectors, sticking only to class names. */
+element selectors, sticking only to class names.
+*/
 
 .navbar-brand {
-  padding-left: 20px;
-
- font-size: 24px;
+  font-size: 24px;
 }
 
+
 .navbar {
- font-size: 16px;
+ font-size: 18px;
 }
 
 .container{
-
+  /* Removes badding from banner, ensures consistent background color. */
   padding: 0;
   background: #F5f4d6;
-
-}
-.container-center{
-    height: 100%;
-    display: block;
-    vertical-align: middle;
 }
 
-.displayed {
+iframe, .card {
+  /* Allows the iframe to be centered. */
+  display:block;
+  margin: auto;
+}
+
+.jumbotron {
+  /* Shrink borders and apply lilac background.  */
+  padding: 0px;
+  /* background-color: #Bcb2d5; */
+  border-radius: 0px;
+}
+
+.text-center {
     display: block;
     align: center;
     text-align: center;
@@ -192,7 +123,14 @@ element selectors, sticking only to class names. */
     margin-right: auto;
   }
 
-.social_media{
+
+
+.event{
+    border-bottom:2px solid #E7af14;
+}
+
+.social_media {
+  /* Used to style Font Awesome Social Media icons. */
   display: inline-block;
   vertical-align: middle;
   float: none;
@@ -200,164 +138,82 @@ element selectors, sticking only to class names. */
   color: #202565;
 }
 
-.cks-text {
-  font-size: 1.5em;
-  /* background-color: rgba(0, 0, 0, 0.4); */
-  color: white;
-  /* text-shadow: 0px 0px 4px #000000; */
-}
-
-.footer{
-    border-top:2px solid #E7af14;
-    padding: 0;
-    margin: 0;
-}
-
+/* CAROUSEL CSS */
 
 .overlay {
+    /* Ensures Carousel logo and Caption are displayed in-line with the body, and text color is white. */
     position: relative;
     text-align: center;
     color: white;
 }
 
-/* Top left text */
-.top-left {
-    position: absolute;
-    top: 8px;
-    left: 10%;
+.carousel-control.left{
+  background: none;
+  font-size: 100px;
+}
+.carousel-control.right{
+  background: none;
+  font-size: 100px;
 }
 
-.bottom-left {
-    position: absolute;
-    bottom: 8px;
-    left: 16px;
+.carousel-control{
+  position: absolute;
+  top: 45%;
+  bottom: 0;
+  left: 0;
+  width: 15%;
+  font-size: auto;
+  color: #fff;
+  text-align: center;
+  opacity: 1;
+  text-shadow: none;
+}
+.carousel-control:hover{
+  color: #000;
+}
+.carousel-indicators{
+  bottom: -50px;
 }
 
-/* Top right text */
-.top-right {
-    position: absolute;
-    top: 8px;
-    right: 16px;
-}
-/* Bottom right text */
-.bottom-right {
-    position: absolute;
-    bottom: 8px;
-    right: 16px;
-}
-
-/* Centered text */
-.centered {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.carousel-indicators li{
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 1px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: #000\9;
+  background-color: rgba(0,0,0,0);
+  border: 1px solid #16a085;
+  border-radius: 50%;
 }
 
-/* Centered text */
-.bottom-centered {
-    position: absolute;
-    width: 80%;
-    bottom: 8px;
-    left: 50%;
-    transform: translate(-50%, -20%);
+.carousel-indicators .active{
+  width: 12px;
+  height: 12px;
+  margin: 0;
+  background-color: #16a085;
 }
-/* Centered text */
-.top-center {
-    position: absolute;
-    width:60%;
-    top: 18px;
-    left: 50%;
-    transform: translate(-50%, -20%);
-}
-
-
-/* Centered text */
-.top-centered {
-    position: absolute;
-    width: 80%;
-    top: 450px;
-    left: 50%;
-    transform: translate(-50%, -20%);
+.carousel-caption{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  padding-top: 35px; /* Height of dark background */
+  padding-bottom: 35px;
+  color: #fff;
+  text-align: center;
+  background: rgba(0,0,0,0.4);
 }
 
-
-/* Carousel */
-
-.carousel-control.left
-{
-background: none;
-font-size: 100px;
-}
-.carousel-control.right
-{
-background: none;
-font-size: 100px;
-}
-
-.carousel-control
-{
-position: absolute;
-top: 45%;
-bottom: 0;
-left: 0;
-width: 15%;
-font-size: auto;
-color: #fff;
-text-align: center;
-opacity: 1;
-text-shadow: none;
-}
-.carousel-control:hover
-{
-color: #000;
-}
-.carousel-indicators
-{
-bottom: -50px;
-}
-.carousel-indicators li
-{
-display: inline-block;
-width: 10px;
-height: 10px;
-margin: 1px;
-text-indent: -999px;
-cursor: pointer;
-background-color: #000\9;
-background-color: rgba(0,0,0,0);
-border: 1px solid #16a085;
-border-radius: 50%;
-}
-.carousel-indicators .active
-{
-width: 12px;
-height: 12px;
-margin: 0;
-background-color: #16a085;
-}
-.carousel-caption
-{
-position: absolute;
-right: 0;
-bottom: 0;
-left: 0;
-z-index: 10;
-padding-top: 35px; /* Height of dark background */
-padding-bottom: 35px;
-color: #fff;
-text-align: center;
-background: rgba(0,0,0,0.8);
-}
-
-.carousel-logo
-{
-position: absolute;
-right: 16px;
-top: 0;
-left: 20;
-z-index: 10;
-padding-top: 20px;
-padding-bottom: 20px;
-text-align: right;
+.carousel-logo{
+  position: absolute;
+  right: 16px;
+  top: 0;
+  left: 20;
+  z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: right;
 }
