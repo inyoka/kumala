@@ -91,7 +91,6 @@ element selectors, sticking only to class names.
   font-size: 24px;
 }
 
-
 .navbar {
  font-size: 18px;
 }
@@ -151,6 +150,7 @@ iframe, .card {
   background: none;
   font-size: 100px;
 }
+
 .carousel-control.right{
   background: none;
   font-size: 100px;
@@ -168,11 +168,13 @@ iframe, .card {
   opacity: 1;
   text-shadow: none;
 }
+
 .carousel-control:hover{
   color: #000;
 }
+
 .carousel-indicators{
-  bottom: -50px;
+  bottom: 0px;
 }
 
 .carousel-indicators li{
@@ -183,8 +185,8 @@ iframe, .card {
   text-indent: -999px;
   cursor: pointer;
   background-color: #000\9;
-  background-color: rgba(0,0,0,0);
-  border: 1px solid #16a085;
+  background-color: rgba(255,0,0,0);
+  border: 1px solid #E7af14;
   border-radius: 50%;
 }
 
@@ -192,8 +194,9 @@ iframe, .card {
   width: 12px;
   height: 12px;
   margin: 0;
-  background-color: #16a085;
+  background-color: #F5f4d6;
 }
+
 .carousel-caption{
   position: absolute;
   right: 0;
