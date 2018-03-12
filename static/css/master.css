@@ -146,7 +146,7 @@ iframe, .card {
     color: white;
 }
 
-.carousel-control.left{
+/* .carousel-control.left{
   background: none;
   font-size: 100px;
 }
@@ -167,7 +167,7 @@ iframe, .card {
   text-align: center;
   opacity: 1;
   text-shadow: none;
-}
+} */
 
 .carousel-control:hover{
   color: #000;
