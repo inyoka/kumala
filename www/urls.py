@@ -20,6 +20,7 @@ from www import views
 # Template Tagging
 
 app_name = 'www'
+
 urlpatterns=[
     path('www/', views.home, name='www'),
     path('about', views.about, name='about'),
@@ -31,4 +32,6 @@ urlpatterns=[
     path('alumni', views.alumni, name='alumni'),
     path('careers', views.careers, name='careers'),
     path('event', views.event, name='event'),
+    path('signup', views.signup, name='signup'),
+    path('login', views.login, name='login'),
 ]
