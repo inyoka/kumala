@@ -21,4 +21,5 @@ urlpatterns = [
     path('', views.home, name='home'), #  Show home-page index.html
     path('admin/', admin.site.urls),
     path('', include('www.urls')),
+    path('logout/', views.user_logout, name='logout'),
 ]
