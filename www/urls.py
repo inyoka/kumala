@@ -15,23 +15,25 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from www import views
+# from www.views import Home
+from www.views import Home, About, Courses, Registration, Gallery, Videos
+from www.views import Contact, Alumni, Careers, Event, signup, user_login
 
 # Template Tagging
 
 app_name = 'www'
 
 urlpatterns=[
-    path('www/', views.home, name='www'),
-    path('about', views.about, name='about'),
-    path('courses', views.courses, name='courses'),
-    path('registration', views.registration, name='registration'),
-    path('gallery', views.gallery, name='gallery'),
-    path('videos', views.videos, name='videos'),
-    path('contact', views.contact, name='contact'),
-    path('alumni', views.alumni, name='alumni'),
-    path('careers', views.careers, name='careers'),
-    path('event', views.event, name='event'),
-    path('signup', views.signup, name='signup'),
-    path('user_login/', views.user_login, name='user_login'),
+    path('www/', Home.as_view(), name='www'),
+    path('about', About.as_view(), name='about'),
+    path('courses', Courses.as_view(), name='courses'),
+    path('register', Registration.as_view(), name='registration'),
+    path('gallery', Gallery.as_view(), name='gallery'),
+    path('contact', Contact.as_view(), name='contact'),
+    path('videos', Videos.as_view(), name='videos'),
+    path('alumni', Alumni.as_view(), name='alumni'),
+    path('careers', Careers.as_view(), name='careers'),
+    path('event', Event.as_view(), name='event'),
+    path('signup', signup, name='signup'),
+    path('user_login/', user_login, name='user_login'),
 ]

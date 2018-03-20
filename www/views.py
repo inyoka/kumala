@@ -1,54 +1,97 @@
 from django.shortcuts import render
-from www.models import UserProfile
-from www.forms import UserForm, ProfileForm
-
 from django.contrib.auth import authenticate, login, logout
 from django.http import HttpResponseRedirect, HttpResponse
 from django.urls import reverse
 from django.contrib.auth.decorators import login_required
+from django.views.generic.base import View, TemplateView
+
+from www.models import UserProfile
+from www.forms import UserForm, ProfileForm
+
+class Home(TemplateView):
+    template_name = 'www/home.html'
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['page_title'] = 'Home Page'
+        context['page_desc'] = 'Chandra Kumala School'
+        return context
+
+class About(TemplateView):
+    template_name = 'www/about.html'
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['page_title'] = 'About Us'
+        return context
+
+class Courses(TemplateView):
+    template_name = 'www/courses.html'
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['page_title'] = 'Courses'
+        return context
+
+class Registration(TemplateView):
+    template_name = 'www/registration.html'
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['page_title'] = 'Register'
+        return context
+
+class Gallery(TemplateView):
+    template_name = 'www/gallery.html'
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['page_title'] = 'Gallery'
+        return context
+
+class Videos(TemplateView):
+    template_name = 'www/videos.html'
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['page_title'] = 'Videos'
+        return context
 
 
-# Create your views here.
+class Contact(TemplateView):
+    template_name = 'www/contact.html'
 
-def home(request):
-    title_dict = {'page_title':'Home Page','page_desc':'Chandra Kumala School'}
-    return render(request, 'www/home.html', context = title_dict)
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['page_title'] = 'Contact'
+        return context
 
-def about(request):
-    title_dict = {'page_title':'About Us'}
-    return render(request, 'www/about.html', context = title_dict)
 
-def courses(request):
-    title_dict = {'page_title':'Courses'}
-    return render(request, 'www/courses.html', context = title_dict)
+class Alumni(TemplateView):
+    template_name = 'www/alumni.html'
 
-def registration(request):
-    title_dict = {'page_title':'Register'}
-    return render(request, 'www/registration.html', context = title_dict)
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['page_title'] = 'Alumni'
+        return context
 
-def gallery(request):
-    title_dict = {'page_title':'Gallery'}
-    return render(request, 'www/gallery.html', context = title_dict)
 
-def videos(request):
-    title_dict = {'page_title':'Videos'}
-    return render(request, 'www/videos.html', context = title_dict)
+class Careers(TemplateView):
+    template_name = 'www/careers.html'
 
-def contact(request):
-    title_dict = {'page_title':'Contact Us'}
-    return render(request, 'www/contact.html', context = title_dict)
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['page_title'] = 'Careers'
+        return context
 
-def alumni(request):
-    title_dict = {'page_title':'Alumni'}
-    return render(request, 'www/alumni.html', context = title_dict)
 
-def careers(request):
-    title_dict = {'page_title':'Join Our Team'}
-    return render(request, 'www/careers.html', context = title_dict)
+class Event(TemplateView):
+    template_name = 'www/event.html'
 
-def event(request):
-    title_dict = {'page_title':'Trolls Performance','page_desc':'Chandra Kumala Primary School performance...'}
-    return render(request, 'www/event.html', context = title_dict)
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['page_title'] = 'Event'
+        return context
 
 @login_required
 def user_logout(request):
