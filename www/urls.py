@@ -16,7 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 # from www.views import Home
-from www.views import Home, About, Courses, Registration, Gallery, Videos
+from www.views import Home, About, Programs, Registration, Gallery, Videos
 from www.views import Contact, Alumni, Careers, Event, signup, user_login
 
 # Template Tagging
@@ -26,7 +26,7 @@ app_name = 'www'
 urlpatterns=[
     path('www/', Home.as_view(), name='www'),
     path('about', About.as_view(), name='about'),
-    path('courses', Courses.as_view(), name='courses'),
+    path('programs', Programs.as_view(), name='programs'),
     path('register', Registration.as_view(), name='registration'),
     path('gallery', Gallery.as_view(), name='gallery'),
     path('contact', Contact.as_view(), name='contact'),

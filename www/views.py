@@ -25,12 +25,12 @@ class About(TemplateView):
         context['page_title'] = 'About Us'
         return context
 
-class Courses(TemplateView):
-    template_name = 'www/courses.html'
+class Programs(TemplateView):
+    template_name = 'www/programs.html'
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['page_title'] = 'Courses'
+        context['page_title'] = 'Programs'
         return context
 
 class Registration(TemplateView):
