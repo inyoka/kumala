@@ -203,8 +203,9 @@ iframe, .card {
   bottom: 0;
   left: 0;
   z-index: 10;
-  padding-top: 35px; /* Height of dark background */
-  padding-bottom: 35px;
+  /* max-height: 220px;
+  padding-top: auto; /* Height of dark background */
+  /* padding-bottom: auto; */ */
   color: #fff;
   text-align: center;
   background: rgba(0,0,0,0.4);
