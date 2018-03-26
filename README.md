@@ -1,6 +1,6 @@
 # kumala
 
-Website with a school administration app built on the side to access the ERPnext School Administration Database.
+School Website with a school administration app being built on the side to access an ERPnext School Administration Database.
 
 The site is currently built with:
 Django 2.0.3
