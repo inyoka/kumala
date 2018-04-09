@@ -17,6 +17,10 @@ from django.contrib import admin
 from django.urls import path, include
 from www.views import Home, user_logout
 
+admin.site.site_header = 'Chandra Kumala School'
+admin.site.site_title = 'Chandra Kumala Admin'
+admin.site.index_title = 'Chandra Kumala Admin'
+
 urlpatterns = [
     path('', Home.as_view(), name='home'), #  Show home-page index.html
     path('admin/', admin.site.urls),
