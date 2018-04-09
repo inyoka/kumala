@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+{% extends "www/base.html" %}
+{% load staticfiles %}
+{% block body_block %}
+
+<div class="overlay">
+  <div class="carousel-logo">
+    <img class="d-none d-md-block" src="{% static "images/kumala-logo.svg" %}" width="120px" alt="">
+  </div>
+  <div class="carousel-logo">
+    <img class="d-block d-md-none" src="{% static "images/kumala-logo.svg" %}" width="60px" alt="">
+  </div>
+</div>
+
+<div class="jumbotron">
+  <h1 class="display-3 text-center">{{ page_title }}</h1>
+  <p class="lead text-center">Our school is filled with creative students and teachers. <br> Explore our <a href="https://www.youtube.com/chandrakumalaschool" target="_blank">YouTube channel <i class="fab fa-youtube-square"></i></a> to get an idea of what it's like to study at Chandra Kumala School.</p>
+</div>
+
+
+  <div class="row">
+      <div class="col-md-12 col-lg-6  text-center">
+          <iframe  width="400" height="225" class="embed-responsive-item" src="https://www.youtube.com/embed/mStjJf6p1Bs?rel=0" allowfullscreen></iframe>
+      </div>
+      <div class="col-md-12 col-lg-6  text-center">
+          <iframe  width="400" height="225" class="embed-responsive-item" src="https://www.youtube.com/embed/JwxyIS5oeGY?rel=0" allowfullscreen></iframe>
+      </div>
+      <!-- <div class="col-md-12 col-lg-6  text-center">
+          <iframe  width="400" height="225" class="embed-responsive-item" src="https://www.youtube.com/embed/nVAph2g9jTo?rel=0" allowfullscreen></iframe>
+      </div> -->
+  </div>
+  <br>
+  <h1 class="text-center">Curious about our Alumni?</h1>
+  <br>
+  <div class="row">
+      <!-- <div class="col-md-12 col-lg-6  text-center">
+          <iframe  width="400" height="225" class="embed-responsive-item" src="https://www.youtube.com/embed/3zQ-e50An10?rel=0" allowfullscreen></iframe>
+      </div> -->
+      <div class="col-md-12 col-lg-6  text-center">
+          <iframe  width="400" height="225" class="embed-responsive-item" src="https://www.youtube.com/embed/Lc2tti5DeVY?rel=0" allowfullscreen></iframe>
+      </div>
+      <div class="col-md-12 col-lg-6  text-center">
+          <iframe  width="400" height="225" class="embed-responsive-item" src="https://www.youtube.com/embed/aZHozzvjCJw?rel=0" allowfullscreen></iframe>
+      </div>
+
+  </div>
+
+{% endblock %}

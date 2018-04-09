@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+{% extends "www/base.html" %}
+{% load staticfiles %}
+{% block body_block %}
+
+<div class="overlay">
+  <div class="carousel-logo">
+    <img class="d-none d-md-block" src="{% static "images/kumala-logo.svg" %}" width="120px" alt="">
+  </div>
+  <div class="carousel-logo">
+    <img class="d-block d-md-none" src="{% static "images/kumala-logo.svg" %}" width="60px" alt="">
+  </div>
+</div>
+
+<div class="jumbotron">
+  <h1 class="display-3 text-center">{{ page_title }}</h1>
+  <p class="lead text-center"><a href="tel:+62-061-661-6765">Call or Skype +62-061-661-6765  <i class="fas fa-mobile"></i></a> <br><a href="mailto:info@chandrakumala.com?Subject=Website%20question" target="_top"> Email : info@chandrakumala.com  <i class="fas fa-envelope-square"></i></a></p>
+</div>
+
+  <div class="card" style="width: 32rem;">
+    <div class="card-body">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.788015720234!2d98.70464181348703!3d3.6357996973543907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x303133cb86bccbe3%3A0x74aa644c1519ba8b!2sChandra+Kumala+School!5e0!3m2!1sen!2sid!4v1518526602341" width="450" height="450" frameborder="0" style="border:10" allowfullscreen>
+      &nbsp</iframe><br>
+      <h5 class="card-title">Visit our campus</h5>
+      <h6 class="card-subtitle mb-2 text-muted">Open School Every Thursday <a class="social_media" href="tel:+62-061-661-6765"><i class="fas fa-phone"></i></a><br> Call for details.</h6>
+      <p class="card-text">We have a large green campus with many facilities including a playground, climbing wall, badminton and basketball courts.</p>
+      <a href="https://www.google.com/maps?ll=3.635902,98.704839&z=14&t=m&hl=en-GB&gl=ID&mapclient=embed&cid=8406641932374751883" class="card-link"  target="_blank">Full-page map</a>
+      <a href="{% url 'www:gallery' %}" class="card-link">Campus Pictures</a>
+    </div>
+  </div>
+
+
+
+
+
+{% endblock %}
