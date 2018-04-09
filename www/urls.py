@@ -18,6 +18,7 @@ from django.urls import path
 # from www.views import Home
 from www.views import Home, About, Programs, Registration, Gallery, Videos
 from www.views import Contact, Alumni, Careers, Event, signup, user_login
+from www.views import Exams
 
 # Template Tagging
 
@@ -26,6 +27,7 @@ app_name = 'www'
 urlpatterns=[
     path('www/', Home.as_view(), name='www'),
     path('about', About.as_view(), name='about'),
+    path('exams', Exams.as_view(), name='exams'),
     path('programs', Programs.as_view(), name='programs'),
     path('register', Registration.as_view(), name='registration'),
     path('gallery', Gallery.as_view(), name='gallery'),
