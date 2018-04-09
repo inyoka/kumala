@@ -1,32 +1,10 @@
-/*
-There are five types of categories:
+/* Base Rules */
 
-Base, Layout, Module, State, Theme
-
-Our theme colours :
-
-#E7af14 Gold
-#F5f4d6 Cream
-#Bcb2d5 Lilac
-#202565 Dark Blue
-#000000 Black
-
-Beige 	#F5F5DC
-Cornsilk 	#FFF8DC
-FloralWhite 	#FFFAF0
-Ivory 	#FFFFF0
-
-MidnightBlue 	#191970
-Navy 	#000080
-
-
-Base Rules
-
-A Base rule is applied to an element using an element selector, a descendent
-selector, or a child selector, along with any pseudo-classes. It doesn’t
-include any class or ID selectors. It is defining the default styling for how
-that element should look in all occurrences on the page.
- */
+nav{
+  animation-name: moveInLeft;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+}
 
 html body {
   background: #202565;
@@ -36,6 +14,7 @@ html body {
   font-family: 'PT Sans', sans-serif;
   height: 100%;
 }
+
 
 body {
   background-color: #Bcb2d5;
@@ -52,18 +31,39 @@ nav {
   position: fixed;
   top: 0px;
 }
+.nav-item{
+   text-align: right;
+}
 
 
+.table ._top{
+  flex-basis: 50%;
+  font-size: 50;
+}
+/* Layout Rules */
+.ExamTimetable{
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  justify-content: space-between;
+}
+
+.table{
+  flex: 1;
+  flex-basis: : 90%;
+}
 
 
 /*
-Layout Rules
+@media (min-width:900px) {
+  .ExamTimetable{
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+  }
+} */
 
-Layout styles can also be divided into major and minor styles based on reuse.
-Major layout styles such as header and footer are traditionally styled using
-ID selectors but take the time to think about the elements that are common
-across all components of the page and use class selectors where appropriate.
-*/
+
 
 header{
     border-bottom:2px solid #E7af14;
@@ -76,16 +76,29 @@ footer{
     margin: 0;
 }
 
-/*
-Module Rules
+/* Module Rules */
 
-Modules sit inside Layout components. Modules can sometimes sit within other
-Modules, too. Each Module should be designed to exist as a standalone
-component. In doing so, the page will be more flexible. If done right,
-Modules can easily be moved to different parts of the layout without
-breaking. When defining the rule set for a module, avoid using IDs and
-element selectors, sticking only to class names.
-*/
+@keyframes moveInLeft {
+  0%{
+    opacity: 0;
+    transform: translateY(-100);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#threeLines{
+  border: 0;
+}
+
+/* .petals {
+  fill: #94d31b;
+}
+.petals:hover {
+  fill: #ace63c;
+} */
 
 .navbar-brand {
   font-size: 24px;
@@ -94,6 +107,8 @@ element selectors, sticking only to class names.
 .navbar {
  font-size: 18px;
 }
+
+.navbar-nav > li > .dropdown-menu { background-color: #FF0000; }
 
 .container{
   /* Removes badding from banner, ensures consistent background color. */
@@ -145,29 +160,6 @@ iframe, .card {
     text-align: center;
     color: white;
 }
-
-/* .carousel-control.left{
-  background: none;
-  font-size: 100px;
-}
-
-.carousel-control.right{
-  background: none;
-  font-size: 100px;
-}
-
-.carousel-control{
-  position: absolute;
-  top: 45%;
-  bottom: 0;
-  left: 0;
-  width: 15%;
-  font-size: auto;
-  color: #fff;
-  text-align: center;
-  opacity: 1;
-  text-shadow: none;
-} */
 
 .carousel-control:hover{
   color: #000;
