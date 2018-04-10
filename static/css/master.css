@@ -36,8 +36,24 @@ nav {
    text-align: right;
 }
 
+/* Exam Timetable Page */
 
-/* Layout Rules */
+.exam-table-headings{
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 20px 20px 20px;
+
+}
+.exam-table-headings h2{
+  flex: 1;
+  flex-basis: 20%;
+  align-items: center;
+  /* background-color: #FFFAF0; */
+}
+h2, btn {
+    display: inline;
+}
+
 .ExamTimetable{
   display: flex;
   flex-wrap: wrap;
@@ -64,7 +80,7 @@ nav {
 }
 @media (min-width: 900px){
   .job-row{
-      display: flex;
+    display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
   }
