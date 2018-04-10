@@ -31,15 +31,12 @@ nav {
   position: fixed;
   top: 0px;
 }
+
 .nav-item{
    text-align: right;
 }
 
 
-.table ._top{
-  flex-basis: 50%;
-  font-size: 50;
-}
 /* Layout Rules */
 .ExamTimetable{
   display: flex;
@@ -47,12 +44,60 @@ nav {
   margin: auto;
   justify-content: space-between;
 }
-
-.table{
+.exam-table{
   flex: 1;
   flex-basis: : 90%;
+  caption-side: top;
 }
 
+
+/* Careers Page */
+.job{
+  padding:5px
+  margin-left: 50px;
+}
+.job-title{
+  margin: auto;
+}
+.job-row{
+  margin: 5px;
+}
+@media (min-width: 900px){
+  .job-row{
+      display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+}
+.job-media{
+  padding: 0 15px; float: right;
+  flex-basis: 40%;
+  /* flex: 1; */
+}
+.job-desc{
+  /* flex: 2; */
+  flex-basis: 60%;
+  font-size: 24px;
+}
+
+/* Gallery Page */
+
+.gallery-container{
+  max-width: 1400px;
+  margin: 40px auto 0 auto;
+  padding: 30px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.thumbnail{
+  width: 300px;
+  height: 200px;
+  line-height: 100px;
+  margin-bottom: 20px;
+}
 
 /*
 @media (min-width:900px) {
@@ -124,7 +169,7 @@ iframe, .card {
 
 .jumbotron {
   /* Shrink borders and apply lilac background.  */
-  padding: 0px;
+  padding: 15px;
   /* background-color: #Bcb2d5; */
   border-radius: 0px;
 }
