@@ -1,10 +1,10 @@
 /* Base Rules */
 
-nav{
+/* nav{
   animation-name: moveInLeft;
   animation-duration: 2s;
   animation-timing-function: ease-out;
-}
+} */
 
 html body {
   background: #202565;
@@ -36,6 +36,17 @@ nav {
    text-align: right;
 }
 
+.navbar-brand {
+  font-size: 24px;
+}
+
+.navbar {
+ font-size: 18px;
+}
+
+.navbar-nav > li > .dropdown-menu { background-color: #FF0000; }
+
+
 /* Exam Timetable Page */
 
 .exam-table-headings{
@@ -55,7 +66,6 @@ h2, btn {
     display: inline;
     flex-wrap: wrap;
 }
-
 
 .ExamTimetable{
   display: flex;
@@ -92,10 +102,8 @@ h2, btn {
 .job-media{
   padding: 0 15px; float: right;
   flex-basis: 40%;
-  /* flex: 1; */
 }
 .job-desc{
-  /* flex: 2; */
   flex-basis: 60%;
   font-size: 24px;
 }
@@ -111,23 +119,13 @@ h2, btn {
   justify-content: space-around;
   flex-wrap: wrap;
 }
+
 .thumbnail{
   width: 300px;
   height: 200px;
   line-height: 100px;
   margin-bottom: 20px;
 }
-
-/*
-@media (min-width:900px) {
-  .ExamTimetable{
-    display: flex;
-    align-items: stretch;
-    justify-content: space-between;
-  }
-} */
-
-
 
 header{
     border-bottom:2px solid #E7af14;
@@ -157,25 +155,8 @@ footer{
   border: 0;
 }
 
-/* .petals {
-  fill: #94d31b;
-}
-.petals:hover {
-  fill: #ace63c;
-} */
-
-.navbar-brand {
-  font-size: 24px;
-}
-
-.navbar {
- font-size: 18px;
-}
-
-.navbar-nav > li > .dropdown-menu { background-color: #FF0000; }
-
 .container{
-  /* Removes badding from banner, ensures consistent background color. */
+  /* Removes padding from banner, ensures consistent background color. */
   padding: 0;
   background: #F5f4d6;
 }
@@ -200,8 +181,6 @@ iframe, .card {
     margin-left: auto;
     margin-right: auto;
   }
-
-
 
 .event{
     border-bottom:2px solid #E7af14;
