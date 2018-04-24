@@ -29,7 +29,11 @@
             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
             <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|PT+Sans" rel="stylesheet">
             <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-  <!-- END GOOGLE AND BOOTSTRAP -->
+<!-- END GOOGLE AND BOOTSTRAP -->
+
+  <link rel="stylesheet" href="{% static 'www/master.css' %}">
+
+
 
   <title>{{ page_title }}</title>
   <meta name="description" content="{{ page_desc }}">
@@ -42,8 +46,8 @@
   <link rel="icon" href="{% static "images/kumala.ico" %}">
 </head>
 
-<body>
-    <div class="container">
+<body>    
+
       <header>
       <!-- <header>  class="sticky-top" -->
         <nav class="navbar navbar-expand-lg navbar-light">
@@ -125,22 +129,13 @@
 
 <!-- BANNER AND INSERTION OF OTHER HTML PAGES -->
 
-      <!-- <div class="container">
-          <!-- EVENT BANNER .... -->
-          <!-- <div class="row">
-              <div class="col-12">
-                  <div class="thumbnail event">
-                      <a href="{% url 'www:event' %}">
-                      <img src="{% static "/images/troll-1920x320.jpg" %}" alt="" style="width:100%">
-                      </a>
-                  </div>
-              </div>
-          </div>
-      </div> -->
+<aside>
+</aside>
 
+<section>
   {% block body_block %}
   {% endblock %}
-
+</section>
 
 
 <!-- PAGE FOOTER / CONTACT AUTHOR COMPANY DETAILS -->
