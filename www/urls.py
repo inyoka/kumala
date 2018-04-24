@@ -16,9 +16,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 # from www.views import Home
-from www.views import Home, About, Programs, Registration, Gallery, Videos
-from www.views import Contact, Alumni, Careers, Event, signup, user_login
-from www.views import Exams
+from www.views import (Home, About, Programs, Registration, Gallery, Videos,
+                    Contact, Alumni, Careers, Event, signup, user_login, Exams,
+                    ReadingWorkshop)
 
 # Template Tagging
 
@@ -36,6 +36,7 @@ urlpatterns=[
     path('alumni', Alumni.as_view(), name='alumni'),
     path('careers', Careers.as_view(), name='careers'),
     path('event', Event.as_view(), name='event'),
+    path('q&a', ReadingWorkshop.as_view(), name='q&a'),
     path('signup', signup, name='signup'),
     path('user_login/', user_login, name='user_login'),
 ]

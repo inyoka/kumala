@@ -92,6 +92,13 @@ class Careers(TemplateView):
         context['page_title'] = 'Careers'
         return context
 
+class ReadingWorkshop(TemplateView):
+    template_name = 'www/ReadingWorkshop.html'
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['page_title'] = 'Reading Workshop'
+        return context
 
 class Event(TemplateView):
     template_name = 'www/event.html'
