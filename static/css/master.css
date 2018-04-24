@@ -1,10 +1,5 @@
 /* Base Rules */
 
-/* nav{
-  animation-name: moveInLeft;
-  animation-duration: 2s;
-  animation-timing-function: ease-out;
-} */
 
 html body {
   background: #202565;
@@ -15,6 +10,46 @@ html body {
   height: 100%;
 }
 
+html {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+section{
+  display: flex;
+  flex-direction: column;
+}
+article{
+  flex-direction: row;
+  column-count: 2;
+  column-gap: 40px;
+  padding: 30px;
+}
+
+.article-head h1 {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+
+@media (min-width: 768px) {
+  html {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  html {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  html {
+    width: 1170px;
+  }
+}
 
 body {
   background-color: #Bcb2d5;
@@ -22,6 +57,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Playfair Display', serif;
+    text-align: center;
 }
 
 nav {
@@ -45,7 +81,6 @@ nav {
 }
 
 .navbar-nav > li > .dropdown-menu { background-color: #FF0000; }
-
 
 /* Exam Timetable Page */
 
@@ -78,7 +113,6 @@ h2, btn {
   flex-basis: : 90%;
   caption-side: top;
 }
-
 
 /* Careers Page */
 .job{
@@ -138,6 +172,18 @@ footer{
     margin: 0;
 }
 
+/* .homeCarousel{
+  border-radius: 24px;
+} */
+
+.shadow{
+  background-color: #EEEEEE;
+  box-shadow:3px 3px 3px 2px #797979;
+  height: 50px;
+  width: 100px;
+  padding: 5px;
+}
+
 /* Module Rules */
 
 @keyframes moveInLeft {
@@ -155,7 +201,7 @@ footer{
   border: 0;
 }
 
-.container{
+section {
   /* Removes padding from banner, ensures consistent background color. */
   padding: 0;
   background: #F5f4d6;
@@ -209,7 +255,7 @@ iframe, .card {
 }
 
 .carousel-indicators{
-  bottom: 0px;
+  top: 20px;
 }
 
 .carousel-indicators li{
