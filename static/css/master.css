@@ -20,12 +20,13 @@ html {
 section{
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 article{
+  max-width: 800px;
   flex-direction: row;
-  column-count: 2;
-  column-gap: 40px;
   padding: 30px;
+
 }
 
 .article-head h1 {
