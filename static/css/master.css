@@ -1,6 +1,16 @@
 /* Base Rules */
 
 
+@media screen and (max-width: 768px) {
+      h1 {
+            font-size: 30px;
+      }
+      h2 {
+            font-size: 25px;
+      }
+}
+
+
 html body {
   background: #202565;
   /* padding-top: 45px; /* Prevent top menu overlap */ */
@@ -22,19 +32,41 @@ section{
   flex-direction: column;
   justify-content: center;
 }
-article{
+.article-head{
   max-width: 800px;
   flex-direction: row;
   padding: 30px;
+  flex-basis: 2;
+  order: 0;
+}
 
+.columns{
+  display: flex;
+  flex-direction: row;
+  align-content: space-around;
+  flex-wrap: wrap;
 }
 
 .article-head h1 {
   justify-content: center;
   align-items: center;
   text-align: center;
+  flex: 1 0 300px;
 }
 
+figure{
+  width:100%; /* you can use % */
+  height: auto;
+  flex-basis: 1;
+  order: 1;
+  flex-shrink: 6;
+  flex: 1 1 300px;
+}
+
+
+.buttons{
+  flex-basis: 1;
+}
 
 @media (min-width: 768px) {
   html {

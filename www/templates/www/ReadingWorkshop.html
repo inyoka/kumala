@@ -2,27 +2,24 @@
 {% load staticfiles %}
 {% block body_block %}
 
-<div class="overlay">
-  <div class="carousel-logo">
-    <br>
-    <img class="d-none d-md-block" src="{% static "images/kumala-logo.svg" %}" width="120px" alt="">
-  </div>
-  <div class="carousel-logo">
-    <img class="d-block d-md-none" src="{% static "images/kumala-logo.svg" %}" width="60px" alt="">
+<div class="columns">
+  <figure class="figure">
+    <img src="{% static "/images/generic/one.jpg" %}" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+    <figcaption class="figure-caption">CREDIT ABHI SHARMA, FLICKR CREATIVE COMMONS</figcaption>
+  </figure>
+  <div class="article-head">
+    <div class="jumbotron">
+      <h1 class="display-3">Reading Workshop</h1>
+      <h2>Questionnaire Responses ...<h2>
+        <div class="buttons">
+          <a class="btn btn-primary" href="#indonesian"><h2>Bahasa Indonesia</h2></a>
+          <a class="btn btn-primary" href="#english"><h2>English</h2></a>
+        </div>
+    </div>
   </div>
 </div>
 
-<div class="article-head">
-  <div class="jumbotron">
-    <h1 class="display-3">Reading Workshop</h1>
-    <h2>Questionnaire Responses ...<h2>
-  </div>
-</div>
-	<a class="btn btn-primary" href="#indonesian"><h2>Bahasa Indonesia</h2></a>
-  <a class="btn btn-primary" href="#english"><h2>English</h2></a>
-<br><br>
-<h1 id="indonesian">Bahasa Indonesia</h1><a class="btn btn-info float-right" href="#_top"><i class="fas fa-arrow-up"></i></a>
-
+<h1 id="indonesian">Bahasa Indonesia</h1><a class="btn btn-info float-right" href="#_top"><i class="fas fa-arrow-up"></i></a>#
 
 <article>
   <h2>Informasi buku-buku yang menyenangkan/biasa dibaca anak-anak</h2>
@@ -50,10 +47,6 @@
 </article>
 <article>
   <h2>Cara membuat anak mengerti apa yang telah dia baca</h2>
-  <p>Perpustakaan Bookmarks di Sekolah Chandra Kumala dan CaSE2 memiliki sejumlah buku berbahasa Inggris yang sesuai untuk anak-anak atau dapat dipinjam melalui sistem keanggotaan. Toko buku Gramedia menawarkan buku cerita berbahasa Inggris yang terbatas. Toko buku Books & Beyond menawarkan berbagai buku berbahasa Inggris yang lebih baik untuk remaja dan orang dewasa. Namun, buku anak-anak memang masih terbatas.</p>
-</article>
-<article>
-  <h2>Cara membuat anak mengerti apa yang telah dia baca</h2>
   <p>Membaca, sama halnya dengan belajar, bukanlah proses yang linier. Seorang anak mungkin membaca buku yang sama beberapa kali dan menyerap informasi dan kosa kata yang berbeda. Kuncinya adalah menawarkan buku yang sesuai untuk usia membaca (bukan usia anak sebenarnya) dan mendorong mereka untuk membaca beberapa buku diluar batasan itu untuk mendorong diri mereka sendiri. Taruhlah kamus didekat mereka tetapi jangan terlalu sering menggunakannya. Hanya secukupnya saja untuk menunjang kelanjutan cerita. “Sebagai anak saya membaca buku-buku yang tidak sesuai dengan usia saya. Tentunya buku-buku itu mengandung beberapa kata-kata sulit yang artinya harus cari di dalam kamus. Kedepannya saya menjadi sangat ketergantungan dengan kamus bahasa Inggris Oxford.” Lemony Snicket. Anak-anak, bahkan orang dewasa, mungkin tidak mengerti semua kata dalam sebuah buku, atau semua situasi di dalam sebuah adegan dalam cerita, tetapi mereka masih akan bisa mendapatkan cukup banyak intisari untuk memahami isi cerita pada saat itu. Membaca ulang di masa yang akan datang akan memberikan mereka pengalaman yang berbeda.</p>
 </article>
 <article>
@@ -70,7 +63,17 @@
 </article>
 
 
-<h1 id="english">Question's and Answer's  in Engligh</h1><a class="btn btn-info float-right" href="#_top"><i class="fas fa-arrow-up"></i></a>
+<div class="columns">
+  <figure class="figure">
+        <img src="{% static "/images/generic/two.jpg" %}" class="figure-img img-fluid rounded" alt="">
+        <figcaption class="figure-caption"><a href="https://www.flickr.com/photos/48439369@N00">CREDIT Tim Pierce</a></figcaption>
+  </figure>
+  <div class="article-head">
+    <h1 id="english">Question's and Answer's in English</h1>
+  </div>
+</div>
+<a class="btn btn-info float-right" href="#_top"><i class="fas fa-arrow-up"></i></a>
+
 
 
 <article>
@@ -119,4 +122,6 @@ Children, even adults, may not understand all the words in a book or all the cir
   <h2>How to handle children's boredom?</h2>
   <p>This is an interesting issue. We hope to be able to organise a discussion on this soon. Please keep in touch. If you need help sooner, please contact Ms Endang in Ex 150 for appointment with our Parenting Coach.</p>
 </article>
+
+
 {% endblock %}
