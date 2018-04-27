@@ -1,0 +1,20 @@
+{% extends "www/base.html" %}
+{% load staticfiles %}
+{% block body_block %}
+
+<div class="jumbotron text-center">
+  <h1 class="display-3">{{ page_title }}</h1>
+  <p class="lead">{{ page_desc }}</p>
+  <form class="" action="{% url 'www:user_login' %}" method="post">
+    {% csrf_token %}
+    <label for="username">Username : </label>
+    <input type="text" name="username" placeholder="Enter username">
+    <br>
+    <label for="password">Password:</label>
+    <input type="password" name="password">
+    <input type="submit" name="" value="Login">
+  </form>
+
+</div>
+
+{% endblock %}
