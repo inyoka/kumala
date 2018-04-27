@@ -31,31 +31,27 @@
             <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 <!-- END GOOGLE AND BOOTSTRAP -->
 
-  <link rel="stylesheet" href="{% static 'www/master.css' %}">
-
-
-
   <title>{{ page_title }}</title>
   <meta name="description" content="{{ page_desc }}">
   <meta property="og:title" content="{{ page_title }}">
   <meta property="og:description" content="{{ page_desc }}">
   <meta property="og:image" content="{% static "images/kumala-logo.svg" %}">
 
+  <link rel="stylesheet" href="{% static "css/reset.css" %}">
   <link rel="stylesheet" href="{% static "css/master.css" %}">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="{% static "images/kumala.ico" %}">
 </head>
 
 <body  id="_top">
-<div class="container">
-
-
+<div class="whole-page">
       <header>
+        <a class="navbar-brand d-none d-sm-block notranslate">Chandra Kumala School</a>
+        <a class="navbar-brand d-block d-sm-none notranslate">CKS</a>
+      </header>
       <!-- <header>  class="sticky-top" -->
         <nav class="navbar navbar-expand-lg navbar-light">
             <a class="navbar-brand" href="#"><img src="{% static "images/kumala-logo.svg" %}" width="40px" alt="">
-                <a class="navbar-brand d-none d-sm-block notranslate">Chandra Kumala School</a>
-                <a class="navbar-brand d-block d-sm-none notranslate">CKS</a>
             </a>
             <a class="navbar-brand ml-auto d-block d-lg-none" style="font-size: 16px;" href="{% url 'home' %}">
 
@@ -84,16 +80,15 @@
                       </svg>
                     </a>
 
-
                     <div class="nav-item dropdown">
                       <a class="nav-link dropdown-toggle dropdown-toggle-split active" href="{% url 'www:programs' %}" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Academics</a>
                       <div class="dropdown-menu active dropdown-menu-right" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="{% url 'www:scholarships' %}">Scholarships</a>
                         <a class="dropdown-item" href="{% url 'www:registration' %}">Registration</a>
                         <a class="dropdown-item" href="{% url 'www:programs' %}">Programs</a>
                         <a class="dropdown-item" href="{% url 'www:exams' %}">Exam Timetable</a>
                       </div>
                     </div>
-
 
 
                     <div class="nav-item dropdown">
@@ -127,50 +122,45 @@
                 </div>
             </div>
         </nav>
-      </header>
+
 
 <!-- BANNER AND INSERTION OF OTHER HTML PAGES -->
 
-<aside>
-</aside>
 
-<section>
+<main>
   {% block body_block %}
   {% endblock %}
-</section>
+
+    <a class="btn btn-info float-right" href="#_top"><i class="fas fa-arrow-up"></i></a>
+
+</main>
 
 
 <!-- PAGE FOOTER / CONTACT AUTHOR COMPANY DETAILS -->
-
-      <footer>
-          <div class="row">
-              <div class="col-lg-2 text-center">
-                  <div id="google_translate_element"></div>
-                  <script type="text/javascript">
-                  function googleTranslateElementInit() { new google.translate.TranslateElement({pageLanguage: 'en', gaTrack: true, gaId: 'UA-114964374-1'}, 'google_translate_element'); }
-                  </script>
-                  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
-                  </script>
-              </div>
-              <div class="col-lg-7 notranslate text-center">
-                  <i class="fas fa-map-marker-alt"></i>&nbsp
-                  Chandra Kumala School, Perumahan Cemara Asri<br> No.1 Block O Deliserdang, Medan, Indonesia, 20317
-              </div>
-              <div class="col-lg-3 text-center">
-                  <a class="social_media" href="https://www.facebook.com/ChandraKumalaSchool/" target="_blank"><i class="fab fa-facebook"></i></a>
-                  <a class="social_media" href="https://www.instagram.com/chandrakumalaofficial/" target="_blank"><i class="fab fa-instagram"></i></a>
-                  <a class="social_media" href="https://www.youtube.com/chandrakumalaschool" target="_blank"><i class="fab fa-youtube-square"></i></a>
-                  <a class="social_media" href="mailto:info@chandrakumala.com?Subject=Website%20question" target="_top"><i class="fas fa-envelope"></i></a>
-                  &nbsp
-                  <a class="social_media" href="tel:+62-061-661-6765"><i class="fas fa-phone"></i></a>
-              </div>
-          </div>
-      </footer>
+<footer>
+  <div class="text-center">
+      <div id="google_translate_element"></div>
+      <script type="text/javascript">
+      function googleTranslateElementInit() { new google.translate.TranslateElement({pageLanguage: 'en', gaTrack: true, gaId: 'UA-114964374-1'}, 'google_translate_element'); }
+      </script>
+      <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
   </div>
+  <div class="notranslate text-center">
+      <i class="fas fa-map-marker-alt"></i>&nbsp
+      Chandra Kumala School, Perumahan Cemara Asri<br> No.1 Block O Deliserdang, Medan, Indonesia, 20317
+  </div>
+  <div class="text-center">
+      <a class="social_media" href="https://www.facebook.com/ChandraKumalaSchool/" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a class="social_media" href="https://www.instagram.com/chandrakumalaofficial/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a class="social_media" href="https://www.youtube.com/chandrakumalaschool" target="_blank"><i class="fab fa-youtube-square"></i></a>
+      <a class="social_media" href="mailto:info@chandrakumala.com?Subject=Website%20question" target="_top"><i class="fas fa-envelope"></i></a>
+      &nbsp
+      <a class="social_media" href="tel:+62-061-661-6765"><i class="fas fa-phone"></i></a>
+  </div>
+</footer></div>
 <!-- FINAL BOOTSTRAP ELEMENTS -->
       <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
-</div>
 </html>

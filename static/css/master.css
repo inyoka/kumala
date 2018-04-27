@@ -1,38 +1,68 @@
 /* Base Rules */
 
-
-@media screen and (max-width: 768px) {
-      h1 {
-            font-size: 30px;
-      }
-      h2 {
-            font-size: 25px;
-      }
-}
-
-
-html body {
-  background: #202565;
-  /* padding-top: 45px; /* Prevent top menu overlap */ */
-  margin: 0;
-  margin-bottom: 50px;
-  font-family: 'PT Sans', sans-serif;
-  height: 100%;
-}
-
 html {
-  padding-right: 15px;
-  padding-left: 15px;
+  margin: 0;
+  background-color: MidnightBlue; /* background: #202565; */
   margin-right: auto;
   margin-left: auto;
 }
 
-section{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+body {
+  font-family: "PT Sans", sans-serif;
+  /* background-color: MidnightBlue; */
 }
-.article-head{
+
+.whole-page {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  background-color: MidnightBlue;
+}
+
+header{
+  background-color: PapayaWhip ;
+  font-family: "Libre Baskerville", sans-serif;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 1px 1px 3px Silver;
+  text-align: center;
+  font-weight: 700;
+}
+
+
+main {
+  background-color: red;
+  display: flex;
+  flex-direction: row;
+  align-content: flex-end;
+  width: 900px;
+  justify-content: center;
+  flex: 1;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  border-top: 2px solid Orange;
+  background: PapayaWhip ;
+}
+
+.logo {
+  position: absolute;
+  right: 16px;
+  top: 0;
+  left: 20;
+  z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: left;
+}
+
+.google_translate_element{
+  order: 2;
+}
+
+.article-head {
   max-width: 800px;
   flex-direction: row;
   padding: 30px;
@@ -40,7 +70,7 @@ section{
   order: 0;
 }
 
-.columns{
+.columns {
   display: flex;
   flex-direction: row;
   align-content: space-around;
@@ -54,8 +84,8 @@ section{
   flex: 1 0 300px;
 }
 
-figure{
-  width:100%; /* you can use % */
+figure {
+  width: 100%; /* you can use % */
   height: auto;
   flex-basis: 1;
   order: 1;
@@ -63,12 +93,20 @@ figure{
   flex: 1 1 300px;
 }
 
-
-.buttons{
+.buttons {
   flex-basis: 1;
 }
 
-@media (min-width: 768px) {
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 25px;
+  }
+}
+
+/* @media (min-width: 768px) {
   html {
     width: 750px;
   }
@@ -82,27 +120,29 @@ figure{
   html {
     width: 1170px;
   }
-}
+} */
 
-body {
-  background-color: #Bcb2d5;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Playfair Display', serif;
-    text-align: center;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Playfair Display", serif;
+  text-align: center;
 }
 
 nav {
-  background-color: #F5f4d6;
-  font-family: 'Libre Baskerville', sans-serif;
+  border-bottom: 2px solid Orange;
+  background-color: PapayaWhip ;
+  font-family: "Libre Baskerville", sans-serif;
   font-weight: 700;
   position: fixed;
   top: 0px;
 }
 
-.nav-item{
-   text-align: right;
+.nav-item {
+  text-align: right;
 }
 
 .navbar-brand {
@@ -110,74 +150,77 @@ nav {
 }
 
 .navbar {
- font-size: 18px;
+  font-size: 18px;
 }
 
-.navbar-nav > li > .dropdown-menu { background-color: #FF0000; }
+.navbar-nav > li > .dropdown-menu {
+  background-color: #ff0000;
+}
 
 /* Exam Timetable Page */
 
-.exam-table-headings{
-    display: flex;
-    justify-content: space-between;
-    margin: 40px 20px 20px 20px;
-    flex-wrap: wrap;
+.exam-table-headings {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 20px 20px 20px;
+  flex-wrap: wrap;
 }
-.exam-table-headings h2{
-    flex: 1;
-    flex-basis: 20%;
-    align-items: center;
-    justify-content: space-between;
-}
-
-h2, btn {
-    display: inline;
-    flex-wrap: wrap;
+.exam-table-headings h2 {
+  flex: 1;
+  flex-basis: 20%;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.ExamTimetable{
+h2,
+btn {
+  display: inline;
+  flex-wrap: wrap;
+}
+
+.ExamTimetable {
   display: flex;
   flex-wrap: wrap;
   margin: auto;
   justify-content: space-between;
 }
-.exam-table{
+.exam-table {
   flex: 1;
-  flex-basis: : 90%;
+  flex-basis: 90%;
   caption-side: top;
 }
 
 /* Careers Page */
-.job{
-  padding:5px
+.job {
+  padding: 5px;
   margin-left: 50px;
 }
-.job-title{
+.job-title {
   margin: auto;
 }
-.job-row{
+.job-row {
   margin: 5px;
 }
-@media (min-width: 900px){
-  .job-row{
+@media (min-width: 900px) {
+  .job-row {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
   }
-
 }
-.job-media{
-  padding: 0 15px; float: right;
+.job-media {
+  padding: 0 15px;
+  float: right;
   flex-basis: 40%;
 }
-.job-desc{
+.job-desc {
   flex-basis: 60%;
   font-size: 24px;
 }
 
 /* Gallery Page */
 
-.gallery-container{
+.gallery-container {
   max-width: 1400px;
   margin: 40px auto 0 auto;
   padding: 30px 0;
@@ -187,31 +230,16 @@ h2, btn {
   flex-wrap: wrap;
 }
 
-.thumbnail{
+.thumbnail {
   width: 300px;
   height: 200px;
   line-height: 100px;
   margin-bottom: 20px;
 }
 
-header{
-    border-bottom:2px solid #E7af14;
-}
-
-footer{
-    border-top:2px solid #E7af14;
-    background: #F5f4d6;
-    padding: 0;
-    margin: 0;
-}
-
-/* .homeCarousel{
-  border-radius: 24px;
-} */
-
-.shadow{
-  background-color: #EEEEEE;
-  box-shadow:3px 3px 3px 2px #797979;
+.shadow {
+  background-color: #eeeeee;
+  box-shadow: 3px 3px 3px 2px #797979;
   height: 50px;
   width: 100px;
   padding: 5px;
@@ -220,49 +248,44 @@ footer{
 /* Module Rules */
 
 @keyframes moveInLeft {
-  0%{
+  0% {
     opacity: 0;
     transform: translateY(-100);
   }
-  100%{
+  100% {
     opacity: 1;
     transform: translateY(0);
   }
 }
 
-#threeLines{
+#threeLines {
   border: 0;
 }
 
-section {
-  /* Removes padding from banner, ensures consistent background color. */
-  padding: 0;
-  background: #F5f4d6;
-}
-
-iframe, .card {
+iframe,
+.card {
   /* Allows the iframe to be centered. */
-  display:block;
+  display: block;
   margin: auto;
 }
 
 .jumbotron {
-  /* Shrink borders and apply lilac background.  */
+    display: flex;
+    flex-direction: row;
   padding: 15px;
-  /* background-color: #Bcb2d5; */
   border-radius: 0px;
+  background-color: Plum;
 }
 
 .text-center {
-    display: block;
-    align: center;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-  }
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
 
-.event{
-    border-bottom:2px solid #E7af14;
+.event {
+  border-bottom: 2px solid Orange;
 }
 
 .social_media {
@@ -275,23 +298,27 @@ iframe, .card {
 }
 
 /* CAROUSEL CSS */
-
-.overlay {
-    /* Ensures Carousel logo and Caption are displayed in-line with the body, and text color is white. */
-    position: relative;
-    text-align: center;
-    color: white;
+#homeCarousel {
+  max-width: 500px;
 }
 
-.carousel-control:hover{
+
+.overlay {
+  /* Ensures Carousel logo and Caption are displayed in-line with the body, and text color is white. */
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.carousel-control:hover {
   color: #000;
 }
 
-.carousel-indicators{
+.carousel-indicators {
   top: 20px;
 }
 
-.carousel-indicators li{
+.carousel-indicators li {
   display: inline-block;
   width: 10px;
   height: 10px;
@@ -299,33 +326,29 @@ iframe, .card {
   text-indent: -999px;
   cursor: pointer;
   background-color: #000\9;
-  background-color: rgba(255,0,0,0);
-  border: 1px solid #E7af14;
+  border: 1px solid Orange;
   border-radius: 50%;
 }
 
-.carousel-indicators .active{
+.carousel-indicators .active {
   width: 12px;
   height: 12px;
   margin: 0;
-  background-color: #F5f4d6;
+  background-color: PapayaWhip ;
 }
 
-.carousel-caption{
+.carousel-caption {
   position: absolute;
   right: 0;
   bottom: 0;
   left: 0;
   z-index: 10;
-  /* max-height: 220px;
-  padding-top: auto; /* Height of dark background */
-  /* padding-bottom: auto; */ */
   color: #fff;
   text-align: center;
-  background: rgba(0,0,0,0.4);
+  background: rgba(0, 0, 0, 0.4);
 }
 
-.carousel-logo{
+.carousel-logo {
   position: absolute;
   right: 16px;
   top: 0;
