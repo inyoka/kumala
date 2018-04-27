@@ -41,6 +41,14 @@ class Programs(TemplateView):
         context['page_title'] = 'Programs'
         return context
 
+class Scholarships(TemplateView):
+    template_name = 'www/scholarships.html'
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['page_title'] = 'Scholarships'
+        return context
+
 class Registration(TemplateView):
     template_name = 'www/registration.html'
 

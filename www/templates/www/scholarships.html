@@ -1,0 +1,23 @@
+{% extends "www/base.html" %}
+{% load staticfiles %}
+{% block body_block %}
+
+
+<div class="overlay">
+  <div class="carousel-caption">
+    <h1 class="display-3 d-none d-md-block">{{ page_title }}</h1>
+    <h2 class="display-5 d-none d-md-block">{{ page_desc }}</h2>
+  </div>
+  <div class="carousel-logo">
+    <img class="d-none d-md-block" src="{% static "images/kumala-logo.svg" %}" width="120px" alt="">
+  </div>
+  <div class="carousel-logo">
+    <img class="d-block d-md-none" src="{% static "images/kumala-logo.svg" %}" width="60px" alt="">
+  </div>
+</div>
+
+
+<a href="https://docs.google.com/document/d/e/2PACX-1vSpDdlVrnxrrANpkT8U9dy-bBVEJkXWLlq8D2s_Izaj-pbypPMZe3fx7C8_5XWiRxyh_YQ0l76EUvx0/pub" target="_blank">Information on Partial Scholarships for External students.</a>
+
+
+{% endblock %}

@@ -109,3 +109,5 @@ ENV/
 # mypy
 .mypy_cache/
 www/migrations/0001_initial.py
+*.odt
+ignored-stuff/README.md
