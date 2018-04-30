@@ -39,20 +39,23 @@
 
   <link rel="stylesheet" href="{% static "css/reset.css" %}">
   <link rel="stylesheet" href="{% static "css/master.css" %}">
+  <script type="text/javascript" src="{% static "js/master.css" %}">
+
+  </script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="{% static "images/kumala.ico" %}">
 </head>
 
 <body  id="_top">
-<div class="whole-page">
+<!-- <div class="whole-page"> -->
       <header>
-        <a class="navbar-brand d-none d-sm-block notranslate">Chandra Kumala School</a>
-        <a class="navbar-brand d-block d-sm-none notranslate">CKS</a>
+        <div class="navbar-brand" href="#"><img src="{% static "images/kumala-logo.svg" %}" width="80px" alt=""></div>
+        <div class="navbar-brand d-none d-sm-block notranslate">Chandra Kumala School</div>
+        <div class="navbar-brand d-block d-sm-none notranslate">CKS</div>
       </header>
       <!-- <header>  class="sticky-top" -->
         <nav class="navbar navbar-expand-lg navbar-light">
-            <a class="navbar-brand" href="#"><img src="{% static "images/kumala-logo.svg" %}" width="40px" alt="">
-            </a>
+
             <a class="navbar-brand ml-auto d-block d-lg-none" style="font-size: 16px;" href="{% url 'home' %}">
 
               <svg width="18" height="18" version="1.1" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
@@ -123,17 +126,19 @@
             </div>
         </nav>
 
-
 <!-- BANNER AND INSERTION OF OTHER HTML PAGES -->
 
+        <div class="section">
+              <div class="empty"></div>
+              <main>
+                {% block body_block %}
+                {% endblock %}
+                <a class="btn btn-info btn-block" href="#_top"><i class="fas fa-arrow-up"></i></a>
 
-<main>
-  {% block body_block %}
-  {% endblock %}
+              </main>
+              <aside></aside>
+         </div>
 
-    <a class="btn btn-info float-right" href="#_top"><i class="fas fa-arrow-up"></i></a>
-
-</main>
 
 
 <!-- PAGE FOOTER / CONTACT AUTHOR COMPANY DETAILS -->
@@ -155,7 +160,7 @@
       <a class="social_media" href="https://www.youtube.com/chandrakumalaschool" target="_blank"><i class="fab fa-youtube-square"></i></a>
       <a class="social_media" href="mailto:info@chandrakumala.com?Subject=Website%20question" target="_top"><i class="fas fa-envelope"></i></a>
       &nbsp
-      <a class="social_media" href="tel:+62-061-661-6765"><i class="fas fa-phone"></i></a>
+      <a class="social_media" href="tel:+62-061-661-6765"><i class="fas fa-phone"></i></div>
   </div>
 </footer></div>
 <!-- FINAL BOOTSTRAP ELEMENTS -->
