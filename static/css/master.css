@@ -1,68 +1,62 @@
 /* Base Rules */
+.w3-container{
+display: flex;
+min-height: 100vh;
+flex-direction: column;
+}
 
 html {
-  margin: 0;
-  background-color: MidnightBlue; /* background: #202565; */
-  margin-right: auto;
-  margin-left: auto;
-}
+    margin: 0;
+    background: MidnightBlue;
+    margin-right: auto;
+    margin-left: auto; }
 
-body {
-  font-family: "PT Sans", sans-serif;
-  /* background-color: MidnightBlue; */
-}
+body {    font-family: 'PT Sans', sans-serif;
+background-color: MidnightBlue;}
 
-.whole-page {
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
-  background-color: MidnightBlue;
-}
+header {
+          font-family: "Libre Baskerville", sans-serif;
+          border-top:2px solid Orange;
+          background: PapayaWhip;
+          text-align: center;
+          font-weight: 700;
+          flex-direction: row;
+        }
 
-header{
-  background-color: PapayaWhip ;
-  font-family: "Libre Baskerville", sans-serif;
-  justify-content: center;
-  align-items: center;
-  text-shadow: 1px 1px 3px Silver;
-  text-align: center;
-  font-weight: 700;
-}
+nav {
+        background: PapayaWhip;
+        border-bottom:2px solid Orange;
+        font-family: 'Libre Baskerville', sans-serif;
+        font-weight: 700;
+        position: fixed;
+        top: 0px; }
+
+.section{  display: flex;
+          justify-content: flex-start;
+          flex-direction: row;
+          background: #F5f4d6;
+          justify-content: center;
+          align-items: stretch;
+          flex: 1 1 auto;}
+main{     background-color: White;
+          order: 1;
+          flex: 1 1 auto;}
+.empty{   background-color: MidnightBlue;
+          flex: 0 0 8rem;
+          order: 0;}
+aside{    background-color: MidnightBlue;
+          flex: 0 0 8rem;
+          order: 2;}
 
 
-main {
-  background-color: red;
-  display: flex;
-  flex-direction: row;
-  align-content: flex-end;
-  width: 900px;
-  justify-content: center;
-  flex: 1;
-}
+          footer {
+            display: flex;
+            flex-direction: row;
+            border-top: 2px solid Orange;
+            background: PapayaWhip ;
+          }
 
-footer {
-  display: flex;
-  flex-direction: row;
-  border-top: 2px solid Orange;
-  background: PapayaWhip ;
-}
-
-.logo {
-  position: absolute;
-  right: 16px;
-  top: 0;
-  left: 20;
-  z-index: 10;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  text-align: left;
-}
-
-.google_translate_element{
-  order: 2;
-}
-
-.article-head {
+.article-head{
   max-width: 800px;
   flex-direction: row;
   padding: 30px;
@@ -70,7 +64,7 @@ footer {
   order: 0;
 }
 
-.columns {
+.columns{
   display: flex;
   flex-direction: row;
   align-content: space-around;
@@ -84,8 +78,10 @@ footer {
   flex: 1 0 300px;
 }
 
-figure {
-  width: 100%; /* you can use % */
+
+
+figure{
+  width:100%; /* you can use % */
   height: auto;
   flex-basis: 1;
   order: 1;
@@ -93,20 +89,21 @@ figure {
   flex: 1 1 300px;
 }
 
-.buttons {
+
+.buttons{
   flex-basis: 1;
 }
 
 @media screen and (max-width: 768px) {
-  h1 {
-    font-size: 30px;
-  }
-  h2 {
-    font-size: 25px;
-  }
+      h1 {
+            font-size: 30px;
+      }
+      h2 {
+            font-size: 25px;
+      }
 }
 
-/* @media (min-width: 768px) {
+@media (min-width: 768px) {
   html {
     width: 750px;
   }
@@ -120,29 +117,19 @@ figure {
   html {
     width: 1170px;
   }
-} */
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Playfair Display", serif;
-  text-align: center;
 }
 
-nav {
-  border-bottom: 2px solid Orange;
-  background-color: PapayaWhip ;
-  font-family: "Libre Baskerville", sans-serif;
-  font-weight: 700;
-  position: fixed;
-  top: 0px;
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+    text-align: center;
 }
 
-.nav-item {
-  text-align: right;
+
+
+.nav-item{
+   text-align: right;
 }
 
 .navbar-brand {
@@ -150,77 +137,74 @@ nav {
 }
 
 .navbar {
-  font-size: 18px;
+ font-size: 18px;
 }
 
-.navbar-nav > li > .dropdown-menu {
-  background-color: #ff0000;
-}
+.navbar-nav > li > .dropdown-menu { background-color: #FF0000; }
 
 /* Exam Timetable Page */
 
-.exam-table-headings {
-  display: flex;
-  justify-content: space-between;
-  margin: 40px 20px 20px 20px;
-  flex-wrap: wrap;
+.exam-table-headings{
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 20px 20px 20px;
+    flex-wrap: wrap;
 }
-.exam-table-headings h2 {
-  flex: 1;
-  flex-basis: 20%;
-  align-items: center;
-  justify-content: space-between;
-}
-
-h2,
-btn {
-  display: inline;
-  flex-wrap: wrap;
+.exam-table-headings h2{
+    flex: 1;
+    flex-basis: 20%;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.ExamTimetable {
+h2, btn {
+    display: inline;
+    flex-wrap: wrap;
+}
+
+.ExamTimetable{
   display: flex;
   flex-wrap: wrap;
   margin: auto;
   justify-content: space-between;
 }
-.exam-table {
+.exam-table{
   flex: 1;
   flex-basis: 90%;
   caption-side: top;
 }
 
 /* Careers Page */
-.job {
-  padding: 5px;
+.job{
+  padding:5px;
   margin-left: 50px;
 }
-.job-title {
+.job-title{
   margin: auto;
 }
-.job-row {
+.job-row{
   margin: 5px;
 }
-@media (min-width: 900px) {
-  .job-row {
+@media (min-width: 900px){
+  .job-row{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
   }
+
 }
-.job-media {
-  padding: 0 15px;
-  float: right;
+.job-media{
+  padding: 0 15px; float: right;
   flex-basis: 40%;
 }
-.job-desc {
+.job-desc{
   flex-basis: 60%;
   font-size: 24px;
 }
 
 /* Gallery Page */
 
-.gallery-container {
+.gallery-container{
   max-width: 1400px;
   margin: 40px auto 0 auto;
   padding: 30px 0;
@@ -230,16 +214,16 @@ btn {
   flex-wrap: wrap;
 }
 
-.thumbnail {
+.thumbnail{
   width: 300px;
   height: 200px;
   line-height: 100px;
   margin-bottom: 20px;
 }
 
-.shadow {
-  background-color: #eeeeee;
-  box-shadow: 3px 3px 3px 2px #797979;
+.shadow{
+  background-color: #EEEEEE;
+  box-shadow:3px 3px 3px 2px #797979;
   height: 50px;
   width: 100px;
   padding: 5px;
@@ -248,44 +232,44 @@ btn {
 /* Module Rules */
 
 @keyframes moveInLeft {
-  0% {
+  0%{
     opacity: 0;
     transform: translateY(-100);
   }
-  100% {
+  100%{
     opacity: 1;
     transform: translateY(0);
   }
 }
 
-#threeLines {
+#threeLines{
   border: 0;
 }
 
-iframe,
-.card {
+
+
+iframe, .card {
   /* Allows the iframe to be centered. */
-  display: block;
+  display:block;
   margin: auto;
 }
 
 .jumbotron {
-    display: flex;
-    flex-direction: row;
+  /* Shrink borders and apply lilac background.  */
   padding: 15px;
+  /* background-color: #Bcb2d5; */
   border-radius: 0px;
-  background-color: Plum;
 }
 
 .text-center {
-  display: block;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-}
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-.event {
-  border-bottom: 2px solid Orange;
+.event{
+    border-bottom:2px solid #E7af14;
 }
 
 .social_media {
@@ -298,27 +282,23 @@ iframe,
 }
 
 /* CAROUSEL CSS */
-#homeCarousel {
-  max-width: 500px;
-}
-
 
 .overlay {
-  /* Ensures Carousel logo and Caption are displayed in-line with the body, and text color is white. */
-  position: relative;
-  text-align: center;
-  color: white;
+    /* Ensures Carousel logo and Caption are displayed in-line with the body, and text color is white. */
+    position: relative;
+    text-align: center;
+    color: white;
 }
 
-.carousel-control:hover {
+.carousel-control:hover{
   color: #000;
 }
 
-.carousel-indicators {
+.carousel-indicators{
   top: 20px;
 }
 
-.carousel-indicators li {
+.carousel-indicators li{
   display: inline-block;
   width: 10px;
   height: 10px;
@@ -326,18 +306,19 @@ iframe,
   text-indent: -999px;
   cursor: pointer;
   background-color: #000\9;
-  border: 1px solid Orange;
+/*   background-color: rgba(255,0,0,0); */
+  border: 1px solid #E7af14;
   border-radius: 50%;
 }
 
-.carousel-indicators .active {
+.carousel-indicators .active{
   width: 12px;
   height: 12px;
   margin: 0;
-  background-color: PapayaWhip ;
+  background-color: #F5f4d6;
 }
 
-.carousel-caption {
+.carousel-caption{
   position: absolute;
   right: 0;
   bottom: 0;
@@ -345,10 +326,10 @@ iframe,
   z-index: 10;
   color: #fff;
   text-align: center;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0,0,0,0.4);
 }
 
-.carousel-logo {
+.carousel-logo{
   position: absolute;
   right: 16px;
   top: 0;
