@@ -1,16 +1,13 @@
 <!DOCTYPE html>
 {% extends "www/base.html" %}
 {% load staticfiles %}
-{% block body_block %}
+{% block section %}
 
 <!-- <div class="jumbotron">
   <h1 class="display-3 text-center">{{ page_title }}</h1>
   <p class="lead text-center">Our school is filled with creative students and teachers. <br> Explore our <a href="https://www.youtube.com/chandrakumalaschool" target="_blank">YouTube channel <i class="fab fa-youtube-square"></i></a> to get an idea of what it's like to study at Chandra Kumala School.</p>
 
 </div> -->
-<div class="jumbotron">
-  <h1 class="">Welcome to CKS & CKS 2</h1>
-</div>
 
 
       <div id="homeCarousel" class="carousel slide" data-ride="carousel">
@@ -21,13 +18,8 @@
           <li data-target="#homeCarousel" data-slide-to="3"></li>
         </ol>
         <div class="carousel-inner">
-
           <div class="carousel-item active">
-            <img class="d-block w-100" src="{% static "/images/cks2-1920x1080.jpg" %}" alt="First slide">
-          </div>
-
-          <div class="carousel-item" active>
-            <img class="d-block w-100" src="{% static "/images/00475-1920x1080.jpg" %}" alt="Second slide">
+            <img class="d-block w-100" src="{% static "/images/00475-1920x1080.jpg" %}" alt="First slide">
             <div class="carousel-logo">
               <img class="d-none d-md-block" src="{% static "images/kumala-logo.svg" %}" width="120px" alt="">
             </div>
@@ -41,7 +33,7 @@
           </div>
 
           <div class="carousel-item">
-            <img class="d-block w-100" src="{% static "/images/00336-1920x1080.jpg" %}" alt="Third slide">
+            <img class="d-block w-100" src="{% static "/images/00336-1920x1080.jpg" %}" alt="Second slide">
             <div class="carousel-logo">
               <img class="d-none d-md-block" src="{% static "images/kumala-logo.svg" %}" width="120px" alt="">
             </div>
@@ -54,9 +46,8 @@
             </div>
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="{% static "/images/regis-1920x1080.jpg" %}" alt="Fourth slide">
+            <img class="d-block w-100" src="{% static "/images/regis-1920x1080.jpg" %}" alt="Third slide">
           </div>
-
 
         </div>
         <a class="carousel-control-prev" href="#homeCarousel" role="button" data-slide="prev">
