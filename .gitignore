@@ -111,3 +111,12 @@ ENV/
 www/migrations/0001_initial.py
 *.odt
 ignored-stuff/README.md
+school.svg
+media/trolls.svg
+school-new.svg
+www/migrations/__init__.py
+www/migrations/__init__.py
+www/templates/migrations/0001_initial.py
+www/templates/migrations/__init__.py
+www/migrations/__init__.py
+www/migrations/__init__.py
