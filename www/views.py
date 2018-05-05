@@ -58,15 +58,22 @@ class Registration(TemplateView):
         return context
 
 class Gallery(TemplateView):
-    template_name = 'www/gallery.html'
+    template_name = 'www/media/gallery.html'
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context['page_title'] = 'Gallery'
         return context
 
+class Trolls(TemplateView):
+    template_name = 'www/media/trolls.html'
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['page_title'] = 'Trolls'
+        return context
 class Videos(TemplateView):
-    template_name = 'www/videos.html'
+    template_name = 'www/media/videos.html'
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
@@ -100,12 +107,22 @@ class Careers(TemplateView):
         context['page_title'] = 'Careers'
         return context
 
-class ReadingWorkshop(TemplateView):
-    template_name = 'www/ReadingWorkshop.html'
+class Workshop(TemplateView):
+    template_name = 'www/workshop.html'
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['page_title'] = 'Parents Enrichment Program'
+        context['page_desc'] = 'Support and training for students parents.'
+        return context
+
+class Reading(TemplateView):
+    template_name = 'www/reading.html'
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context['page_title'] = 'Reading Workshop'
+        context['page_desc'] = 'Support and training to help encourage student reading.'
         return context
 
 class Event(TemplateView):
