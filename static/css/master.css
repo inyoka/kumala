@@ -95,6 +95,7 @@ aside{
   background:  #343a40;
   width: 40px;
   order: 1;
+  overflow: hidden;
 }
 
 .rotated {
