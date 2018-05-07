@@ -3,7 +3,7 @@
 {% block section %}
 
 <div class="jumbotron text-center">
-  <h1 class="display-3">{{ page_title }}</h1>
+  <h1>{{ page_title }}</h1>
   <p class="lead">{{ page_desc }}</p>
   <form class="" action="{% url 'www:user_login' %}" method="post">
     {% csrf_token %}
