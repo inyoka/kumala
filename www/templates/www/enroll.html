@@ -1,5 +1,14 @@
 {% extends "www/base.html" %}
 {% load staticfiles %}
+
+{% block aside %}
+    <nobr><a href="{% url 'www:enroll' %}">
+    <p class="rotated awesome">Please complete the form&hellip;</p>
+    </a></nobr>
+
+{% endblock %}
+
+
 {% block section %}
 
 
