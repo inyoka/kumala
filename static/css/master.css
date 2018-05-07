@@ -1,9 +1,9 @@
 /*
 
-font-family: 'Playfair Display', sans-serif;
 font-family: 'PT Serif', serif;
-font-family: 'Playfair Display', serif;
 font-family: 'Libre Baskerville', sans-serif;
+font-family: 'Open Sans', sans-serif;
+
 
 */
 
@@ -11,13 +11,9 @@ html body {
   background: #202565;
   margin: 0;
   margin-bottom: 50px;
-  font-family: 'Playfair Display', sans-serif;
-  font-family: 'PT Serif', serif;
-  font-family: 'Playfair Display', serif;
-  font-family: 'Libre Baskerville', sans-serif;
-
   height: 100%;
   font-size: 100%;
+  font-family: 'PT Serif', serif;
 }
 
 html {
@@ -34,14 +30,15 @@ header {
   justify-content: center;
   align-items: center;
   background-color: #F5f4d6;
-  font-family: 'Libre Baskerville', sans-serif;
   font-weight: 700;
+  font-family: 'Libre Baskerville', sans-serif;
 }
 
 
 main{
   display: flex;
   flex-direction: row;
+  align-items: flex-start;
   flex: 1;
 }
 
@@ -49,12 +46,15 @@ nav {
   color: white;
   height: auto;
   align-items: center;
+  align-content: center;
   font-weight: 500;
+  font-style: normal;
   position: fixed;
   top: 0px;
   border-top:2px solid #E7af14;
   border-bottom:2px solid #E7af14;
   text-transform: capitalize;
+  font-family: 'Open Sans', sans-serif;
 }
 
 nav a {
@@ -70,24 +70,49 @@ footer{
 }
 
 
-section {
+main {
   /* Removes padding from banner, ensures consistent background color. */
   padding: 0;
   background: #F5f4d6;
   /* Flex stuff */
   display: flex;
+  align-items: stretch;
+  flex: 1;
+}
+
+section{
+  padding: 0;
+  background: #F5f4d6;
   flex-direction: column;
-  justify-content: center;
+  /* Flex stuff */
+  display: flex;
   flex: 1;
   order: 0;
 }
 
 aside{
   background-color: #343a40;
+  background:  #343a40;
   width: 40px;
   order: 1;
-  flex: 0 0 auto;
 }
+
+.rotated {
+  transform: rotate(90deg);
+  position: relative;
+}
+
+
+/* Google Translate Issues */
+h1, h2{
+  text-transform: capitalize;
+}
+
+.jumbotron {
+  padding: 15px;
+  border-radius: 0px;
+}
+
 
 /* Reading.html */
 
@@ -140,6 +165,11 @@ iframe{
   margin-bottom: 20px;
 }
 
+.loader {
+  filter:hue-rotate(0deg);
+  color:linear-gradient(45deg,#0f8,#08f);
+  animation:hue 5000ms infinite linear;
+}
 
 /*
 Centre Stuff
@@ -197,7 +227,7 @@ CAROUSEL CSS
   width: 12px;
   height: 12px;
   margin: 0;
-  background-color: LightBlack;
+  background-color: Black;
 }
 
 .carousel-caption{
@@ -232,3 +262,25 @@ Mobile Responsive CSS
       html, bodt {width: 100%;}
 
 }
+
+.awesome {
+      font-family: futura;
+      width:100%;
+      height: 100%
+      margin: 0 auto;
+      text-align: center;
+      animation: colorchange 20s infinite alternate;
+      color:#313131;
+      font-size:45px;
+      font-weight: bold;
+    }
+
+    @-webkit-keyframes colorchange {
+      0%  {color: Pink; }
+      10% {color: DarkViolet ;}
+      20% {color: Red ;}
+      30% {color: OrangeRed ;}
+      80% {color: Gold;}
+      90% {color: MediumVioletRed;}
+      100% {color: LightBlue;}
+    }
