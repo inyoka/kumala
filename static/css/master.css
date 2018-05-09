@@ -23,11 +23,13 @@ html {
   margin-left: auto;
 }
 
-
 header {
+  padding: 10px;
+  border-top-left-radius:  5px;
+  border-top-right-radius: 5px;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   background-color: #F5f4d6;
   font-weight: 700;
@@ -55,6 +57,15 @@ nav {
   border-bottom:2px solid #E7af14;
   text-transform: capitalize;
   font-family: 'Open Sans', sans-serif;
+  padding: 0;
+}
+
+.navbar-brand {
+  padding:0;
+}
+
+.navbar{
+  padding: 0;
 }
 
 nav a {
@@ -64,9 +75,13 @@ nav a {
 
 footer{
     border-top:2px solid #E7af14;
+    display: flex;
+    justify-content: space-around;
     background: #F5f4d6;
     padding: 0;
     margin: 0;
+    border-bottom-left-radius:  5px;
+    border-bottom-right-radius: 5px;
 }
 
 
@@ -92,7 +107,6 @@ section{
 
 aside{
   background-color: #343a40;
-  background:  #343a40;
   width: 40px;
   order: 1;
   overflow: hidden;
@@ -105,9 +119,6 @@ aside{
 
 
 /* Google Translate Issues */
-h1, h2{
-  text-transform: capitalize;
-}
 
 .jumbotron {
   padding: 15px;
@@ -228,7 +239,7 @@ CAROUSEL CSS
   width: 12px;
   height: 12px;
   margin: 0;
-  background-color: Black;
+  background-color: #343a40;
 }
 
 .carousel-caption{
@@ -260,7 +271,8 @@ Mobile Responsive CSS
 @media screen and (max-width: 768px) {
       h1 { font-size: 30px; }
       h2 { font-size: 25px; }
-      html, bodt {width: 100%;}
+      html, body {width: 100%;}
+      footer { flex-direction: column; }
 
 }
 
