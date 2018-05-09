@@ -39,6 +39,8 @@ Long Term goals
 
 
 
+<svg id="cks" height="1em" width="1em"><image x="0" y="0" height="1em" width="1em" xlink:href="{% static 'images/kiwi.svg' %}" /></svg>
+
 Organisation
 ------------
 
