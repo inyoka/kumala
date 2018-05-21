@@ -3,7 +3,7 @@
 *.sqlite3
 *.sqlite
 kumala/settings_secret.py
-
+static/ignore
 
 
 

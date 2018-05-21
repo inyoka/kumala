@@ -206,12 +206,23 @@ iframe, .card {
 CAROUSEL CSS
 */
 
-.overlay {
+.overlay{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background-color: #080d15;
+  opacity: .7;
+}
+
+
+
+/* .overlay {
     /* Ensures Carousel logo and Caption are displayed in-line with the body, and text color is white. */
     position: relative;
     text-align: center;
     color: white;
-}
+} */
 
 .carousel-control:hover{
   color: Black;
