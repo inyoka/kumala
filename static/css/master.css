@@ -60,6 +60,25 @@ nav {
   padding: 0;
 }
 
+.rocket{
+  align-items: center;
+      text-align: center;
+      color: white;
+      height: auto;
+      align-items: center;
+      align-content: center;
+
+}
+
+
+.text-center {
+    display: block;
+    align: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
 .navbar-brand {
   padding:0;
 }
