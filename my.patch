@@ -430,7 +430,7 @@ index 7f38c20..29b3cae 100644
 --- a/www/templates/www/home.html
 +++ b/www/templates/www/home.html
 @@ -4,7 +4,7 @@
- {% block section %}
+ {% block page %}
  
  <!-- <div class="jumbotron">
 -  <h1 class="display-3 text-center">{{ page_title }}</h1>
