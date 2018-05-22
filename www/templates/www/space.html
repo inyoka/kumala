@@ -1,0 +1,40 @@
+{% extends "www/base.html" %}
+{% load staticfiles %}
+
+
+{% block space %}
+<div class="rocket text-center">
+  <a href="{% url 'www:space' %}" target="_blank"><h1 style="center"><i class="fas fa-space-shuttle"></i> Welcome to our <b class="awesome">Space</b> page! <i style="transform: scale(-1, 1);" class="fas fa-space-shuttle"></i></h1>
+</a>
+</div>
+{% endblock %}
+
+{% block page %}
+<div class="row">
+  <div class="column col-md-12 col-lg-6 ">
+    <h2>Keep checking back for updates.</h2>
+    <p>The two-stage launcher ignited its two Russian-made RD-181 main engines at 4:44:06 a.m. EDT (0844:06 GMT) Monday, and the Antares rocket lifted off a few seconds later from pad 0A at the Mid-Atlantic Regional Spaceport on Virginia’s Eastern Shore.</p>
+    <ul>
+      <li><a href="https://spaceflightnow.com/2018/05/20/antares-launch-timeline-on-the-oa-9-cargo-mission/">
+        Antares launch timeline on the OA-9 cargo mission</a></li>
+      <li><a href="https://spaceflightnow.com/2018/05/21/antares-rocket-launch-kicks-off-space-stations-next-commercial-cargo-delivery/">
+        The Antares launch.</a></li>
+      <li>
+        <a href="https://spaceflightnow.com/2018/05/20/orbital-atk-readies-cargo-ship-for-launch-to-space-station/">
+        Loading of the Antares cargo (which includes our rocket)</a>
+      </li>
+    </ul>
+    <p>The payload should dock with the Internation Space Station (ISS) within a couple of days, more details to follow.  When the payload docks with the International Space Station you will be able to watch <a href="https://www.youtube.com/watch?v=RtU_mdL2vBM">here</a>.</p>
+
+  </div>
+  <div class="column col-md-12 col-lg-6 text-center">
+      <iframe width="100%" class="embed-responsive-item" src="https://www.youtube.com/embed/CrWNEbAI8VM?rel=0" allowfullscreen></iframe>
+  </div>
+</div>
+
+
+
+
+
+
+{% endblock %}

@@ -41,6 +41,14 @@ class Programs(TemplateView):
         context['page_title'] = 'Programs'
         return context
 
+class Space(TemplateView):
+    template_name = 'www/space.html'
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['page_title'] = 'Space Programme'
+        return context
+
 class Enroll(TemplateView):
     template_name = 'www/enroll.html'
 
