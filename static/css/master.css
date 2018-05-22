@@ -172,16 +172,16 @@ img {max-width:100%;}
 }
 
 .flex-text{
-/* width: 620px; */
-flex-basis: 2;
+  width: 620px;
+  flex-basis: 2;
 }
 
 .flex-image {
   padding: 5px;
- height: 300px;
- width: 400px;
- overflow: hidden;
- flex-basis: 1;
+  height: 300px;
+  width: 400px;
+  overflow: hidden;
+  flex-basis: 1;
 }
 
 /* Gallery Page */
