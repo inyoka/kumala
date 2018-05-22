@@ -4,7 +4,7 @@
 *.sqlite
 kumala/settings_secret.py
 static/ignore
-
+static/images/unused
 
 
 # Byte-compiled / optimized / DLL files
