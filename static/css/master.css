@@ -8,7 +8,7 @@ font-family: 'Open Sans', sans-serif;
 */
 
 html body {
-  background: #202565;
+  background: MidnightBlue;
   margin: 0;
   margin-bottom: 50px;
   height: 100%;
@@ -31,10 +31,11 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-color: #F5f4d6;
+  background-color: PapayaWhip;
   font-weight: 700;
   font-family: 'Libre Baskerville', sans-serif;
 }
+
 
 
 main{
@@ -45,6 +46,7 @@ main{
 }
 
 nav {
+  background-color: #363636;
   color: white;
   height: auto;
   align-items: center;
@@ -53,8 +55,8 @@ nav {
   font-style: normal;
   position: fixed;
   top: 0px;
-  border-top:2px solid #E7af14;
-  border-bottom:2px solid #E7af14;
+  border-top:2px solid Orange;
+  border-bottom:2px solid Orange;
   text-transform: capitalize;
   font-family: 'Open Sans', sans-serif;
   padding: 0;
@@ -62,6 +64,8 @@ nav {
 
 .rocket{
   align-items: center;
+  background-color: #363636;
+  width: 100%;
       text-align: center;
       color: white;
       height: auto;
@@ -80,6 +84,7 @@ nav {
   }
 
 .navbar-brand {
+  font-size: 2em;
   padding:0;
 }
 
@@ -93,10 +98,10 @@ nav a {
 }
 
 footer{
-    border-top:2px solid #E7af14;
+    border-top:2px solid Orange;
     display: flex;
     justify-content: space-around;
-    background: #F5f4d6;
+    background: PapayaWhip;
     padding: 0;
     margin: 0;
     border-bottom-left-radius:  5px;
@@ -107,7 +112,7 @@ footer{
 main {
   /* Removes padding from banner, ensures consistent background color. */
   padding: 0;
-  background: #F5f4d6;
+  background: PapayaWhip;
   /* Flex stuff */
   display: flex;
   align-items: stretch;
@@ -116,7 +121,7 @@ main {
 
 section{
   padding: 0;
-  background: #F5f4d6;
+  background: PapayaWhip;
   flex-direction: column;
   /* Flex stuff */
   display: flex;
@@ -125,10 +130,17 @@ section{
 }
 
 aside{
-  background-color: #343a40;
+  background-color: #363636;
   width: 40px;
   order: 1;
   overflow: hidden;
+}
+
+.row{
+  padding-top: 20px;
+padding-left: 20px;
+padding-right: 20px;
+padding-bottom: 30px;
 }
 
 .rotated {
@@ -259,9 +271,9 @@ CAROUSEL CSS
   text-indent: -999px;
   cursor: pointer;
   color: purple;
-  background-color: #000;
-  background-color: #F5f4d6;
-  border: 1px solid #E7af14;
+  background-color: Black;
+  background-color: PapayaWhip;
+  border: 1px solid Orange;
   border-radius: 50%;
 }
 
@@ -269,7 +281,7 @@ CAROUSEL CSS
   width: 12px;
   height: 12px;
   margin: 0;
-  background-color: #343a40;
+  background-color: #363636;
 }
 
 .carousel-caption{
