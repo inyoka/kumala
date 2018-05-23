@@ -1,26 +1,11 @@
 <!DOCTYPE html>
-{% extends "www/base.html" %}
+{% extends "www/_page.html" %}
 {% load staticfiles %}
-{% block page %}
+{% block section %}
 
-
-<div class="overlay d-none d-md-block">
-  <div class="carousel-caption">
-    <h1>{{ page_title }}</h1>
-    <!-- <div class="carousel-logo">
-      <img class="d-none d-md-block" src="{% static "images/kumala-logo.svg" %}" width="120px" alt="">
-    </div>
-    <div class="carousel-logo">
-      <img class="d-block d-md-none" src="{% static "images/kumala-logo.svg" %}" width="60px" alt="">
-    </div> -->
+  <div class="event">
+    <img src="{% static "/images/intothewoods.jpg" %}" alt="Into the Woods"  style="width:100%;">
   </div>
-</div>
-
-  <h3 class="text-center">{{ page_desc}}</h3>
-<div class="event">
-  <img src="{% static "/images/troll-1920x1080.jpg" %}" alt="a-Maze-ing"  style="width:100%;">
-
-</div>
 
 
 {% endblock %}
