@@ -27,10 +27,8 @@
   <!-- BOOTSTRAP STUFF -->
             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
             <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Open+Sans|PT+Serif" rel="stylesheet">
-            <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+            {# <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script> #}
 <!-- END GOOGLE AND BOOTSTRAP -->
-
-  <link rel="stylesheet" href="{% static 'www/master.css' %}">
   <title>{{ page_title }}</title>
   <meta name="description" content="{{ page_desc }}">
   <meta property="og:title" content="{{ page_title }}">
@@ -38,6 +36,7 @@
   <meta property="og:image" content="{% static "images/kumala-logo.svg" %}">
 
   <link rel="stylesheet" href="{% static "css/master.css" %}">
+  <link rel="stylesheet" href="{% static "css/fontawesome-all.css" %}">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="{% static "images/kumala.ico" %}">
 </head>
