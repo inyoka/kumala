@@ -47,6 +47,7 @@ class Space(TemplateView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context['page_title'] = 'Space Programme'
+        context['page_desc'] = 'Information on our International Space Station research project.'
         return context
 
 class Enroll(TemplateView):
