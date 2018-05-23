@@ -3,9 +3,8 @@
 
 
 {% block space %}
-<div class="rocket text-center">
-  <a href="{% url 'www:space' %}"><h1 style="center"><i class="fas fa-space-shuttle"></i> Welcome to our <b class="awesome">Space</b> page! <i style="transform: scale(-1, 1);" class="fas fa-space-shuttle"></i></h1>
-</a>
+<div class="rocket text-center d-block d-lg-none">
+  <a href="{% url 'www:space' %}#update"><p style="center"><i class="fas fa-space-shuttle"></i> <i class="fas fa-sync fa-spin"></i> Click here for ISS Docking Date & Time <i class="fas fa-sync fa-spin"></i> <i style="transform: scale(-1, 1);" class="fas fa-space-shuttle"></i></p></a>
 </div>
 {% endblock %}
 
@@ -44,6 +43,11 @@ Our research is then built inside a chamber called the Micro Lab where the resea
 
   </div>
   <div class="column col-md-12 col-lg-6">
+    <h1>  <i class="fas fa-sync fa-spin fa-sm"></i> <a name="update">Docking with ISS Update</a></i>
+</h1>
+    <p>Cygnus spacecraft is an American automated cargo spacecraft carrying our Research Project.  The craft should be captured <b>Thursday, May 24th</b> at 3:45am (EDT), <b>Approx 2:45pm Indonesian Time</b> or 8:45am British Summertime. <a href="https://www.youtube.com/watch?v=RtU_mdL2vBM"> Live video feed of Docking</a></p>
+    <p>After this, at approximately <b>4:20pm Indonesian Time</b>, Cygnus will be installed into the stations Unity Module.  It will be installed via robot arm controlled by ground controllers.<a href="https://www.youtube.com/watch?v=RtU_mdL2vBM"> Live video feed of installation.</a></p>
+    <p>Confirmation of the time can be found here at the <a href="https://www.nasa.gov/nasalive"> NASA Live site</a>.</p>
     <iframe width="100%" class="embed-responsive-item" src="https://www.youtube.com/embed/l2yEDgMVCAU?rel=0" allowfullscreen></iframe>
 
       <iframe width="100%" class="embed-responsive-item" src="https://www.youtube.com/embed/CrWNEbAI8VM?rel=0" allowfullscreen></iframe>

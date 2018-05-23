@@ -19,8 +19,9 @@
             <section>
               {% block space %}
               <div class="rocket text-center">
-                <a href="{% url 'www:space' %}"><h1 style="center"><i class="fas fa-space-shuttle"></i><b class="awesome"> Space Mission</b> Updates  <i style="transform: scale(-1, 1);" class="fas fa-space-shuttle"></i></h1>
-              </a>
+                <a href="{% url 'www:space' %}"><h1 style="center"><i class="fas fa-space-shuttle"></i><b class="awesome"> Space Mission</b> Updates  <i style="transform: scale(-1, 1);" class="fas fa-space-shuttle"></i></h1></a>
+                <a href="{% url 'www:space' %}#update"><p style="center"><i class="fas fa-sync fa-spin"></i>  Click here for ISS Docking Date & Time <i class="fas fa-sync fa-spin"></i></p></a>
+
               </div>
               {% endblock %}
               {% block page %}
