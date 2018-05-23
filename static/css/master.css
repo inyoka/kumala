@@ -16,6 +16,10 @@ html body {
   font-family: 'PT Serif', serif;
 }
 
+body {
+  background-color: white;
+}
+
 html {
   padding-right: 15px;
   padding-left: 15px;
@@ -35,7 +39,6 @@ header {
   font-weight: 700;
   font-family: 'Libre Baskerville', sans-serif;
 }
-
 
 
 main{
@@ -112,7 +115,7 @@ footer{
 main {
   /* Removes padding from banner, ensures consistent background color. */
   padding: 0;
-  background: PapayaWhip;
+  background: White;
   /* Flex stuff */
   display: flex;
   align-items: stretch;
@@ -121,7 +124,7 @@ main {
 
 section{
   padding: 0;
-  background: PapayaWhip;
+  background: White;
   flex-direction: column;
   /* Flex stuff */
   display: flex;
