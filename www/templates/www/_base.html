@@ -15,11 +15,6 @@
               {% include "www/_header.html" %}
 
           <main>
-            <aside>
-              {% block aside %}
-                {% include "www/_aside.html" %}
-              {% endblock %}
-            </aside>
 
             <section>
               {% block space %}
@@ -31,6 +26,14 @@
               {% block page %}
               {% endblock %}
             </section>
+
+            <aside>
+              {% block aside %}
+                {% include "www/_aside.html" %}
+              {% endblock %}
+            </aside>
+
+
           </main>
               <!-- PAGE FOOTER / CONTACT AUTHOR COMPANY DETAILS -->
             <footer>
