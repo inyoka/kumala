@@ -1,8 +1,12 @@
-{% extends "www/_page.html" %}
+{% extends "www/_base.html" %}
 {% load staticfiles %}
-{% block section %}
+{% block page %}
 
-<iframe src="https://docs.google.com/document/d/e/2PACX-1vSpDdlVrnxrrANpkT8U9dy-bBVEJkXWLlq8D2s_Izaj-pbypPMZe3fx7C8_5XWiRxyh_YQ0l76EUvx0/pub" width="100%" height="520"></iframe>
+<div class="jumbotron">
+  <h1 class="display-3">{{ page_title }}</h1>
+  <p class="lead">{{ page_desc }}</p>
+  <iframe src="https://docs.google.com/document/d/e/2PACX-1vSpDdlVrnxrrANpkT8U9dy-bBVEJkXWLlq8D2s_Izaj-pbypPMZe3fx7C8_5XWiRxyh_YQ0l76EUvx0/pub" width="100%" height="1024"></iframe>
+</div>
 
 
 {% endblock %}
