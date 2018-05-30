@@ -19,15 +19,22 @@ flex-page{display: flex;
           flex-direction: column;
 }
 
-header {
-  padding: 10px;
+flex-title{
   display: flex;
+  background-color: PapayaWhip;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-color: PapayaWhip;
+  padding: 10px;
+}
+
+
+header {
+  padding: 0px;
+
   font-weight: 700;
   font-family: 'Libre Baskerville', sans-serif;
+  background-color: PapayaWhip;
 }
 
 
