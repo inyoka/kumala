@@ -10,27 +10,17 @@ font-family: 'Open Sans', sans-serif;
 html body {
   background: MidnightBlue;
   margin: 0;
-  margin-bottom: 50px;
-  height: 100%;
   font-size: 100%;
   font-family: 'PT Serif', serif;
 }
 
-body {
-  background-color: white;
-}
-
-html {
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
+flex-page{display: flex;
+          min-height: 100vh;
+          flex-direction: column;
 }
 
 header {
   padding: 10px;
-  border-top-left-radius:  5px;
-  border-top-right-radius: 5px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -69,12 +59,11 @@ nav {
   align-items: center;
   background-color: #363636;
   width: 100%;
-      text-align: center;
-      color: white;
-      height: auto;
-      align-items: center;
-      align-content: center;
-
+  text-align: center;
+  color: white;
+  height: auto;
+  align-items: center;
+  align-content: center;
 }
 
 
@@ -107,15 +96,12 @@ footer{
     background: PapayaWhip;
     padding: 0;
     margin: 0;
-    border-bottom-left-radius:  5px;
-    border-bottom-right-radius: 5px;
 }
 
 
 main {
   /* Removes padding from banner, ensures consistent background color. */
   padding: 0;
-  background: White;
   /* Flex stuff */
   display: flex;
   align-items: stretch;
@@ -124,11 +110,11 @@ main {
 
 section{
   padding: 0;
-  background: White;
+  background-color: white;
   flex-direction: column;
   /* Flex stuff */
   display: flex;
-  flex: 1;
+  flex: 1 0;
   order: 0;
 }
 
@@ -312,11 +298,14 @@ CAROUSEL CSS
 Mobile Responsive CSS
 */
 
+
+
 @media screen and (max-width: 768px) {
       h1 { font-size: 30px; }
       h2 { font-size: 25px; }
       html, body {width: 100%;}
       footer { flex-direction: column; }
+      .container { padding-right: 0px; padding-left: 0px; }
 
 }
 

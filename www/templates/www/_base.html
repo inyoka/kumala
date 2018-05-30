@@ -6,19 +6,17 @@
 
 <body  id="_top">
 
-      <div class="container">
+      <flex-page>
 
               {% include "www/_header.html" %}
 
-          <main>
+          <main class="container">
 
             <section>
               {% block space %}
-              <div class="rocket text-center">
+              <!-- <div class="rocket text-center">
                 <a href="{% url 'www:space' %}"><h1 style="center"><i class="fas fa-space-shuttle"></i><b class="awesome"> Space Mission</b> Updates  <i style="transform: scale(-1, 1);" class="fas fa-space-shuttle"></i></h1></a>
-                <a href="{% url 'www:space' %}#update"><p style="center"><i class="fas fa-sync fa-spin"></i>  Click here for ISS Docking Date & Time <i class="fas fa-sync fa-spin"></i></p></a>
-
-              </div>
+              </div> -->
               {% endblock %}
               {% block page %}
               {% endblock %}
@@ -46,7 +44,7 @@
                         CKS 2, Children’s Garden dan CaSE, <br> Jalan S Parman Medan
                     </div>
             </footer>
-      </div>
+      </flex-page>
 
       <!-- FINAL BOOTSTRAP ELEMENTS -->
       <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
