@@ -77,12 +77,6 @@ nav {
     text-align: center;
 }
 
-.colum-header{
-    flex: 1 0 50%;
-    height: 100%;
-    position: relative;
-    text-align: center;
-}
 
 .column-three{
     flex: 1 0 25%;
@@ -359,17 +353,12 @@ Mobile Responsive CSS
       h2 { font-size: 25px; }
       html, body {width: 100%;}
       footer { flex-direction: column; }
+      .column{ flex: 1 0 100%; }
+      .column2{ order: 2; }
       .container { padding-right: 0px; padding-left: 0px; }
 
 
 }
-
-
-@media screen and (max-width: 600px){
-      .column{ min-width: 500px; }
-      .column2{ order: 2; }
-}
-
 
 .awesome {
       animation: colorchange 20s infinite alternate;
