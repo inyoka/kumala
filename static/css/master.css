@@ -77,6 +77,13 @@ nav {
     text-align: center;
 }
 
+.colum-header{
+    flex: 1 0 50%;
+    height: 100%;
+    position: relative;
+    text-align: center;
+}
+
 .column-three{
     flex: 1 0 25%;
     height: 100%;
