@@ -124,6 +124,14 @@ nav a {
     text-decoration:none;
 }
 
+a:hover {
+    text-decoration:none;
+}
+
+nav svg:hover {
+  color:green;
+}
+
 footer{
     border-top:2px solid Orange;
     display: flex;
