@@ -25,6 +25,14 @@ class About(TemplateView):
         context['page_title'] = 'About Us'
         return context
 
+class News(TemplateView):
+    template_name = 'www/news.html'
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['page_title'] = 'In the Newspapers'
+        return context
+
 class Exams(TemplateView):
     template_name = 'www/exams.html'
 
