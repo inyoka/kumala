@@ -158,13 +158,13 @@ section{
   /* Flex stuff */
   display: flex;
   flex: 1 0;
-  order: 0;
+  order: 1;
 }
 
 aside{
   background-color: #363636;
   width: 40px;
-  order: 1;
+  order: 2;
   overflow: hidden;
 }
 
@@ -368,8 +368,10 @@ Mobile Responsive CSS
       .column{ flex: 1 0 100%; }
       .column2{ order: 2; }
       .container { padding-right: 0px; padding-left: 0px; }
-
-
+      main{ flex-direction: column;}
+      .rotated { transform: rotate(0deg); position: relative; }
+      aside{ width: 100%; order: 1; }
+      section{ order: 2;}
 }
 
 .awesome {
