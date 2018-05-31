@@ -359,7 +359,8 @@ Mobile Responsive CSS
 
 
 @media screen and (max-width: 600px){
-        .column2{ order: 2; }
+      .column{ min-width: 500px; }
+      .column2{ order: 2; }
 }
 
 
