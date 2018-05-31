@@ -248,6 +248,10 @@ Centre Stuff
     flex-wrap: wrap;
 }
 
+.rounded {
+    border-radius: 35px;
+}
+
 /* Scholarships Page */
 iframe, .card {
   /* Allows the iframe to be centered. */
