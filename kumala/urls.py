@@ -16,14 +16,25 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from www.views import Home, user_logout
+# from django.conf import settings
+# from django.conf.urls.static import static
+
+from wagtail.admin import urls as wagtailadmin_urls
+from wagtail.documents import urls as wagtaildocs_urls
+from wagtail.core import urls as wagtail_urls
 
 admin.site.site_header = 'Chandra Kumala School'
 admin.site.site_title = 'Chandra Kumala Admin'
 admin.site.index_title = 'Chandra Kumala Admin'
 
 urlpatterns = [
+    path('cms/', include(wagtailadmin_urls)),
+    path('documents/', include(wagtaildocs_urls)),
     path('', Home.as_view(), name='home'), #  Show home-page index.html
     path('admin/', admin.site.urls),
     path('', include('www.urls')),
     path('logout/', user_logout, name='logout'),
+    path('', include(wagtail_urls)),
 ]
+
+# + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
