@@ -21,11 +21,12 @@ flex-page{display: flex;
 
 flex-title{
   display: flex;
+  background-image: url(/static/images/bg.jpg);
   background-color: PapayaWhip;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
+  padding: 0px;
 }
 
 
