@@ -136,6 +136,7 @@ nav svg:hover {
 footer{
     border-top:2px solid Orange;
     display: flex;
+    align-items: center;
     justify-content: space-around;
     background: PapayaWhip;
     padding: 0;
