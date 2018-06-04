@@ -374,7 +374,7 @@ Mobile Responsive CSS
       h1 { font-size: 30px; }
       h2 { font-size: 25px; }
       html, body {width: 100%;}
-      footer { flex-direction: column; }
+      #flex-footer { flex-direction: column; }
       .column{ flex: 1 0 100%; }
       .column2{ order: 2; }
       .container { padding-right: 0px; padding-left: 0px; }
