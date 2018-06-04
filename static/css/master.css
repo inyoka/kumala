@@ -388,18 +388,18 @@ Mobile Responsive CSS
 }
 
 .awesome {
-      animation: colorchange 20s infinite alternate;
+      animation: colorchange 10s infinite alternate;
       color:#313131;
       font-weight: bold;
 }
 
 @-webkit-keyframes colorchange {
-      0%  {color: LightBlue; }
-      20% {color: Green ;}
-      40% {color: Yellow ;}
-      60% {color: Red ;}
+      0%  {color: Purple; }
+      20% {color: Blue;}
+      40% {color: Purple ;}
+      60% {color: Blue ;}
       80% {color: Purple;}
-      100% {color: LightBlue;}
+      100% {color: Blue;}
 }
 
 .thrust {
