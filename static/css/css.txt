@@ -29,6 +29,15 @@ MidnightBlue 	#191970
 Navy 	#000080
 
 
+/*
+
+font-family: 'PT Serif', serif;
+font-family: 'Libre Baskerville', sans-serif;
+font-family: 'Open Sans', sans-serif;
+
+
+*/
+
 Long Term goals
 ---------------
 
