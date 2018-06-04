@@ -119,8 +119,7 @@ nav {
 }
 
 .navbar{
-  padding: 0;
-}
+  padding: 0 5px 0 5px;}
 
 nav a {
     color:white;
@@ -382,6 +381,10 @@ Mobile Responsive CSS
       .rotated { transform: rotate(0deg); position: relative; }
       aside{ width: 100%; order: 1; }
       section{ order: 2;}
+      navbar-brand svg {
+        width: 27px;
+        height: 27px;
+      }
 }
 
 .awesome {
