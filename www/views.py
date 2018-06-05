@@ -134,8 +134,8 @@ class Careers(TemplateView):
         context['page_title'] = 'Careers'
         return context
 
-class Workshop(TemplateView):
-    template_name = 'www/workshop.html'
+class Parents(TemplateView):
+    template_name = 'www/groups/parents.html'
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)

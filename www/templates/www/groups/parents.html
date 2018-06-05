@@ -1,0 +1,28 @@
+{% extends "www/_base.html" %}
+{% load staticfiles %}
+{% block page %}
+
+
+<div class="jumbotron">
+  <h1 class="">{{ page_title }}</h1>
+  <h2 class="">{{ page_desc }}</h2>
+</div>
+
+<div class="columns">
+  <div class="column" style="vertical-align: text-top;">
+    <p>Welcome to CK's Parent Enrichment Program page. </p>
+    <p>A students's education is greatly influenced by the level of parental involvement, both in school and at home. Our parent enrichment program helps parents coordinate with teachers to give students the best opportunities.
+       Here you will find advice on how you can support your child's development. Helping you parent more effectively.</p>
+      <p>Please select a link below to view previous events...</p>
+
+    <a href="{% url 'www:reading' %}" class="btn btn-info" role="button">Reading Workshop</a>
+  </div>
+  <div class="column">
+    <div>
+        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ygHU0mQGuJU?rel=0" allowfullscreen></iframe>
+    </div>
+
+  </div>
+</div>
+
+{% endblock %}

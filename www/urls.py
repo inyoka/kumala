@@ -18,7 +18,7 @@ from django.urls import path
 # from www.views import Home
 from www.views import (Home, About, Programs, Registration, Gallery, Videos,
                     Contact, Alumni, Careers, Event, signup, user_login, Exams,
-                    Workshop, Reading, Scholarships, Trolls, Enroll, Space, News)
+                    Parents, Reading, Scholarships, Trolls, Enroll, Space, News)
 
 # Template Tagging
 
@@ -41,7 +41,7 @@ urlpatterns=[
     path('careers', Careers.as_view(), name='careers'),
     path('event', Event.as_view(), name='event'),
     path('reading', Reading.as_view(), name='reading'),
-    path('workshop', Workshop.as_view(), name='workshop'),
+    path('parents', Parents.as_view(), name='parents'),
     path('enroll', Enroll.as_view(), name='enroll'),
     path('signup', signup, name='signup'),
     path('user_login/', user_login, name='user_login'),
