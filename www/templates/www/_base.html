@@ -14,6 +14,13 @@
 
           <main class="container">
 
+            <nav>
+              {% block nav %}
+              {% include "www/_nav.html" %}
+              {% endblock %}
+            </nav>
+
+
             <section>
               {% block space %}
               <!-- <div class="rocket text-center">
