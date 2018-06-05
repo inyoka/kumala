@@ -1,33 +1,27 @@
 <!DOCTYPE html>
 {% extends "www/_base.html" %}
 {% load staticfiles %}
-
-
-
-{% block nav %}
-
-{% include "www/_nav.html" %}
-
-<div class="flex-nav navbar-inverse">
-  <span class="nav-item">
-    <a class="nav-link active" href="{% url 'www:awards' %}"> Awards</a>
-  </span>
-</div>
-
-{% endblock %}
-
-
 {% block page %}
 
-<div class="">
-    <div class="text-center">
-      <h2>Alumni Information</h2>
-      <h3>School Awards</h3>
-      <h3>Testimonials</h3>
-      <h3>Businesses</h3>
-    </div>
-</div>
 
+<nav>
+
+</nav>
+
+
+<div class="columns">
+  <div class="column-two-thirds">
+    <h2>Alumni Information</h2>
+    <h3>School Awards</h3>
+    <h3>Testimonials</h3>
+    <h3>Businesses</h3>
+  </div>
+  <div class="column-one-third">
+    <div class="thumbnail centered">
+        <img class="rounded" src="{% static "/images/1920x1137/00102.jpg" %}" alt="">
+    </div>
+  </div>
+</div>
 
 <div class="columns">
   <div class="column">

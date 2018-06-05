@@ -118,11 +118,19 @@ class Contact(TemplateView):
 
 
 class Alumni(TemplateView):
-    template_name = 'www/alumni.html'
+    template_name = 'www/groups/alumni.html'
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context['page_title'] = 'Alumni'
+        return context
+
+class Awards(TemplateView):
+    template_name = 'www/awards.html'
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['page_title'] = 'Awards'
         return context
 
 
