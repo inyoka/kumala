@@ -346,6 +346,11 @@ CAROUSEL CSS
     right: 16px;
 }
 
+.bottom-right {
+    position: absolute;
+    bottom: 5%;
+    right: -10%;
+}
 .carousel-control:hover{
   color: Black;
 }
