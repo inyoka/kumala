@@ -224,9 +224,9 @@ nav{
 
 .row{
   padding-top: 20px;
-padding-left: 20px;
-padding-right: 20px;
-padding-bottom: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 30px;
 }
 
 .rotated {
@@ -241,7 +241,6 @@ padding-bottom: 30px;
   padding: 15px;
   border-radius: 0px;
 }
-
 
 /* Reading.html */
 
@@ -438,7 +437,7 @@ Mobile Responsive CSS
 @media (min-width: 1200px) { ... }
 
 div.short {
-    line-height: 80%;
+    line-height: 90%;
 }
 
 .awesome {
