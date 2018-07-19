@@ -437,12 +437,18 @@ Mobile Responsive CSS
  /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { ... }
 
-
+div.short {
+    line-height: 80%;
+}
 
 .awesome {
       animation: colorchange 10s infinite alternate;
       color:#313131;
       font-weight: bold;
+}
+
+.lobster{
+  font-family: 'Lobster', cursive;
 }
 
 @-webkit-keyframes colorchange {
