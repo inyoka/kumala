@@ -1,0 +1,306 @@
+/* Base Rules */
+
+
+
+@media screen and (max-width: 768px) {
+      h1 { font-size: 30px; }
+      h2 { font-size: 25px; }
+}
+
+p{
+  font-size: 140%;
+}
+.article-head{
+  flex-direction: row;
+  padding: 30px;
+}
+
+.columns{
+  display: flex;
+  flex-direction: row;
+  align-content: space-around;
+  flex-wrap: wrap;
+}
+
+.article-head h1 {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex: 1 0 300px;
+}
+
+figure{
+  width:100%; /* you can use % */
+  height: auto;
+  flex-basis: 1;
+  order: 1;
+  flex-shrink: 6;
+  flex: 1 1 300px;
+}
+
+.buttons{
+  flex-basis: 1;
+}
+
+@media (min-width: 768px) {
+  html { width: 750px; }
+}
+@media (min-width: 992px) {
+  html { width: 970px; }
+}
+@media (min-width: 1200px) {
+  html { width: 1170px; }
+}
+
+body {
+  background-color: #Bcb2d5;
+  font-size: 120%;
+}
+
+
+
+
+a.nav-link:hover, svg:hover
+{
+   color: grey;
+   fill: grey;
+   text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+.nav-item{
+   text-align: right;
+}
+
+.navbar-brand {
+  font-size: 24px;
+}
+
+.navbar {
+ font-size: 18px;
+ padding-left:0px;
+padding-right:0px;
+}
+
+.navbar-nav > li > .dropdown-menu { background-color: #FF0000; }
+
+/* Exam Timetable Page */
+
+
+
+
+h2, btn {
+    display: inline;
+    flex-wrap: wrap;
+}
+
+
+.exam-table{
+  flex: 1;
+  flex-basis:  90%;
+  caption-side: top;
+}
+
+/* Careers Page */
+.job{
+  padding: 5px;
+  margin-left: 50px;
+}
+.job-title{
+  margin: auto;
+}
+.job-row{
+  margin: 5px;
+}
+@media (min-width: 900px){
+  .job-row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+}
+.job-media{
+  padding: 0 15px; float: right;
+  flex-basis: 40%;
+}
+.job-desc{
+  flex-basis: 60%;
+  font-size: 24px;
+}
+
+/* Gallery Page */
+
+.gallery-container{
+  max-width: 1400px;
+  margin: 40px auto 0 auto;
+  padding: 30px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.thumbnail{
+  width: 300px;
+  height: 200px;
+  line-height: 100px;
+  margin-bottom: 20px;
+}
+
+
+
+
+.overlay {
+    /* Ensures Carousel logo and Caption are displayed in-line with the body, and text color is white. */
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+
+.fab{
+  size: 1em;
+}
+
+/*
+SVG Rules
+*/
+
+
+
+
+
+
+
+.event{
+    border-bottom:2px solid #E7af14;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/////////////////////////////////////////
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.social_media {
+  height: 1em;
+  /* Used to style Font Awesome Social Media icons. */
+  display: inline-block;
+  vertical-align: top;
+  float: none;
+  font-size: 2em;
+  color: #202565;
+}
+
+
+.text-center {
+    display: block;
+    align: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+
+
+  /* CAROUSEL CSS */
+
+  .overlay {
+      /* Ensures Carousel logo and Caption are displayed in-line with the body, and text color is white. */
+      position: relative;
+      text-align: center;
+      color: white;
+  }
+
+  .carousel-control:hover{
+    color: #000;
+  }
+
+  .carousel-indicators{
+    top: 20px;
+  }
+
+  .carousel-indicators li{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 1px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #000\9;
+    background-color: #FF0000;
+    border: 1px solid #E7af14;
+    border-radius: 50%;
+  }
+
+  .carousel-indicators .active{
+    width: 12px;
+    height: 12px;
+    margin: 0;
+    background-color: #F5f4d6;
+  }
+
+  .carousel-caption{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    color: #fff;
+    text-align: center;
+    background: #00000040;
+  }
+
+  .carousel-logo{
+    position: absolute;
+    right: 16px;
+    top: 0;
+    left: 20;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: right;
+  }
