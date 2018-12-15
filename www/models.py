@@ -18,7 +18,7 @@ class UserProfile(models.Model):
         return f'{self.user.last_name}, {self.user.first_name}'
 
 
-class HomePage(Page):
+class Home(Page):
     body = RichTextField(blank=True)
 
     content_panels = Page.content_panels + [
