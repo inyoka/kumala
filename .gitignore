@@ -1,5 +1,9 @@
 # Project spcific ignore files ...
 
+
+ignore/
+www/static/images/unused/
+media/
 *.sqlite3
 *.sqlite
 kumala/settings_secret.py
@@ -122,3 +126,11 @@ www/migrations/__init__.py
 www/migrations/__init__.py
 static/css/newmaster.css
 svg-icons.html
+www/urls-harrier.py
+www/templates/www/home-harrier.html
+www/templates/www/enroll-harrier.html
+www/templates/www/base-harrier.html
+www/templates/www/_head-harrier.html
+www/templates/www/_aside-harrier.html
+www/models-harrier.py
+www/static/css/css.txt
