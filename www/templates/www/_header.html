@@ -1,30 +1,24 @@
 {% load staticfiles %}
 
-
-
-<flex-title class="container whiter">
-    <span class="navbar-brand">
-        <img src="{% static "images/kumala-logo.svg" %}" width="80px" alt="Logo Image">
+<header class="container my-3 d-flex justify-content-between align-items-center">
+    <span class="">
+        <img class="mx-3" src="{% static "images/mala-white.svg" %}" width="90px" alt="Logo Image">
     </span>
-        <div class="text-center">
-            <div class="">
-                <a class="navbar-brand d-none d-md-block notranslate">Chandra Kumala School</a>
-                <a class="navbar-brand d-none d-md-none d-sm-block notranslate">Chandra Kumala</a>
-                <a class="navbar-brand d-block d-sm-none notranslate">Ku<nobr style="color:purple;">mala</nobr></a>
 
-            </div>
-          </div>
-            <span class="fa-layers fa-fw fa-3x" style="style: none; margin: 0; padding: 0;">
-              <a href="https://goo.gl/maps/hR95oHnVUdv" target="_blank">
-              <i class="fas fa-square"></i>
-              <i class="fas fa-map-marker-alt fa-inverse" data-fa-transform="shrink-9 up-2"></i>
-              <span class="fa-layers-text fa-inverse" data-fa-transform="shrink-12 down-4" style="font-family: 'Open Sans', sans-serif; font-weight:900">NAV</span>
-              </a>
-            </span>
-</flex-title>
+    <div class="text-center text-light display-5">
+        <a class="navbar-brand d-none d-md-block notranslate">Chandra Kumala School</a>
+        <a class="navbar-brand d-none d-md-none d-sm-block notranslate">Chandra Kumala</a>
+        <a class="navbar-brand d-block d-sm-none notranslate">CKS</a>
+    </div>
+
+    <span class="text-center mx-0">
+      <a class="btn btn-success btn-sm my-1 mx-1 mx-md-2" href="https://goo.gl/maps/hR95oHnVUdv" target="_blank"><i class="fas fa-map-marker-alt fa-inverse fa-3x" data-fa-transform="shrink-7"></i></a>
+      <a class="btn btn-primary btn-sm my-1 mx-1 mx-md-2" href="tel:+62-061-661-6765" target="_blank"><i class="fas fa-mobile-alt fa-inverse fa-3x" data-fa-transform="shrink-7"></i></a>
+    </span>
+    </header>
 
 
-<navbar class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg text-light navbar-dark bg-dark">
   <div class="container">
         <div class="collapse navbar-collapse mr-auto" id="navbarText">
             <div class="nav-item dropdown ">
@@ -39,8 +33,7 @@
               </div>
             </div>
 
-
-            <div class="nav-item dropdown ">
+            <!-- <div class="nav-item dropdown ">
               <a class="nav-link dropdown-toggle" href="{% url 'www:programs' %}" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Departments</a>
               <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item" href="{% url 'www:space' %}"><i class="fas fa-space-shuttle fa-rotate-270 fa-fw"></i> Space Research</a>
@@ -50,8 +43,7 @@
                 <a class="dropdown-item disabled" href="#"><i class="fas fa-binoculars fa-fw"></i> Performances and Drama</a>
                 <a class="dropdown-item disabled" href="#"><i class="fas fa-basketball-ball fa-fw"></i> Sports</a>
               </div>
-            </div>
-
+            </div> -->
 
             <div class="nav-item dropdown disabled">
               <a class="nav-link dropdown-toggle " href="{% url 'home' %}" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Facilities</a>
@@ -86,16 +78,9 @@
                   </div>
                 </div>
 
-                <div id="google_translate_element" class="nav-item dropdown"></div>
 
           </div>
-
-            <a class="navbar-brand" href="{% url 'home' %}">
-                <svg width="18" height="18">
-                <path fill="currentColor" id="chandraKumala" d="m14.391 0-3.5898 4v5h-1.8008l-4.5-2-4.5 2v9h18v-14zm0.03125 4.6797c1.0328 0 1.8691 0.76794 1.8691 1.8008 0 1.0328-0.8363 1.7988-1.8691 1.7988-1.0328 0-1.8711-0.76598-1.8711-1.7988 0-1.0328 0.83825-1.8008 1.8711-1.8008z" />
-                </svg>
-            </a>
-
+          <div class="pl-2">
             <a class="navbar-brand" href="https://www.facebook.com/ChandraKumalaSchool/" target="_blank">
                 <svg width="18" height="18">
                 <path fill="currentColor" id="facebook" d="m 18,0.99241 v 16.01116 c 0,0.55045 -0.445982,0.99241 -0.992411,0.99241 h -4.588393 v -6.96696 h 2.338393 L 15.107143,8.31295 H 12.415179 V 6.57723 c 0,-0.7875 0.216964,-1.32187 1.345982,-1.32187 h 1.438393 V 2.82455 c -0.249108,-0.0321 -1.100893,-0.10848 -2.097322,-0.10848 -2.073214,0 -3.4955356,1.26563 -3.4955356,3.59197 V 8.31295 H 7.2602679 v 2.71607 H 9.6066964 V 18 H 0.99241071 C 0.44598214,18 0,17.55402 0,17.00759 V 0.99241 C 0,0.44598 0.44598214,0 0.99241071,0 H 17.003571 C 17.554018,0 18,0.44598 18,0.99241 Z" />
@@ -109,14 +94,9 @@
                 <svg width="18" height="18"><path fill="currentColor" id="youtube" d="M 7.5053571,6.83438 11.330357,9.00804 7.5053571,11.1817 Z M 18,1.92857 V 16.07143 C 18,17.13616 17.136161,18 16.071429,18 H 1.9285714 C 0.86383929,18 0,17.13616 0,16.07143 V 1.92857 C 0,0.86384 0.86383929,0 1.9285714,0 H 16.071429 C 17.136161,0 18,0.86384 18,1.92857 Z m -1.6875,7.08348 c 0,0 0,-2.39464 -0.305357,-3.54375 C 15.838393,4.83348 15.344196,4.33527 14.713393,4.16652 13.576339,3.85714 9,3.85714 9,3.85714 c 0,0 -4.5763393,0 -5.7133929,0.30938 -0.6308035,0.16875 -1.125,0.66696 -1.29375,1.30178 C 1.6875,6.61339 1.6875,9.01205 1.6875,9.01205 c 0,0 0,2.39465 0.3053571,3.54375 0.16875,0.63482 0.6629465,1.11295 1.29375,1.2817 C 4.4236607,14.14286 9,14.14286 9,14.14286 c 0,0 4.576339,0 5.713393,-0.30938 0.630803,-0.16875 1.125,-0.64687 1.29375,-1.28169 C 16.3125,11.4067 16.3125,9.01205 16.3125,9.01205 Z" />
                 </svg>
             </a>
-            <a class="navbar-brand" href="mailto:info@chandrakumala.com?Subject=Website%20question" target="_top">
-                <svg width="18" height="18">
-                <path id="email" fill="currentColor" d="M 17.658984,6.70781 C 17.796094,6.59883 18,6.70078 18,6.87305 V 14.0625 C 18,14.99414 17.244141,15.75 16.3125,15.75 H 1.6875 C 0.75585937,15.75 0,14.99414 0,14.0625 V 6.87656 C 0,6.70078 0.20039063,6.60234 0.34101563,6.71133 1.1285156,7.32305 2.1726562,8.1 5.7585937,10.70508 6.5003906,11.24648 7.7519531,12.38555 9,12.37852 c 1.255078,0.0105 2.53125,-1.15313 3.244922,-1.67344 C 15.830859,8.1 16.871484,7.31953 17.658984,6.70781 Z M 9,11.25 C 9.815625,11.2641 10.989844,10.22344 11.580469,9.79453 16.245703,6.40898 16.600781,6.11367 17.676562,5.26992 17.880469,5.11172 18,4.86563 18,4.60547 V 3.9375 C 18,3.00586 17.244141,2.25 16.3125,2.25 H 1.6875 C 0.75585937,2.25 0,3.00586 0,3.9375 V 4.60547 C 0,4.86563 0.11953125,5.1082 0.3234375,5.26992 1.3992187,6.11016 1.7542969,6.40898 6.4195312,9.79453 7.0101563,10.22344 8.184375,11.26406 9,11.25 Z"/>
-                </svg>
-            </a>
-            <a class="navbar-brand" href="tel:+62-061-661-6765">
-                <svg  width="18" height="18" ><path  fill="currentColor" id="telephone" d="M 17.345988,0.86536 13.689735,0.02171 c -0.397758,-0.0918 -0.804341,0.11433 -0.965251,0.48976 l -1.687501,3.9374 a 0.84375064,0.84375064 0 0 0 0.241242,0.9854 l 2.131068,1.74361 C 12.144616,9.87349 9.9310015,12.11762 7.1778784,13.40926 L 5.4342677,11.27823 A 0.84375064,0.84375064 0 0 0 4.4488724,11.03698 l -3.93739755,1.6875 c -0.37532841,0.16084 -0.58159028,0.56739 -0.48976209,0.96525 l 0.84364518,3.65626 C 0.95303769,17.72592 1.291909,18 1.6874875,18 10.690553,18 18,10.70395 18,1.68749 18,1.29458 17.728804,0.95367 17.345988,0.86536 Z" /></svg>
-            </a>
+          </div>
+
+
             <!-- Hamburger Icon -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
               <svg  width="18" height="18" >

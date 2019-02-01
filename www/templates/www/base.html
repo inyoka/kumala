@@ -6,21 +6,17 @@
 
 <body  id="_top">
 
-      <flex-page>
-          <header>
-              <!-- Includes flex-title and nav elements. -->
-              {% include "www/_header.html" %}
-          </header>
+          {% include "www/_header.html" %}
 
           <main class="container">
 
-            <!-- <nav>
-              {% block nav %}
-                {% include "www/_nav.html" %}
-                <p>New links</p>
+            <aside>
+              {% block aside %}
+              <nobr><a href="{% url 'www:enroll' %}">
+              <h1 class="awesome"></i>SIGNUP FOR 2019</h1>
+              </a></nobr>
               {% endblock %}
-            </nav> -->
-
+            </aside>
 
             <section>
               {% block space %}
@@ -34,22 +30,21 @@
 
           </main>
               <!-- PAGE FOOTER / CONTACT AUTHOR COMPANY DETAILS -->
-            <footer>
-                <div id="flex-footer" class="whiter container">
+            <footer class="">
+                <div class="container d-flex flex-column flex-lg-row border-warning bg-light justify-content-between align-items-center py-2 mt-1 border-top-5">
                     <div class="notranslate text-center ">
                         <i class="fas fa-map-marker-alt"></i>&nbsp
                         Chandra Kumala School, Per. Cemara Asri<br> No.1 Block O Deliserdang, Medan, Indonesia, 20317
-                    </div>
-                    <div class="text-center">
-                      <a href="#_top"><i class="fas fa-arrow-circle-up fa-2x"></i></a>
                     </div>
                     <div class="notranslate text-center ">
                       <i class="fas fa-map-marker-alt"></i>&nbsp
                         CKS 2, Children’s Garden dan CaSE, <br> Jalan S Parman Medan
                     </div>
+                    <div class="text-center">
+                      <a href="#_top"><i class="fas fa-arrow-circle-up fa-2x"></i></a>
+                    </div>
                 </div>
             </footer>
-      </flex-page>
 
       <!-- FINAL BOOTSTRAP ELEMENTS -->
       <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
