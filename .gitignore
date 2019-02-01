@@ -134,3 +134,5 @@ www/templates/www/_head-harrier.html
 www/templates/www/_aside-harrier.html
 www/models-harrier.py
 www/static/css/css.txt
+*.txt
+*.out
