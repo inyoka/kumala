@@ -1,107 +1,67 @@
 {% load staticfiles %}
 
-<header class="container my-3 d-flex justify-content-between align-items-center">
-    <span class="">
-        <img class="mx-3" src="{% static "images/mala-white.svg" %}" width="90px" alt="Logo Image">
-    </span>
-
-    <div class="text-center text-light display-5">
-        <a class="navbar-brand d-none d-md-block notranslate">Chandra Kumala School</a>
-        <a class="navbar-brand d-none d-md-none d-sm-block notranslate">Chandra Kumala</a>
-        <a class="navbar-brand d-block d-sm-none notranslate">CKS</a>
+<header class="container my-3 d-flex justify-content-between align-items-start">
+    <div class="">
+        <!-- <img class="mx-3 d-none" src="{% static "images/mala-white.svg" %}" width="90px" alt="Logo Image"> -->
+        <img class="mx-3 d-none d-sm-block d-md-none" src="{% static "images/mala-white.svg" %}" width="90px" alt="Logo Image">
+        <img class="mx-3 d-none d-md-block" src="{% static "images/mala-white.svg" %}" width="120px" alt="Logo Image">
     </div>
 
-    <span class="text-center mx-0">
-      <a class="btn btn-success btn-sm my-1 mx-1 mx-md-2" href="https://goo.gl/maps/hR95oHnVUdv" target="_blank"><i class="fas fa-map-marker-alt fa-inverse fa-3x" data-fa-transform="shrink-7"></i></a>
-      <a class="btn btn-primary btn-sm my-1 mx-1 mx-md-2" href="tel:+62-061-661-6765" target="_blank"><i class="fas fa-mobile-alt fa-inverse fa-3x" data-fa-transform="shrink-7"></i></a>
-    </span>
+
+    <div class="d-flex flex-column align-items-end">
+      <div class="container d-flex justify-content-end align-items-center">
+        <a class="btn btn-primary btn-sm my-1 mx-1 mx-md-2" href="tel:+62-061-661-6765" target="_blank"><i class="fab fa-facebook-square fa-inverse fa-fw fa-2x"></i></a>
+        <a class="btn btn-danger btn-sm my-1 mx-1 mx-md-2" href="https://www.instagram.com/chandrakumalaofficial/" target="_blank"><i class="fab fa-youtube fa-inverse fa-fw fa-2x"></i></a>
+        <a class="btn btn-warning btn-sm my-1 mx-1 mx-md-2" href="https://www.instagram.com/chandrakumalaofficial/" target="_blank"><i class="fab fa-instagram fa-inverse fa-fw fa-2x"></i></a>
+        <a class="btn btn-success btn-sm my-1 mx-1 mx-md-2" href="https://goo.gl/maps/hR95oHnVUdv" target="_blank"><i class="fas fa-map-marker-alt fa-inverse fa-fw fa-2x"></i></a>
+        <a class="btn btn-info btn-sm my-1 mx-1 mx-md-2" href="tel:+62-061-661-6765" target="_blank"><i class="fas fa-mobile-alt fa-inverse fa-fw fa-2x"></i></a>
+      </div>
+
+
+
+      <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+        <a class="navbar-brand d-none d-md-block notranslate" href="#">Chandra Kumala School</a>
+        <a class="navbar-brand d-block d-md-none  notranslate" href="#">Chandra Kumala</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarToggler">
+        <div class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <div class="nav-item ">
+            <a class="nav-link dropdown-toggle" href="{% url 'home' %}" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Our School</a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item text-dark" href="{% url 'www:news' %}"><i class="far fa-newspaper"></i> News</a>
+              <a class="dropdown-item text-dark" href="{% url 'www:registration' %}"><i class="fas fa-pencil-alt fa-fw"></i> Register</a>
+              <a class="dropdown-item text-dark" href="{% url 'www:scholarships' %}"><i class="far fa-handshake fa-fw"></i> Scholarships</a>
+              <a class="dropdown-item text-dark" href="{% url 'www:programs' %}"><i class="fas fa-graduation-cap fa-fw"></i> Programs</a>
+              <a class="dropdown-item text-dark" href="{% url 'www:exams' %}"><i class="far fa-calendar-alt fa-fw"></i> Exam Timetable</a>
+              <a class="dropdown-item text-dark" href="{% url 'www:contact' %}"><i class="fas fa-map-signs fa-fw"></i> Map & Contact<span class="sr-only">(current)</span></a>
+            </div>
+          </div>
+          <div class="nav-item">
+            <a class="nav-link dropdown-toggle " href="{% url 'www:programs' %}" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Groups</a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item text-dark" href="{% url 'www:alumni' %}"><i class="far fa-address-card"></i> Alumni</a>
+              <a class="dropdown-item text-dark" href="{% url 'www:parents' %}"><i class="fas fa-users"></i> Parents</a>
+              <a class="dropdown-item text-dark disabled" href="#"><i class="fas fa-user-circle"></i> Teachers</a>
+            </div>
+          </div>
+          <div class="nav-item">
+            <a class="nav-link dropdown-toggle" href="{% url 'www:programs' %}" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Media</a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item text-dark" href="{% url 'www:news' %}"><i class="far fa-newspaper"></i> News</a>
+              <a class="dropdown-item text-dark" href="{% url 'www:gallery' %}"><i class="far fa-image"></i> Pictures</a>
+              <a class="dropdown-item text-dark" href="{% url 'www:videos' %}"><i class="fas fa-video"></i> Videos</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item text-dark no-translate" href="https://www.facebook.com/ChandraKumalaSchool/" target="_blank"><i class="fab fa-facebook fa-fw fa-1x"></i> Facebook</a>
+              <a class="dropdown-item text-dark no-translate" href="https://www.instagram.com/chandrakumalaofficial/" target="_blank"><i class="fab fa-instagram fa-fw fa-1x"></i>  Instagram</a>
+              <a class="dropdown-item text-dark no-translate" href="https://www.youtube.com/chandrakumalaschool" target="_blank"><i class="fab fa-youtube fa-fw fa-1x"></i>  YouTube</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    </div>
 </header>
-
-<nav class="navbar navbar-expand-lg text-light navbar-dark bg-dark">
-  <div class="container">
-        <div class="collapse navbar-collapse mr-auto" id="navbarText">
-            <div class="nav-item dropdown ">
-              <a class="nav-link dropdown-toggle" href="{% url 'home' %}" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Our School</a>
-              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item text-dark" href="{% url 'www:news' %}"><i class="far fa-newspaper"></i> News</a>
-                <a class="dropdown-item text-dark" href="{% url 'www:registration' %}"><i class="fas fa-pencil-alt fa-fw"></i> Register</a>
-                <a class="dropdown-item text-dark" href="{% url 'www:scholarships' %}"><i class="far fa-handshake fa-fw"></i> Scholarships</a>
-                <a class="dropdown-item text-dark" href="{% url 'www:programs' %}"><i class="fas fa-graduation-cap fa-fw"></i> Programs</a>
-                <a class="dropdown-item text-dark" href="{% url 'www:exams' %}"><i class="far fa-calendar-alt fa-fw"></i> Exam Timetable</a>
-                <a class="dropdown-item text-dark" href="{% url 'www:contact' %}"><i class="fas fa-map-signs fa-fw"></i> Map & Contact<span class="sr-only">(current)</span></a>
-              </div>
-            </div>
-
-            <!-- <div class="nav-item dropdown ">
-              <a class="nav-link dropdown-toggle" href="{% url 'www:programs' %}" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Departments</a>
-              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="{% url 'www:space' %}"><i class="fas fa-space-shuttle fa-rotate-270 fa-fw"></i> Space Research</a>
-                <a class="dropdown-item disabled" href="#"><i class="fas fa-utensils fa-fw"></i> Food & Nutrician</a>
-                <a class="dropdown-item disabled" href="#"><i class="fas fa-screwdriver fa-fw"></i> Design & Technology</a>
-                <a class="dropdown-item disabled" href="#"><i class="fas fa-music fa-fw"></i> Orchestra and Music</a>
-                <a class="dropdown-item disabled" href="#"><i class="fas fa-binoculars fa-fw"></i> Performances and Drama</a>
-                <a class="dropdown-item disabled" href="#"><i class="fas fa-basketball-ball fa-fw"></i> Sports</a>
-              </div>
-            </div> -->
-
-            <div class="nav-item dropdown disabled">
-              <a class="nav-link dropdown-toggle " href="{% url 'home' %}" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Facilities</a>
-              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item disabled" href="#">Auditorium</a>
-                <a class="dropdown-item disabled" href="#">Classrooms</a>
-                <a class="dropdown-item disabled" href="#">Kindergarten</a>
-                <a class="dropdown-item disabled" href="#">Sports Pitches</a>
-                <a class="dropdown-item disabled" href="#">Climbing Wall</a>
-              </div>
-            </div>
-
-                <div class="nav-item dropdown ">
-                  <a class="nav-link dropdown-toggle " href="{% url 'www:programs' %}" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Groups</a>
-                  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item text-dark" href="{% url 'www:alumni' %}"><i class="far fa-address-card"></i> Alumni</a>
-                    <a class="dropdown-item text-dark" href="{% url 'www:parents' %}"><i class="fas fa-users"></i> Parents</a>
-                    <a class="dropdown-item text-dark disabled" href="#"><i class="fas fa-user-circle"></i> Teachers</a>
-                  </div>
-                </div>
-
-                <div class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="{% url 'www:programs' %}" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Media</a>
-                  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item text-dark" href="{% url 'www:news' %}"><i class="far fa-newspaper"></i> News</a>
-                    <a class="dropdown-item text-dark" href="{% url 'www:gallery' %}"><i class="far fa-image"></i> Pictures</a>
-                    <a class="dropdown-item text-dark" href="{% url 'www:videos' %}"><i class="fas fa-video"></i> Videos</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item text-dark no-translate" href="https://www.facebook.com/ChandraKumalaSchool/" target="_blank"><i class="fab fa-facebook fa-fw"></i> Facebook</a>
-                    <a class="dropdown-item text-dark no-translate" href="https://www.instagram.com/chandrakumalaofficial/" target="_blank"><i class="fab fa-instagram fa-fw"></i>  Instagram</a>
-                    <a class="dropdown-item text-dark no-translate" href="https://www.youtube.com/chandrakumalaschool" target="_blank"><i class="fab fa-youtube fa-fw"></i>  YouTube</a>
-                  </div>
-                </div>
-
-
-          </div>
-          <div class="pl-2">
-            <a class="navbar-brand" href="https://www.facebook.com/ChandraKumalaSchool/" target="_blank">
-                <svg width="18" height="18">
-                <path fill="currentColor" id="facebook" d="m 18,0.99241 v 16.01116 c 0,0.55045 -0.445982,0.99241 -0.992411,0.99241 h -4.588393 v -6.96696 h 2.338393 L 15.107143,8.31295 H 12.415179 V 6.57723 c 0,-0.7875 0.216964,-1.32187 1.345982,-1.32187 h 1.438393 V 2.82455 c -0.249108,-0.0321 -1.100893,-0.10848 -2.097322,-0.10848 -2.073214,0 -3.4955356,1.26563 -3.4955356,3.59197 V 8.31295 H 7.2602679 v 2.71607 H 9.6066964 V 18 H 0.99241071 C 0.44598214,18 0,17.55402 0,17.00759 V 0.99241 C 0,0.44598 0.44598214,0 0.99241071,0 H 17.003571 C 17.554018,0 18,0.44598 18,0.99241 Z" />
-                </svg>
-            </a>
-            <a class="navbar-brand" href="https://www.instagram.com/chandrakumalaofficial/" target="_blank">
-                <svg width="18" height="18"><path fill="currentColor" id="instagram" d="m 9.0020071,4.386055 c -2.5539319,0 -4.6139431,2.06002 -4.6139431,4.61395 0,2.55393 2.0600112,4.61394 4.6139431,4.61394 2.5539319,0 4.6139429,-2.06001 4.6139429,-4.61394 0,-2.55393 -2.060011,-4.61395 -4.6139429,-4.61395 z m 0,7.61361 c -1.6504183,0 -2.9996654,-1.34523 -2.9996654,-2.99966 0,-1.65444 1.3452315,-2.99967 2.9996654,-2.99967 1.6544339,0 2.9996649,1.34523 2.9996649,2.99967 0,1.65443 -1.349247,2.99966 -2.9996649,2.99966 z m 5.8788619,-7.80234 c 0,0.59833 -0.481874,1.07619 -1.076185,1.07619 -0.598327,0 -1.076185,-0.48188 -1.076185,-1.07619 0,-0.59431 0.481874,-1.07618 1.076185,-1.07618 0.594311,0 1.076185,0.48187 1.076185,1.07618 z m 3.055884,1.09225 c -0.06827,-1.44161 -0.397546,-2.71857 -1.453653,-3.77067 -1.052092,-1.05209 -2.329057,-1.38137 -3.770664,-1.45365 -1.485778,-0.0843 -5.9390959,-0.0843 -7.424874,0 -1.4375906,0.0683 -2.7145566,0.39755 -3.7706636,1.44964 -1.05610718,1.05209 -1.3813721,2.32906 -1.45365319,3.77066 -0.08432795,1.48578 -0.08432795,5.9391 0,7.42488 0.06826547,1.4416 0.39754601,2.71857 1.45365319,3.77066 1.056107,1.05209 2.3290574,1.38137 3.7706636,1.45365 1.4857781,0.0843 5.939096,0.0843 7.424874,0 1.441607,-0.0683 2.718572,-0.39754 3.770664,-1.45365 1.052091,-1.05209 1.381372,-2.32906 1.453653,-3.77066 0.08433,-1.48578 0.08433,-5.93508 0,-7.42086 z m -1.919465,9.01506 c -0.313218,0.78706 -0.919576,1.39342 -1.710652,1.71065 -1.184607,0.46983 -3.995538,0.3614 -5.3046289,0.3614 -1.3090909,0 -4.1240379,0.10441 -5.3046291,-0.3614 C 2.9103172,15.702065 2.3039591,15.095705 1.9867255,14.304635 1.5168984,13.120025 1.62532,10.309095 1.62532,9.000005 c 0,-1.30909 -0.104406,-4.12404 0.3614055,-5.30463 0.313218,-0.78706 0.9195761,-1.39342 1.7106525,-1.71065 1.1846068,-0.46983 3.9955382,-0.36141 5.3046291,-0.36141 1.3090909,0 4.1240379,-0.10441 5.3046289,0.36141 0.787061,0.31321 1.393419,0.91957 1.710652,1.71065 0.469828,1.18461 0.361406,3.99554 0.361406,5.30463 0,1.30909 0.108422,4.12404 -0.361406,5.30463 z" />
-                </svg>
-            </a>
-            <a class="navbar-brand" href="https://www.youtube.com/chandrakumalaschool" target="_blank">
-                <svg width="18" height="18"><path fill="currentColor" id="youtube" d="M 7.5053571,6.83438 11.330357,9.00804 7.5053571,11.1817 Z M 18,1.92857 V 16.07143 C 18,17.13616 17.136161,18 16.071429,18 H 1.9285714 C 0.86383929,18 0,17.13616 0,16.07143 V 1.92857 C 0,0.86384 0.86383929,0 1.9285714,0 H 16.071429 C 17.136161,0 18,0.86384 18,1.92857 Z m -1.6875,7.08348 c 0,0 0,-2.39464 -0.305357,-3.54375 C 15.838393,4.83348 15.344196,4.33527 14.713393,4.16652 13.576339,3.85714 9,3.85714 9,3.85714 c 0,0 -4.5763393,0 -5.7133929,0.30938 -0.6308035,0.16875 -1.125,0.66696 -1.29375,1.30178 C 1.6875,6.61339 1.6875,9.01205 1.6875,9.01205 c 0,0 0,2.39465 0.3053571,3.54375 0.16875,0.63482 0.6629465,1.11295 1.29375,1.2817 C 4.4236607,14.14286 9,14.14286 9,14.14286 c 0,0 4.576339,0 5.713393,-0.30938 0.630803,-0.16875 1.125,-0.64687 1.29375,-1.28169 C 16.3125,11.4067 16.3125,9.01205 16.3125,9.01205 Z" />
-                </svg>
-            </a>
-          </div>
-
-
-            <!-- Hamburger Icon -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-              <svg  width="18" height="18" >
-                <path  fill="currentColor" id="threeLines" d="M 0 1.5 L 0 4.5 L 18 4.5 L 18 1.5 L 0 1.5 z M 0 7.5 L 0 10.5 L 18 10.5 L 18 7.5 L 0 7.5 z M 0 13.5 L 0 16.5 L 18 16.5 L 18 13.5 L 0 13.5 z "/>
-              </svg>
-            </button>
-
-    </div>
-</nav>
