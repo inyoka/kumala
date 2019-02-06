@@ -9,25 +9,10 @@
           {% include "www/_header.html" %}
 
           <main class="container">
-
-            <!-- <aside>
-              {% block aside %}
-              <nobr><a href="{% url 'www:enroll' %}">
-              <h1 class="awesome"></i>SIGNUP FOR 2019</h1>
-              </a></nobr>
-              {% endblock %}
-            </aside> -->
-
             <section>
-              <!-- {% block space %} -->
-              <!-- <div class="rocket text-center">
-                <a href="{% url 'www:space' %}"><h1 style="center"><i class="fas fa-space-shuttle"></i><b class="awesome"> Space Mission</b> Updates  <i style="transform: scale(-1, 1);" class="fas fa-space-shuttle"></i></h1></a>
-              </div> -->
-              <!-- {% endblock %} -->
               {% block page %}
               {% endblock %}
             </section>
-
           </main>
               <!-- PAGE FOOTER / CONTACT AUTHOR COMPANY DETAILS -->
             <footer class="">
@@ -50,11 +35,6 @@
       <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-      <!-- <script type="text/javascript">
-          function googleTranslateElementInit() {
-          new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'id,zh-CN', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');}
-      </script> -->
-      <!-- <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> -->
 </body>
 </div>
 </html>
