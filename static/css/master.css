@@ -35,7 +35,6 @@ nav {
   top: 0px;
   text-transform: capitalize;
   font-family: 'Open Sans', sans-serif;
-  padding: 0;
 }
 
 .container { padding-right: 0px; padding-left: 0px; }
@@ -54,7 +53,6 @@ nav {
     height: 100%;
     position: relative;
     text-align: center;
-    padding: 10px;
 }
 
 .column-one-third{
@@ -62,16 +60,13 @@ nav {
   height: 100%;
   position: relative;
   text-align: center;
-  padding: 10px;
-
 }
+
 .column-two-thirds {
   flex: 1 0 66%;
   height: 100%;
   position: relative;
   text-align: center;
-  padding: 10px;
-
 }
 
 .column-three{
@@ -79,7 +74,6 @@ nav {
     height: 100%;
     position: relative;
     text-align: center;
-    padding: 10px;
 }
 
 .sizer{
@@ -98,18 +92,9 @@ nav {
   align-content: center;
 }
 
-.whiter{
-  background-color:rgba(255,255,255,0.6);
-  padding: 10px;
-}
-
 .navbar-brand {
   font-size: 2em;
-  padding:0;
 }
-
-.navbar{
-  padding: 0 5px 0 5px;}
 
 .navbar a {
     color:white;
@@ -132,21 +117,10 @@ navbar svg:hover {
 
 footer{
     background-position: center 20px top;
-    padding: 0;
-    margin: 0;
 }
 
-main {
-  /* Removes padding from banner, ensures consistent background color. */
-  padding: 0;
-  /* Flex stuff */
-  display: flex;
-  align-items: stretch;
-  flex: 1;
-}
-
-aside{ width: 100%; order: 2; text-align: center;}
-section{ order: 3;}
+/* aside{ width: 100%; order: 2; text-align: center;} */
+/* section{ order: 3;} */
 
 section{
   padding: 0;
@@ -158,13 +132,13 @@ section{
   /* order: 1; */
 }
 
-aside{
+/* aside{
   background-color: #363636;
   background-color:rgba(255,255,255,0.8);
   /* width: 40px; */
   order: 2;
   overflow: hidden;
-}
+} */
 
 nav{
   background-color: #363636;
@@ -174,16 +148,10 @@ nav{
 
 .row{
   padding-top: 20px;
-padding-left: 20px;
-padding-right: 20px;
-padding-bottom: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 30px;
 }
-
-.rotated {
-  transform: rotate(90deg);
-  position: relative;
-}
-
 
 /* Google Translate Issues */
 
