@@ -131,9 +131,6 @@ navbar svg:hover {
 }
 
 footer{
-    /* border-top: Orange; */
-    /* background: #bfcac6;
-    background-image: url("/static/images/1920x1080/00288.jpg"); */
     background-position: center 20px top;
     padding: 0;
     margin: 0;
@@ -260,10 +257,6 @@ Centre Stuff
     justify-content: space-around;
     padding: 10px;
     flex-wrap: wrap;
-}
-
-.rounded {
-    border-radius: 35px;
 }
 
 .greyed{
