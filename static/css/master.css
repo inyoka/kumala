@@ -1,5 +1,6 @@
 html body {
-  background: MidnightBlue;
+  background-image: linear-gradient(to bottom right, #202565, #072556, MidnightBlue);
+  /* background: MidnightBlue; */
   margin: 0;
   font-size: 100%;
   font-family: 'PT Serif', serif;
