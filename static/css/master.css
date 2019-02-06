@@ -12,9 +12,7 @@ html{
   flex-direction: column;
 }
 
-header {
-  padding: 0px;
-  font-weight: 700;
+.basker {
   font-family: 'Libre Baskerville', sans-serif;
 }
 
