@@ -6,20 +6,11 @@ html body {
 }
 
 html{
-  display: flex;
   min-height: 100vh;
-  flex-direction: column;
 }
 
 .basker {
   font-family: 'Libre Baskerville', sans-serif;
-}
-
-main{
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  flex: 1;
 }
 
 nav {
@@ -47,38 +38,10 @@ nav {
   justify-content: center;
   flex-grow: 1;
 }
-.column{
-    flex: 1 0 50%;
-    height: 100%;
-    position: relative;
-    text-align: center;
-}
-
-.column-one-third{
-  flex: 1 0 33%;
-  height: 100%;
-  position: relative;
-  text-align: center;
-}
-
-.column-two-thirds {
-  flex: 1 0 66%;
-  height: 100%;
-  position: relative;
-  text-align: center;
-}
-
-.column-three{
-    flex: 1 0 25%;
-    height: 100%;
-    position: relative;
-    text-align: center;
-}
 
 .sizer{
   font-size: 5vh;
 }
-
 
 .rocket{
   align-items: center;
@@ -130,14 +93,6 @@ section{
   flex: 1 0;
   /* order: 1; */
 }
-
-/* aside{
-  background-color: #363636;
-  background-color:rgba(255,255,255,0.8);
-  /* width: 40px; */
-  order: 2;
-  overflow: hidden;
-} */
 
 nav{
   background-color: #363636;
@@ -214,6 +169,7 @@ iframe{
   color:linear-gradient(45deg,#0f8,#08f);
   animation:hue 5000ms infinite linear;
 }
+
 
 /*
 Centre Stuff
