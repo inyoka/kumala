@@ -41,12 +41,29 @@ class Exams(TemplateView):
         context['page_title'] = 'Exam Timetable'
         return context
 
+class Options(TemplateView):
+    template_name = 'www/options.html'
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['page_title'] = 'Select your options ...'
+        return context
+
 class Programs(TemplateView):
     template_name = 'www/programs.html'
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context['page_title'] = 'Programs'
+        return context
+
+class Splash(TemplateView):
+    template_name = 'www/splash.html'
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['page_title'] = 'Welcome'
+        context['page_desc'] = '... to our splash page'
         return context
 
 class Space(TemplateView):
