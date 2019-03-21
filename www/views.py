@@ -30,7 +30,9 @@ class News(TemplateView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['page_title'] = 'In the Newspapers'
+        context['page_title'] = 'CKS in the News'
+        context['page_desc'] = 'Chandra Kumala SPace Experiment on DAAI TV'
+        context['page_image'] = 'http://i3.ytimg.com/vi/E4ahvbNVw4k/hqdefault.jpg'
         return context
 
 class Exams(TemplateView):
