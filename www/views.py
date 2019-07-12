@@ -35,6 +35,16 @@ class News(TemplateView):
         context['page_image'] = 'http://i3.ytimg.com/vi/E4ahvbNVw4k/hqdefault.jpg'
         return context
 
+class Calendar(TemplateView):
+    template_name = 'www/calendar.html'
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['page_title'] = 'CKS Academic Calendar'
+        context['page_desc'] = 'Chandra Kumala academic calendar for 2019 until 2020'
+        return context
+
+
 class Exams(TemplateView):
     template_name = 'www/exams.html'
 
