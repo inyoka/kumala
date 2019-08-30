@@ -7,42 +7,6 @@
 {% block page %}
 <section class="m-0 p-0">   
 
-    <div class="row align-items-center m-0 p-0">
-        <div class="col-lg m-0 p-0">
-            <div class=" text-center">
-                <h3 class=""><i class="fas fa-users"></i> PENGUMUMAN JAM SEKOLAH UNTUK PUBLIK</h3>
-                <p class="mx-2"> 
-                    Selamat datang kembali!<br>
-                    <b>Mulai tanggal 15 Juli 2019, pelajaran akan dimulai pada pukul 8 pagi.</b> 
-                    Tidak ada perubahan waktu pulang kecuali bagi siswa/siswi Children's Garden yang mendaftar untuk Enrichment Program.
-                    Sekolah akan dibuka mulai pada pukul 07.30 WIB untuk memungkinkan para orang tua mengantarkan anaknya lebih awal atau para siswa untuk menghadiri kegiatan/kelas tertentu.<br>
-                    Untuk informasi lebih lanjut, dapat menghubungi CKS di (061) 6616765.
-                    <br>
-                    Salam Hangat,<br>
-                    Chandra Kumala School
-                  </p>
-              </div>
-        </div>
-        <div class="col-lg">
-          <div class=" text-center">
-            <h3 class=""><i class="fas fa-users"></i> SCHOOL START TIME</h3>
-            <p class="mx-2">
-                    Welcome Back! 
-                    
-                    We are happy to announce that <br> 
-                    <b>as of July 15th 2019, lessons will start at 08.00 am.</b> <br>
-                    Finishing times remain unchanged, except for students on the Children's Garden Enrichment Program.<br>
-                    School will open from 7.30 am for early drop off and students attending special activities or classes.<br>
-                    For further information, please call (061) 6616765<br>
-                    <br>
-                    Kind regards,<br>
-                    Chandra Kumala School
-              </p>
-          </div>
-        </div>
-    </div>
-
-    <br>
 
 
   <div class="row align-items-center m-0 p-0">
@@ -59,23 +23,14 @@
           </ol>
           <div class="carousel-inner">
                 <div class="carousel-item active">
-                        <img src="{% static "/images/1920x1080/welcome.jpg" %}" class="d-block w-100 " alt="...">
+                    <img src="{% static "/images/1920x1080/welcome.jpg" %}" class="d-block w-100 " alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="{% static "/images/3x4/tour.jpg" %}" class="d-block w-100 " alt="...">
+                    <img src="{% static "/images/3x4/it-teacher.jpg" %}" class="d-block w-100 " alt="...">
                 </div>
                 <div class="carousel-item">
-                <img src="{% static "/images/3x4/Web - Science Teacher.jpg" %}" class="d-block w-100 " alt="...">
+                    <img src="{% static "/images/3x4/mandarin-teacher.jpg" %}" class="d-block w-100 " alt="...">
                 </div>
-            <!-- <div class="carousel-item active">
-                <img src="{% static "/images/1920x1080/00102.jpg" %}" class="d-block w-100 " alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="{% static "/images/1920x1080/00475.jpg" %}" class="d-block w-100 " alt="...">
-              </div> -->
-              <div class="carousel-item">
-                <img src="{% static "/images/3x4/Loker art web.jpg" %}" class="d-block w-100 " alt="...">
-              </div>
           </div>
           <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -88,17 +43,7 @@
         </div>
 
       </div>
-      <div class="col-lg order-lg-0">
-          <div class="text-center">
-            <a  class="btn btn-success mt-md-3 mb-md-1 mt-2" href="{% url 'www:enroll' %}"></i>Register for 2019</a><br>
-            <a  class="btn btn-warning mb-md-3 mb-2" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSe5oRntT3ZGWCHhxVKGMNJShFUsTXxzCMJwRTD4QsOrPmOiEQ/viewform?embedded=true"></i>IGCSE options selection 2019</a>
 
-            <br>
-            <h3><i class="fas fa-graduation-cap fa-1x"></i> Experienced</h3>
-            <p class="mx-2">Chandra Kumala School has been educating students for 15 years. Nestled in a 5 hectare green campus, only thirty minutes from the centre of Medan.<br>
-              Education from 18 months up until 18 years.</p>
-          </div>
-      </div>
   </div>
 
   <br>
@@ -118,11 +63,9 @@
         </div>
         <div class="col-lg">
           <div class=" text-center">
-            <h3 class=""><i class="fas fa-users"></i> Inclusive</h3>
-            <p class="mx-2">Promoting team-work while building on students strengths.
-              With a maximum class size of 24 students, we are able to provide individualised curriculums
-              tailored to challenge and develop each student itellectually, socially and emotionally.
-              </p>
+                <h3><i class="fas fa-graduation-cap fa-1x"></i> Experienced</h3>
+                <p class="mx-2">Chandra Kumala School has been educating students for 15 years. Nestled in a 5 hectare green campus, only thirty minutes from the centre of Medan.<br>
+                    Education from 18 months up until 18 years.</p>
           </div>
         </div>
     </div>
@@ -145,7 +88,11 @@
         </div>
         <div class="col-lg order-lg-0 m-0 p-0">
           <div class=" text-center">
-
+                <h3 class=""><i class="fas fa-users"></i> Inclusive</h3>
+                <p class="mx-2">Promoting team-work while building on students strengths.
+                  With a maximum class size of 24 students, we are able to provide individualised curriculums
+                  tailored to challenge and develop each student itellectually, socially and emotionally.
+                  </p>
             <h3 class=""><i class="fas fa-child"></i><i class="fas fa-child"></i><i class="fas fa-child"></i> Tolerant</h3>
             <p class="mx-2">Our 'freedom of belief' programme helps all students discover their faith, while respecting the beliefs of others.
               We encourage students to act on their beliefs, which is why our Kindness Program is an integral part of our curriculum, encouraging students and teachers
