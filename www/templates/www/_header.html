@@ -1,24 +1,26 @@
 {% load staticfiles %}
 
-<header class="container my-3 d-flex justify-content-center justify-content-sm-between align-items-start">
+<header class="container my-3 d-flex justify-content-between align-items-start">
     <div class="">
         <!-- <img class="mx-3 d-none" src="{% static "images/mala-white.svg" %}" width="90px" alt="Logo Image"> -->
+        <img class="mx-3 d-block d-sm-none" src="{% static "images/mala-white.svg" %}" width="55px" alt="Logo Image">
         <img class="mx-3 d-none d-sm-block d-lg-none" src="{% static "images/mala-white.svg" %}" width="90px" alt="Logo Image">
         <img class="mx-3 d-none d-lg-block" src="{% static "images/mala-white.svg" %}" width="120px" alt="Logo Image">
     </div>
 
 
     <div class="d-flex flex-column align-items-end">
-      <nav class="navbar navbar-expand-lg navbar-dark bg-transparent p-0">
-        <img class="d-sm-none px-1" src="{% static "images/mala-white.svg" %}" width="40px" alt="Logo Image">
-        <a class="navbar-brand d-none d-md-block notranslate basker" href="/">Chandra Kumala School</a>
-        <a class="navbar-brand d-block d-md-none basker notranslate" href="/">Chandra Kumala</a>
-      </nav>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent p-0 d-none d-md-block">
+            <img class="d-sm-none px-1" src="{% static "images/mala-white.svg" %}" width="40px" alt="Logo Image">
+            <a class="navbar-brand d-none d-md-block notranslate basker" href="/">Chandra Kumala School</a>
+            <a class="navbar-brand d-block d-md-none basker notranslate" href="/">Chandra Kumala</a>
+        </nav>
 
       <div class="container d-flex justify-content-md-end">
         <a class="btn btn-primary btn-sm my-1 mx-1 mx-md-2 d-none d-md-block" href="https://www.facebook.com/ChandraKumalaSchool/" target="_blank" title="Facebook"><i class="fab fa-facebook-square fa-inverse fa-fw fa-2x"></i></a>
         <a class="btn btn-danger btn-sm my-1 mx-1 mx-md-2 d-none d-md-block" href="https://www.youtube.com/chandrakumalaschool" target="_blank"  title="Youtube"><i class="fab fa-youtube fa-inverse fa-fw fa-2x"></i></a>
         <a class="btn btn-warning btn-sm my-1 mx-1 mx-md-2 d-none d-md-block" href="https://www.instagram.com/chandrakumalaofficial/" target="_blank" title="Instagram"><i class="fab fa-instagram fa-inverse fa-fw fa-2x"></i></a>
+
         <a class="btn btn-secondary btn-sm my-1 mx-1 mx-md-2" href="{% url 'www:calendar' %}" title="Calendar"><i class="fa fa-calendar-alt fa-inverse fa-fw fa-2x" aria-hidden="true"></i></a>
         <a class="btn btn-success btn-sm my-1 mx-1 mx-md-2" href="https://goo.gl/maps/hR95oHnVUdv" target="_blank" title="Navigate to school"><i class="fas fa-map-marker-alt fa-inverse fa-fw fa-2x"></i></a>
         <a class="btn btn-info btn-sm my-1 mx-1 mx-md-2" href="tel:+62-061-661-6765" target="_blank"  title="Call Us"><i class="fas fa-mobile-alt fa-inverse fa-fw fa-2x"></i></a>
@@ -27,6 +29,7 @@
           <span class="navbar-toggler-icon"></span>
         </button> -->
       </div>
+
 
       <nav class="navbar navbar-expand-lg navbar-dark bg-transparent p-0">
         <!-- <a class="navbar-brand d-none d-md-block notranslate" href="#">Chandra Kumala School</a>
