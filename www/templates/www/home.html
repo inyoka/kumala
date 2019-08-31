@@ -5,12 +5,8 @@
 {% load staticfiles %}
 
 {% block page %}
-<section class="m-0 p-0">   
-
-
 
   <div class="row align-items-center m-0 p-0">
-
 
       <div class="col-lg order-lg-1 m-0 p-0">
 
@@ -21,7 +17,7 @@
             <li data-target="#carouselIndicators" data-slide-to="2"></li>
             <!-- <li data-target="#carouselIndicators" data-slide-to="3"></li> -->
           </ol>
-          <div class="carousel-inner">
+          <div class="carousel-inner  rounded-top">
                 <div class="carousel-item active">
                     <img src="{% static "/images/1920x1080/welcome.jpg" %}" class="d-block w-100 " alt="...">
                 </div>
@@ -117,5 +113,4 @@
         </div>
     </div>
 
-</section>
 {% endblock %}
